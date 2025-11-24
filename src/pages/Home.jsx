@@ -8,6 +8,7 @@ import bannerSlide2 from '/images/banners/home-banner-2.avif';
 import logo from '../assets/images/logo/logo.avif';
 import AboutContent from '../components/about-content/AboutContent';
 import UltimateBeverage from '../components/ultimate-beverage/UltimateBeverage';
+import OurProducts from '../components/our-products/OurProducts';
 
 const Home = () => {
     return (
@@ -61,6 +62,9 @@ const Home = () => {
 
             {/* Ultimate Beverage */}
             <UltimateBeverage />
+
+            {/* Our Products */}
+            <OurProducts />
         </>
     )
 }
