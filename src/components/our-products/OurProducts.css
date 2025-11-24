@@ -1,0 +1,24 @@
+.our-products{
+    padding: 4rem 7%;
+    background-color: #f2eade;
+}
+.our-products-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-products-head h5{
+    font-size: calc(2.3rem + 0.5vw);
+    color: #000;
+}
+.our-products-head span{
+    font-size: calc(1.1rem + 0.5vw);
+    color: #000;
+    font-family: "IvyOra", sans-serif !important;
+}
+.our-products-head p{
+    font-size: calc(0.6rem + 0.5vw);
+    color: #000;
+    text-align: center;
+    margin-top: 0.3rem;
+}
