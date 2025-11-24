@@ -37,16 +37,22 @@ const MyNavbar = () => {
                 <Offcanvas.Body>
                     <Nav className="justify-content-center flex-grow-1 nav">
                         <Nav.Link as={NavLink} to="/" onClick={handleClose}>
-                            HOME
+                            Home
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/about" onClick={handleClose}>
-                            ABOUT US
+                        <Nav.Link as={NavLink} to="/origin-of-the-brew" onClick={handleClose}>
+                            Origin of the Brew
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/services" onClick={handleClose}>
-                            SERVICES
+                        <Nav.Link as={NavLink} to="/products" onClick={handleClose}>
+                            Products
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/contact" onClick={handleClose}>
-                            CONTACT
+                        <Nav.Link as={NavLink} to="/darjeeling-story" onClick={handleClose}>
+                            Darjeeling Story
+                        </Nav.Link>
+                        <Nav.Link as={NavLink} to="/about-us" onClick={handleClose}>
+                            About Us
+                        </Nav.Link>
+                        <Nav.Link as={NavLink} to="/art-of-brewing" onClick={handleClose}>
+                            Art of Brewing
                         </Nav.Link>
                     </Nav>
 
