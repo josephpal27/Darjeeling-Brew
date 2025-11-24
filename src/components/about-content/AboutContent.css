@@ -1,0 +1,58 @@
+.about-content{
+    padding: 5rem 7%;
+    background-color: #f2eade;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-content .about-content-left{
+    width: 47%;
+}
+.about-content .about-content-left h3{
+    font-size: calc(2.3rem + 0.5vw);
+    margin-bottom: 2.5rem;
+}
+.about-content .about-content-left p{
+    font-size: calc(0.6rem + 0.5vw);
+    margin-top: 2rem;
+}
+.about-content .about-content-left button{
+    font-size: calc(0.65rem + 0.5vw);
+    background-color: #8e2f2d;
+    padding: 0.8rem 2rem;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    font-family: "IvyOra", sans-serif !important;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 4rem;
+    transition: all 0.2s ease;
+}
+.about-content .about-content-left button:hover{
+    background-color: #711f1d;
+}
+.about-content .about-content-left button .icon{
+    font-size: calc(1.3rem + 0.5vw);
+}
+.about-content .about-content-left a{
+    text-decoration: none;
+}
+.about-content .about-content-right{
+    width: 40%;
+    position: relative;
+}
+.about-content .about-content-right img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.about-content .about-content-right .layer{
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    left: -0.8rem;
+    bottom: -0.8rem;
+    background-color: #d6ad58;
+}
