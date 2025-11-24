@@ -5,6 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./Navbar.css";
 import logo from "../../assets/images/logo/logo.avif";
+import { GoSearch } from "react-icons/go";
+import { BsHandbag } from "react-icons/bs";
 
 const MyNavbar = () => {
     const [show, setShow] = useState(false);
@@ -58,9 +60,13 @@ const MyNavbar = () => {
 
                     {/* Right Side */}
                     <div className="right-btn-wrapper">
-                        <NavLink to="/contact" className="get-in-touch-btn">
-                            GET IN TOUCH
+                        <div className="search-btn">
+                            <GoSearch className="nav-icon" />
+                        </div>
+                        <NavLink to="/cart" className="cart-btn">
+                            <BsHandbag className="nav-icon" />
                         </NavLink>
+                        
                     </div>
                 </Offcanvas.Body>
             </Navbar.Offcanvas>

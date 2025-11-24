@@ -2,14 +2,11 @@
   padding: 0.5rem 7% !important;
   background-color: #f4f7df;
   width: 100%;
-  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.245);
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.144);
   z-index: 10;
 }
 .navbar .nav-brand img{
   width: 100px;
-}
-.navbar .nav{
-  padding-left: 2.5rem;
 }
 .navbar .nav-link{
   color: #000 !important;
@@ -41,20 +38,21 @@
 .navbar .nav-link.active::after{
   width: 30%;
 }
-.navbar .get-in-touch-btn{
-  background-color: #fff;
-  color: #2e0e4f;
-  text-decoration: none;
-  padding: 0.55rem 1.1rem;
-  border-radius: 30px;
-  font-weight: 550;
-  font-size: calc(0.55rem + 0.5vw);
-  transition: all 0.3s ease;
+.navbar .right-btn-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
-.navbar .get-in-touch-btn:hover{
-  background-color: #2e0e4f;
-  color: #fff;
-  box-shadow: rgba(255, 255, 255, 0.278) 0px 3px 8px;
+.navbar .right-btn-wrapper .nav-icon{
+    color: #000;
+    font-size: calc(1.1rem + 0.5vw);
+    cursor: pointer;
+}
+.navbar .right-btn-wrapper .search-btn{
+    padding-top: 2px;
+}
+.navbar .right-btn-wrapper .search-btn .nav-icon{
+    font-size: calc(1.2rem + 0.5vw);
 }
 
 /* Media Queries */
@@ -73,14 +71,14 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
   .offcanvas{
-    background: #2e0e4f;
+    background: #f4f7df;
     width: 70% !important;
   }
   .offcanvas .offCanvasLogo{
     width: 60px;
   }
   .offcanvas .nav-link{
-    color: white !important;
+    color: #000 !important;
     margin: 0.4rem 0;
     font-size: calc(0.9rem + 0.5vw);
     font-weight: 600;
