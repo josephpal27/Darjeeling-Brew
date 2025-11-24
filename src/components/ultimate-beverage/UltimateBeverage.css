@@ -1,0 +1,52 @@
+.ultimate-beverage{
+    /* background: linear-gradient(to right, #d4aa51 40%, #dfd5c9 60%); */
+    padding: 4rem 7% 1rem 7%;
+    background-image: url('/images/ultimate-beverage-bg.avif');
+    background-size: cover;
+    background-position: center;
+}
+.ultimate-beverage h4{
+    font-size: calc(2.3rem + 0.5vw);
+    text-align: center;
+    color: #000;
+}
+.beverage-content-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.beverage-left{
+    width: 27%;
+}
+.beverage-center{
+    width: 37%;
+}
+.beverage-right{
+    width: 30%;
+}
+.beverage-center img{
+    width: 100%;
+    scale: 1.05;
+    margin-left: -1rem;
+}
+.beverage-content-row .box{
+    margin-bottom: 3.5rem;
+}
+.beverage-content-row .box span{
+    font-size: calc(1.1rem + 0.5vw);
+    font-family: "IvyOra", sans-serif !important;
+    color: #000;
+    font-weight: 550;
+}
+.beverage-content-row .box ul{
+    margin-top: 1.5rem;
+}
+.beverage-content-row .box ul li{
+    font-size: calc(0.65rem + 0.5vw);
+    color: #000;
+    font-weight: 550;
+    font-family: "IvyOra", sans-serif !important;
+    margin-bottom: 0.3rem;
+}

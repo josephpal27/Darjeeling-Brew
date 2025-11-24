@@ -11,10 +11,12 @@
 .about-content .about-content-left h3{
     font-size: calc(2.3rem + 0.5vw);
     margin-bottom: 2.5rem;
+    color: #000;
 }
 .about-content .about-content-left p{
     font-size: calc(0.6rem + 0.5vw);
     margin-top: 2rem;
+    color: #000;
 }
 .about-content .about-content-left button{
     font-size: calc(0.65rem + 0.5vw);
