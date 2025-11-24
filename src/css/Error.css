@@ -1,0 +1,12 @@
+.error-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.error-page h1{
+    font-size: calc(3rem + 0.5vw);
+    color: #000;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+}
