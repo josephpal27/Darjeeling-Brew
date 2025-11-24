@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
-
 import bannerSlide1 from '/images/banners/home-banner-1.avif';
 import bannerSlide2 from '/images/banners/home-banner-2.avif';
 import logo from '../assets/images/logo/logo.avif';
+import AboutContent from '../components/about-content/AboutContent';
 
 const Home = () => {
     return (
@@ -54,6 +54,9 @@ const Home = () => {
 
                 </Swiper>
             </section>
+
+            {/* About Content */}
+            <AboutContent />
         </>
     )
 }
