@@ -9,6 +9,7 @@ import logo from '../assets/images/logo/logo.avif';
 import AboutContent from '../components/about-content/AboutContent';
 import UltimateBeverage from '../components/ultimate-beverage/UltimateBeverage';
 import OurProducts from '../components/our-products/OurProducts';
+import DarjeelingStory from '../components/darjeeling-story/DarjeelingStory';
 
 const Home = () => {
     return (
@@ -65,6 +66,9 @@ const Home = () => {
 
             {/* Our Products */}
             <OurProducts />
+
+            {/* Darjeeling Story */}
+            <DarjeelingStory />
         </>
     )
 }
