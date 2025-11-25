@@ -13,10 +13,14 @@ import coldBrew2 from '../../assets/images/brew-icons/cold/2.png';
 import coldBrew3 from '../../assets/images/brew-icons/cold/3.png';
 import coldBrew4 from '../../assets/images/brew-icons/cold/4.png';
 
+import leaf from '../../assets/images/brew-icons/leaf.avif';
+
 const ArtOfBrewing = () => {
     return (
         <>
             <section className="art-of-brewing">
+                <img src={leaf} alt="Leaf" loading="lazy" id="leaf-right" />
+                <img src={leaf} alt="Leaf" loading="lazy" id="leaf-left" />
                 <div className="art-of-brewing-head">
                     <h6>The Art of Brewing - <br /> The Darjeeling Brew Way</h6>
                     <p>Because Darjeeling Brew isn't just another cup - it's a story steeped in the mist of the Himalayas. Every swirl, every minute, and every breath of steam carries the spirit of the mountain. Brewing Darjeeling isn't an act of habit, it's an act of devotion.</p>

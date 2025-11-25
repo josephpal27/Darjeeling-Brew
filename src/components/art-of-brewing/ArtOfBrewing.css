@@ -1,6 +1,20 @@
 .art-of-brewing{
     padding: 1.5rem 7%;
     background-color: #f2eade;
+    position: relative;
+}
+.art-of-brewing #leaf-right{
+    position: absolute;
+    top: -8rem;
+    right: 0;
+    width: 200px;
+}
+.art-of-brewing #leaf-left{
+    position: absolute;
+    top: 15rem;
+    left: -2rem;
+    width: 170px;
+    transform: rotateY(180deg);
 }
 .art-of-brewing .art-of-brewing-head{
     display: flex;
