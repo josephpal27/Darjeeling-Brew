@@ -1,6 +1,10 @@
 .our-products{
-    padding: 4rem 7%;
+    padding: 4rem 7% 1rem 7%;
     background-color: #f2eade;
+    background-image: url('/images/our-products-bg.avif');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 .our-products-head{
     display: flex;
@@ -21,4 +25,24 @@
     color: #000;
     text-align: center;
     margin-top: 0.3rem;
+}
+.our-products .swiper-slide{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+.our-products .swiper-slide span{
+    font-size: calc(1.1rem + 0.5vw);
+    color: #8e2f2d;
+    font-family: "IvyOra", sans-serif !important;
+}
+.our-products .swiper-slide img{
+    width: 50%;
+    height: 400px;
+    object-fit: contain;
+}
+.our-products #product-slide-1 img{
+    height: 550px;
 }
