@@ -11,6 +11,7 @@ import UltimateBeverage from '../components/ultimate-beverage/UltimateBeverage';
 import OurProducts from '../components/our-products/OurProducts';
 import DarjeelingStory from '../components/darjeeling-story/DarjeelingStory';
 import HomeAboutUs from '../components/home-about-us/HomeAboutUs';
+import ArtOfBrewing from '../components/art-of-brewing/ArtOfBrewing';
 
 const Home = () => {
     return (
@@ -73,6 +74,9 @@ const Home = () => {
 
             {/* Home About Us */}
             <HomeAboutUs />
+
+            {/* Art Of Brewing */}
+            <ArtOfBrewing />
         </>
     )
 }
