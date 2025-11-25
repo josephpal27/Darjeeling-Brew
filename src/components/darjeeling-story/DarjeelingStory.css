@@ -1,0 +1,61 @@
+.darjeeling-story{
+    background-color: #f2eade;
+    padding: 0 7% 3rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.darjeeling-story-image{
+    width: 45%;
+    position: relative;
+}
+.darjeeling-story-image img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.darjeeling-story-image .layer{
+    width: 70%;
+    height: 85%;
+    position: absolute;
+    right: -0.8rem;
+    bottom: -0.8rem;
+    background-color: #d6ad58;
+}
+.darjeeling-story-content{
+    width: 48%;
+}
+.darjeeling-story-content h6{
+    font-size: calc(2.3rem + 0.5vw);
+    color: #000;
+}
+.darjeeling-story-content p{
+    font-size: calc(0.6rem + 0.5vw);
+    color: #000;
+    margin-top: 2rem;
+    line-height: 1.6;
+}
+.darjeeling-story-content button{
+    font-size: calc(0.65rem + 0.5vw);
+    background-color: #8e2f2d;
+    padding: 0.8rem 2rem;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    font-family: "IvyOra", sans-serif !important;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 3rem;
+    transition: all 0.2s ease;
+}
+.darjeeling-story-content button:hover{
+    background-color: #711f1d;
+}
+.darjeeling-story-content button .icon{
+    font-size: calc(1.3rem + 0.5vw);
+}
+.darjeeling-story-content a{
+    text-decoration: none;
+}
