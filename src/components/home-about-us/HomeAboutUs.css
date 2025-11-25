@@ -1,0 +1,31 @@
+.home-about-us{
+    padding: 4rem 7%;
+    background-color: #f2eade;
+}
+.home-about-us h6{
+    font-size: calc(2.3rem + 0.5vw);
+    color: #000;
+    text-align: center;
+}
+.home-about-us .about-us-image-row{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-about-us .about-us-image-row img{
+    width: 30%;
+}
+.home-about-us .about-us-image-row img:nth-child(2){
+    scale: 1.13;
+}
+.home-about-us p{
+    font-size: calc(0.8rem + 0.5vw);
+    color: #000;
+    margin: 5rem auto 0;
+    line-height: 1.6;
+    width: 55%;
+    text-align: center;
+    font-family: "IvyOra", sans-serif !important;
+}
