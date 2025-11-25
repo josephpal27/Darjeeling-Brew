@@ -10,6 +10,7 @@ import AboutContent from '../components/about-content/AboutContent';
 import UltimateBeverage from '../components/ultimate-beverage/UltimateBeverage';
 import OurProducts from '../components/our-products/OurProducts';
 import DarjeelingStory from '../components/darjeeling-story/DarjeelingStory';
+import HomeAboutUs from '../components/home-about-us/HomeAboutUs';
 
 const Home = () => {
     return (
@@ -69,6 +70,9 @@ const Home = () => {
 
             {/* Darjeeling Story */}
             <DarjeelingStory />
+
+            {/* Home About Us */}
+            <HomeAboutUs />
         </>
     )
 }
