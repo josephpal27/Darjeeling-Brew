@@ -1,5 +1,5 @@
 .our-products{
-    padding: 4rem 7% 1rem 7%;
+    padding: 4rem 7% 2rem 7%;
     background-color: #f2eade;
     background-image: url('/images/our-products-bg.avif');
     background-size: cover;
@@ -26,8 +26,10 @@
     text-align: center;
     margin-top: 0.3rem;
 }
+.our-products-slider{
+    position: relative;
+}
 .our-products .swiper-slide{
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +39,11 @@
     font-size: calc(1.1rem + 0.5vw);
     color: #8e2f2d;
     font-family: "IvyOra", sans-serif !important;
+    display: block;
+    margin-bottom: 1.8rem;
+}
+.our-products #product-slide-1 span{
+    margin-bottom: 0;
 }
 .our-products .swiper-slide img{
     width: 50%;
@@ -45,4 +52,53 @@
 }
 .our-products #product-slide-1 img{
     height: 550px;
+    scale: 1.1;
+    margin-top: 1.5rem;
+}
+.our-products #product-slide-2 img,
+.our-products #product-slide-3 img{
+    scale: 0.88;
+}
+
+.our-products .slide-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-products .slide-foot span{
+    color: #000;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.our-products .slide-foot p{
+    font-size: calc(0.6rem + 0.5vw);
+    color: #000;
+    text-align: center;
+    width: 60%;
+}
+
+.our-products .swiper-button-next,
+.our-products .swiper-button-prev{
+  color: #fff;
+  top: 52%;
+  transform: translateY(-50%);
+  scale: 0.9;
+  position: absolute;
+  z-index: 10;
+  background-color: #928e88;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+.our-products .swiper-button-next:hover,
+.our-products .swiper-button-prev:hover{
+  background-color: #847d73;
+}
+.our-products .swiper-button-prev{
+  left: 0.5rem;
+}
+.our-products .swiper-button-next{
+  right: 0.5rem;
 }

@@ -40,6 +40,8 @@
 }
 .about-content .about-content-left a{
     text-decoration: none;
+    width: max-content;
+    display: block;
 }
 .about-content .about-content-right{
     width: 40%;

@@ -58,4 +58,6 @@
 }
 .darjeeling-story-content a{
     text-decoration: none;
+    width: max-content;
+    display: block;
 }
