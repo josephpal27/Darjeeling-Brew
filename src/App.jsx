@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { useEffect } from "react";
 import MyNavbar from "./components/navbar/Navbar"
-// import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer';
 // import ScrollToTop from "./components/scroll-to-top/ScrollToTop";
 // import PageTitle from "./components/page-title/PageTitle";
 import AOS from "aos";
@@ -33,7 +33,7 @@ const App = () => {
       {/* <PageTitle/> */}
       <MyNavbar/>
       <Outlet />
-      {/* <Footer/> */}
+      <Footer/>
       {/* <ScrollToTop/> */}
     </>
   )
