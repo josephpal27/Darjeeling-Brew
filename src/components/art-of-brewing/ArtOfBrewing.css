@@ -1,5 +1,5 @@
 .art-of-brewing{
-    padding: 3rem 7%;
+    padding: 1.5rem 7%;
     background-color: #f2eade;
 }
 .art-of-brewing .art-of-brewing-head{
@@ -23,7 +23,7 @@
 }
 
 .brew-tabbing{
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 .brew-tabbing .tab-head{
     display: flex;
@@ -102,6 +102,9 @@
 .timeline-content .box .box-content{
     width: 50%;
 }
+#cold-timeline-content .box .box-content{
+    width: 55%;
+}
 .timeline-content .box span{
     font-size: calc(1.3rem + 0.5vw);
     font-family: "IvyOra", sans-serif !important;
@@ -113,6 +116,8 @@
     color: #000;
     margin-top: 0.7rem;
 }
+
+/* Hot */
 .timeline-content #hot-box-1{
     margin-left: 30rem;
 }
@@ -130,4 +135,21 @@
 }
 .timeline-content #hot-box-6{
     margin-right: 24.5rem;
+}
+
+/* Cold */
+.timeline-content #cold-box-1{
+    margin-left: 33rem;
+}
+.timeline-content #cold-box-2{
+    margin-right: 24rem;
+}
+.timeline-content #cold-box-3{
+    margin-left: 30.3rem;
+}
+.timeline-content #cold-box-4{
+    margin-right: 29.8rem;
+}
+.timeline-content #cold-box-5{
+    margin-left: 35rem;
 }
