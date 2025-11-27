@@ -60,3 +60,56 @@
     bottom: -0.8rem;
     background-color: #d6ad58;
 }
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .about-content{
+        padding: 4.5rem 7%;
+    }
+    .about-content .about-content-left h3{
+        font-size: calc(2.1rem + 0.5vw);
+        margin-bottom: 2.3rem;
+    }
+    .about-content .about-content-left p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 1.8rem;
+    }
+    .about-content .about-content-left button{
+        font-size: calc(0.6rem + 0.5vw);
+        padding: 0.7rem 1.8rem;
+        margin-top: 3.3rem;
+    }
+    .about-content .about-content-left button .icon{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .about-content .about-content-right .layer{
+        left: -0.75rem;
+        bottom: -0.75rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .about-content{
+        padding: 4rem 7%;
+    }
+    .about-content .about-content-left h3{
+        font-size: calc(1.8rem + 0.5vw);
+        margin-bottom: 2.2rem;
+    }
+    .about-content .about-content-left p{
+        font-size: calc(0.5rem + 0.5vw);
+        margin-top: 1.7rem;
+    }
+    .about-content .about-content-left button{
+        font-size: calc(0.55rem + 0.5vw);
+        padding: 0.65rem 1.6rem;
+        gap: 0.25rem;
+        margin-top: 3.2rem;
+    }
+    .about-content .about-content-left button .icon{
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .about-content .about-content-right .layer{
+        left: -0.7rem;
+        bottom: -0.7rem;
+    }
+}
