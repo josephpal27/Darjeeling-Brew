@@ -50,3 +50,53 @@
     font-family: "IvyOra", sans-serif !important;
     margin-bottom: 0.3rem;
 }
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .ultimate-beverage{
+        padding: 3.5rem 7% 0.7rem 7%;
+    }
+    .ultimate-beverage h4{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+    .beverage-content-row{
+        margin-top: 1.9rem;
+    }
+    .beverage-content-row .box{
+        margin-bottom: 3.3rem;
+    }
+    .beverage-content-row .box span{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .beverage-content-row .box ul{
+        margin-top: 1.4rem;
+    }
+    .beverage-content-row .box ul li{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-bottom: 0.28rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .ultimate-beverage{
+        padding: 3rem 7% 0.5rem 7%;
+    }
+    .ultimate-beverage h4{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .beverage-content-row{
+        margin-top: 1.8rem;
+    }
+    .beverage-content-row .box{
+        margin-bottom: 3.2rem;
+    }
+    .beverage-content-row .box span{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .beverage-content-row .box ul{
+        margin-top: 1.3rem;
+    }
+    .beverage-content-row .box ul li{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-bottom: 0.25rem;
+    }
+}
