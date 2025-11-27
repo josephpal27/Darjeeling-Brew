@@ -102,3 +102,92 @@
 .our-products .swiper-button-next{
   right: 0.5rem;
 }
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .our-products{
+        padding: 3.5rem 7% 1.5rem 7%;
+    }
+    .our-products-head h5{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+    .our-products-head span{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .our-products-head p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.3rem;
+    }
+    .our-products .swiper-slide{
+        padding-top: 1.9rem;
+    }
+    .our-products .swiper-slide span{
+        font-size: calc(1rem + 0.5vw);
+        margin-bottom: 1.5rem;
+    }
+    .our-products .swiper-slide img{
+        height: 350px;
+    }
+    .our-products #product-slide-1 img{
+        height: 500px;
+        margin-top: 1.1rem;
+    }
+
+    .our-products .slide-foot span{
+        margin-top: 1rem;
+        margin-bottom: 0.9rem;
+    }
+    .our-products .slide-foot p{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+
+    .our-products .swiper-button-next,
+    .our-products .swiper-button-prev{
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .our-products{
+        padding: 3rem 7% 1rem 7%;
+    }
+    .our-products-head h5{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .our-products-head span{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .our-products-head p{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+    .our-products .swiper-slide{
+        padding-top: 1.5rem;
+    }
+    .our-products .swiper-slide span{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-bottom: 1.3rem;
+    }
+    .our-products .swiper-slide img{
+        height: 310px;
+    }
+    .our-products #product-slide-1 img{
+        height: 460px;
+        margin-top: 0.3rem;
+    }
+
+    .our-products .slide-foot span{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .our-products .slide-foot p{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+
+    .our-products .swiper-button-next,
+    .our-products .swiper-button-prev{
+        width: 37px;
+        height: 37px;
+        padding: 8.5px;
+    }
+}
+ 
