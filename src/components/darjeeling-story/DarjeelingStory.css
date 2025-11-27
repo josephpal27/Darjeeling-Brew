@@ -61,3 +61,11 @@
     width: max-content;
     display: block;
 }
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    
+}
