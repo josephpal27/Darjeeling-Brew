@@ -4,6 +4,8 @@
 }
 .banner .swiper-slide img{
     width: 100%;
+    min-height: 90vh;
+    object-fit: cover;
 }
 .banner .swiper-slide .slide-content{
     width: 100%;
@@ -19,6 +21,7 @@
 }
 .banner .swiper-slide .slide-content img{
     width: 250px;
+    min-height: auto;
     margin-top: -3rem;
 }
 .banner .swiper-slide .slide-content h1{

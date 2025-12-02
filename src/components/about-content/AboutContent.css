@@ -26,6 +26,9 @@
     color: #000;
     text-align: justify;
 }
+.about-content .about-content-left p:last-child{
+    margin-bottom: 0;
+}
 .about-content .about-content-right{
     width: 45%;
     position: relative;
@@ -54,7 +57,7 @@
     }
     .about-content .about-content-left span{
         font-size: calc(1.2rem + 0.5vw);
-        margin-bottom: 2.6rem;
+        margin-bottom: 2.2rem;
     }
     .about-content .about-content-left p{
         font-size: calc(0.55rem + 0.5vw);
@@ -80,7 +83,7 @@
     }
     .about-content .about-content-left p{
         font-size: calc(0.5rem + 0.5vw);
-        margin-top: 1.3rem;
+        margin-top: 1.2rem;
     }
     .about-content .about-content-right .layer{
         left: -0.7rem;

@@ -1,9 +1,6 @@
 .ultimate-beverage{
-    /* background: linear-gradient(to right, #d4aa51 40%, #dfd5c9 60%); */
-    padding: 4rem 7% 1rem 7%;
-    background-image: url('/images/ultimate-beverage-bg.avif');
-    background-size: cover;
-    background-position: center;
+    padding: 2rem 0 0 0;
+    background-color: #f2eadf;
 }
 .ultimate-beverage h4{
     font-size: calc(2.3rem + 0.5vw);
@@ -11,20 +8,24 @@
     color: #000;
 }
 .beverage-content-row{
+    padding: 3rem 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
+    background-image: url('/images/ultimate-beverage-bg.avif');
+    background-size: cover;
+    background-position: center;
 }
 .beverage-left{
-    width: 27%;
+    width: 28%;
 }
 .beverage-center{
-    width: 37%;
+    width: 35%;
 }
 .beverage-right{
-    width: 30%;
+    width: 31%;
 }
 .beverage-center img{
     width: 100%;
@@ -53,13 +54,14 @@
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .ultimate-beverage{
-        padding: 3.5rem 7% 0.7rem 7%;
+        padding: 1.5rem 0 0 0;
     }
     .ultimate-beverage h4{
         font-size: calc(2.1rem + 0.5vw);
     }
     .beverage-content-row{
-        margin-top: 1.9rem;
+        padding: 2.7rem 7%;
+        margin-top: 3rem;
     }
     .beverage-content-row .box{
         margin-bottom: 3.3rem;
@@ -78,13 +80,14 @@
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
     .ultimate-beverage{
-        padding: 3rem 7% 0.5rem 7%;
+        padding: 1rem 0 0 0;
     }
     .ultimate-beverage h4{
         font-size: calc(1.9rem + 0.5vw);
     }
     .beverage-content-row{
-        margin-top: 1.8rem;
+        padding: 2.5rem 7%;
+        margin-top: 2.5rem;
     }
     .beverage-content-row .box{
         margin-bottom: 3.2rem;
