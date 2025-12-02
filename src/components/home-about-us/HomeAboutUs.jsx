@@ -13,7 +13,7 @@ const HomeAboutUs = () => {
                     <img src={aboutImage2} alt="About Image 2" loading="lazy" />
                     <img src={aboutImage3} alt="About Image 3" loading="lazy" />
                 </div>
-                <p>With a 200 year legacy, The Darjeeling Brew is one of the largest marketers of Darjeeling tea. It is your one stop source for premium Darjeeling Tea, across all grades and qualities directly from the best estates in Darjeeling.</p>
+                <p>With a 200-year legacy, The Darjeeling Brew is one of the largest marketers of Darjeeling tea. It is your one-stop source for premium Darjeeling Tea across all grades and qualities, sourced directly from the finest estates in Darjeeling.</p>
             </section>
         </>
     )

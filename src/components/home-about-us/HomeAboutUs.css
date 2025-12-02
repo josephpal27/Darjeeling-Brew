@@ -1,5 +1,5 @@
 .home-about-us{
-    padding: 4rem 7%;
+    padding: 2rem 7% 4rem 7%;
     background-color: #f2eade;
 }
 .home-about-us h6{
@@ -16,9 +16,16 @@
 }
 .home-about-us .about-us-image-row img{
     width: 30%;
+    transition: all 0.5s ease;
+}
+.home-about-us .about-us-image-row img:hover{
+    scale: 1.04;
 }
 .home-about-us .about-us-image-row img:nth-child(2){
     scale: 1.13;
+}
+.home-about-us .about-us-image-row img:nth-child(2):hover{
+    scale: 1.17;
 }
 .home-about-us p{
     font-size: calc(0.8rem + 0.5vw);

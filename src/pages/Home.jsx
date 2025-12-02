@@ -9,7 +9,6 @@ import logo from '../assets/images/logo/logo.avif';
 import AboutContent from '../components/about-content/AboutContent';
 import UltimateBeverage from '../components/ultimate-beverage/UltimateBeverage';
 import OurProducts from '../components/our-products/OurProducts';
-import DarjeelingStory from '../components/darjeeling-story/DarjeelingStory';
 import HomeAboutUs from '../components/home-about-us/HomeAboutUs';
 import ArtOfBrewing from '../components/art-of-brewing/ArtOfBrewing';
 
@@ -68,9 +67,6 @@ const Home = () => {
 
             {/* Our Products */}
             <OurProducts />
-
-            {/* Darjeeling Story */}
-            <DarjeelingStory />
 
             {/* Home About Us */}
             <HomeAboutUs />
