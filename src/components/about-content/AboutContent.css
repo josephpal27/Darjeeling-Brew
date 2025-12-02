@@ -50,11 +50,15 @@
     }
     .about-content .about-content-left h3{
         font-size: calc(2.1rem + 0.5vw);
-        margin-bottom: 2.3rem;
+        margin-bottom: 0.8rem;
+    }
+    .about-content .about-content-left span{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-bottom: 2.6rem;
     }
     .about-content .about-content-left p{
         font-size: calc(0.55rem + 0.5vw);
-        margin-top: 1.8rem;
+        margin-top: 1.4rem;
     }
     .about-content .about-content-right .layer{
         left: -0.75rem;
@@ -68,11 +72,15 @@
     }
     .about-content .about-content-left h3{
         font-size: calc(1.9rem + 0.5vw);
-        margin-bottom: 2.2rem;
+        margin-bottom: 0.6rem;
+    }
+    .about-content .about-content-left span{
+        font-size: calc(1rem + 0.5vw);
+        margin-bottom: 2rem;
     }
     .about-content .about-content-left p{
         font-size: calc(0.5rem + 0.5vw);
-        margin-top: 1.7rem;
+        margin-top: 1.3rem;
     }
     .about-content .about-content-right .layer{
         left: -0.7rem;
