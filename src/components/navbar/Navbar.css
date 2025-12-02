@@ -49,6 +49,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  margin-top: -0.4rem;
 }
 
 .navbar .right-btn-wrapper .nav-icon {
@@ -124,6 +125,7 @@
   }
   .navbar .right-btn-wrapper {
     gap: 1.4rem;
+    margin-top: -0.5rem;
   }
   .navbar .right-btn-wrapper .nav-icon {
     font-size: calc(1rem + 0.5vw);
@@ -154,6 +156,7 @@
   }
   .navbar .right-btn-wrapper {
     gap: 1.3rem;
+    margin-top: -0.4rem;
   }
   .navbar .right-btn-wrapper .nav-icon {
     font-size: calc(0.9rem + 0.5vw);
