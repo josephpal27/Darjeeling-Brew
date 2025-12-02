@@ -11,6 +11,7 @@ import UltimateBeverage from '../components/ultimate-beverage/UltimateBeverage';
 import OurProducts from '../components/our-products/OurProducts';
 import HomeAboutUs from '../components/home-about-us/HomeAboutUs';
 import ArtOfBrewing from '../components/art-of-brewing/ArtOfBrewing';
+import VisionMission from '../components/vision-mission/VisionMission';
 
 const Home = () => {
     return (
@@ -70,6 +71,9 @@ const Home = () => {
 
             {/* Home About Us */}
             <HomeAboutUs />
+
+            {/* Vision & Mission */}
+            <VisionMission />
 
             {/* Art Of Brewing */}
             <ArtOfBrewing />

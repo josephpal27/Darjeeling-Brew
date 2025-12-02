@@ -14,7 +14,7 @@ import coldBrew2 from '../../assets/images/brew-icons/cold/2.png';
 import coldBrew3 from '../../assets/images/brew-icons/cold/3.png';
 import coldBrew4 from '../../assets/images/brew-icons/cold/4.png';
 
-import leaf from '../../assets/images/brew-icons/leaf.avif';
+import leaf from '../../assets/images/leaf.avif';
 
 const hotBrewSteps = [
     {
