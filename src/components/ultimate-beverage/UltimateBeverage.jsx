@@ -1,5 +1,9 @@
 import './UltimateBeverage.css';
 import beverageCup from '../../assets/images/beverage-cup.avif';
+import icn1 from '../../assets/images/icons/beverage/1.png';
+import icn2 from '../../assets/images/icons/beverage/2.png';
+import icn3 from '../../assets/images/icons/beverage/3.png';
+import icn4 from '../../assets/images/icons/beverage/4.png';
 
 const UltimateBeverage = () => {
     return (
@@ -9,7 +13,7 @@ const UltimateBeverage = () => {
                 <div className="beverage-content-row">
                     <div className="beverage-left">
                         <div className="box">
-                            <span>Beyond Tea, Beyond Coffee</span>
+                            <span> <img src={icn1} alt="Icon" loading="lazy" /> Beyond Tea, Beyond Coffee</span>
                             <ul>
                                 <li>Light yet energizing</li>
                                 <li>Zero bitterness, zero acidity</li>
@@ -17,7 +21,7 @@ const UltimateBeverage = () => {
                             </ul>
                         </div>
                         <div className="box">
-                            <span>Effortless Brew</span>
+                            <span> <img src={icn2} alt="Icon" loading="lazy" /> Effortless Brew</span>
                             <ul>
                                 <li>A spoon or pinch of Darjeeling tea leaves</li>
                                 <li>Steep in water for in 3-4 minutes</li>
@@ -31,7 +35,7 @@ const UltimateBeverage = () => {
                     </div>
                     <div className="beverage-right">
                         <div className="box">
-                            <span>Wellness in Every Cup</span>
+                            <span> <img src={icn3} alt="Icon" loading="lazy" /> Wellness in Every Cup</span>
                             <ul>
                                 <li>Rich in polyphenols & antioxidants</li>
                                 <li>Supports heart health, metabolism, skin vitality</li>
@@ -39,7 +43,7 @@ const UltimateBeverage = () => {
                             </ul>
                         </div>
                         <div className="box">
-                            <span>Romance of Origin</span>
+                            <span> <img src={icn4} alt="Icon" loading="lazy" /> Romance of Origin</span>
                             <ul>
                                 <li>Grown on Himalayan slopes kissed by clouds</li>
                                 <li>Hand-picked, artisanal processing</li>
