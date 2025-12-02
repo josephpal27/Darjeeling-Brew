@@ -1,9 +1,6 @@
 .our-products{
-    padding: 4rem 7% 2rem 7%;
-    background-color: #f2eade;
-    background-image: url('/images/our-products-bg.avif');
-    background-size: cover;
-    background-position: center;
+    padding: 4rem 0 0 0;
+    background-color: #f5efe3;
     overflow: hidden;
 }
 .our-products-head{
@@ -26,168 +23,117 @@
     text-align: center;
     margin-top: 0.3rem;
 }
-.our-products-slider{
-    position: relative;
+
+.products-container{
+    padding-top: 1.5rem;
 }
-.our-products .swiper-slide{
+.products-container .product-category{
+    font-size: calc(1.3rem + 0.5vw);
+    color: #8e2f2d;
+    font-family: "IvyOra", sans-serif !important;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 3.5px solid #8e2f2d;
+    width: max-content;
+    margin: 0 auto;
+    z-index: 1;
+}
+.products-container #retail{
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.products-container .product-box{
+    padding: 0 7%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
 }
-.our-products .swiper-slide span{
-    font-size: calc(1.1rem + 0.5vw);
+.products-container .product-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #f5efe37c;
+    pointer-events: none;
+    z-index: 0;
+}
+.products-container .product-box .product-title{
+    font-size: calc(1rem + 0.5vw);
     color: #8e2f2d;
     font-family: "IvyOra", sans-serif !important;
     display: block;
-    margin-bottom: 1.8rem;
+    font-weight: 500;
+    z-index: 1;
 }
-.our-products #product-slide-1 span{
-    margin-bottom: 0;
+.products-container .product-box .product-sub-title{
+    font-size: calc(0.8rem + 0.5vw);
+    color: #000;
+    font-family: "IvyOra", sans-serif !important;
+    display: block;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    z-index: 1;
 }
-.our-products .swiper-slide img{
-    width: 50%;
-    height: 400px;
-    object-fit: contain;
+.products-container .product-box .product-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    z-index: 1;
 }
-.our-products #product-slide-1 img{
-    height: 550px;
-    scale: 1.1;
-    margin-top: 1.5rem;
+.products-container .product-box .product-image img{
+    width: 52%;
 }
-.our-products #product-slide-2 img,
-.our-products #product-slide-3 img{
-    scale: 0.88;
+.products-container #product-box-1 .product-image img{
+    width: 43%;
 }
-
-.our-products .slide-foot{
+.products-container .product-box .box-foot{
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
-.our-products .slide-foot span{
+.products-container .product-box .box-foot span{
+    font-size: calc(1rem + 0.5vw);
     color: #000;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-family: "IvyOra", sans-serif !important;
+    display: block;
+    font-weight: 500;
 }
-.our-products .slide-foot p{
+.products-container .product-box .box-foot p{
     font-size: calc(0.6rem + 0.5vw);
     color: #000;
+    font-weight: 500;
     text-align: center;
-    width: 60%;
+    width: 55%;
+    margin-top: 1rem;
 }
 
-.our-products .swiper-button-next,
-.our-products .swiper-button-prev{
-  color: #fff;
-  top: 52%;
-  transform: translateY(-50%);
-  scale: 0.9;
-  position: absolute;
-  z-index: 10;
-  background-color: #928e88;
-  width: 45px;
-  height: 45px;
-  padding: 10px;
-  border-radius: 50%;
-  transition: all 0.2s ease;
+.products-container #product-box-1{
+    background-image: url("/images/our-products-bg/1.avif");
 }
-.our-products .swiper-button-next:hover,
-.our-products .swiper-button-prev:hover{
-  background-color: #847d73;
+.products-container #product-box-2{
+    background-image: url("/images/our-products-bg/2.avif");
 }
-.our-products .swiper-button-prev{
-  left: 0.5rem;
+.products-container #product-box-3{
+    background-image: url("/images/our-products-bg/3.avif");
 }
-.our-products .swiper-button-next{
-  right: 0.5rem;
+.products-container #product-box-4{
+    background-image: url("/images/our-products-bg/4.avif");
+    padding-bottom: 4rem;
 }
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
-    .our-products{
-        padding: 3.5rem 7% 1.5rem 7%;
-    }
-    .our-products-head h5{
-        font-size: calc(2.1rem + 0.5vw);
-    }
-    .our-products-head span{
-        font-size: calc(1rem + 0.5vw);
-    }
-    .our-products-head p{
-        font-size: calc(0.55rem + 0.5vw);
-        margin-top: 0.3rem;
-    }
-    .our-products .swiper-slide{
-        padding-top: 1.9rem;
-    }
-    .our-products .swiper-slide span{
-        font-size: calc(1rem + 0.5vw);
-        margin-bottom: 1.5rem;
-    }
-    .our-products .swiper-slide img{
-        height: 350px;
-    }
-    .our-products #product-slide-1 img{
-        height: 500px;
-        margin-top: 1.1rem;
-    }
-
-    .our-products .slide-foot span{
-        margin-top: 1rem;
-        margin-bottom: 0.9rem;
-    }
-    .our-products .slide-foot p{
-        font-size: calc(0.55rem + 0.5vw);
-    }
-
-    .our-products .swiper-button-next,
-    .our-products .swiper-button-prev{
-        width: 42px;
-        height: 42px;
-    }
+    
 }
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
-    .our-products{
-        padding: 3rem 7% 1rem 7%;
-    }
-    .our-products-head h5{
-        font-size: calc(1.9rem + 0.5vw);
-    }
-    .our-products-head span{
-        font-size: calc(0.9rem + 0.5vw);
-    }
-    .our-products-head p{
-        font-size: calc(0.5rem + 0.5vw);
-    }
-    .our-products .swiper-slide{
-        padding-top: 1.5rem;
-    }
-    .our-products .swiper-slide span{
-        font-size: calc(0.9rem + 0.5vw);
-        margin-bottom: 1.3rem;
-    }
-    .our-products .swiper-slide img{
-        height: 310px;
-    }
-    .our-products #product-slide-1 img{
-        height: 460px;
-        margin-top: 0.3rem;
-    }
-
-    .our-products .slide-foot span{
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-    }
-    .our-products .slide-foot p{
-        font-size: calc(0.5rem + 0.5vw);
-    }
-
-    .our-products .swiper-button-next,
-    .our-products .swiper-button-prev{
-        width: 37px;
-        height: 37px;
-        padding: 8.5px;
-    }
+    
 }
  
