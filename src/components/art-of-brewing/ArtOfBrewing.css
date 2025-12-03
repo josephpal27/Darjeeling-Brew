@@ -97,7 +97,6 @@
 }
 
 .timeline-content .box{
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,37 +132,48 @@
 
 /* Hot */
 .timeline-content #hot-box-1{
-    margin-left: 30rem;
+    /* margin-left: 30rem; */
+    margin-left: 37%;
 }
 .timeline-content #hot-box-2{
-    margin-right: 21.5rem;
+    /* margin-right: 21.5rem; */
+    margin-right: 26%;
 }
 .timeline-content #hot-box-3{
-    margin-left: 30.5rem;
+    /* margin-left: 30.5rem; */
+    margin-left: 37.3%;
 }
 .timeline-content #hot-box-4{
-    margin-right: 30rem;
+    /* margin-right: 30rem; */
+    margin-right: 36.3%;
 }
 .timeline-content #hot-box-5{
-    margin-left: 31rem;
+    /* margin-left: 31rem; */
+    margin-left: 38%;
 }
 .timeline-content #hot-box-6{
-    margin-right: 24.5rem;
+    /* margin-right: 24.5rem; */
+    margin-right: 30%;
 }
 
 /* Cold */
 .timeline-content #cold-box-1{
-    margin-left: 33rem;
+    /* margin-left: 33rem; */
+    margin-left: 39%;
 }
 .timeline-content #cold-box-2{
-    margin-right: 24rem;
+    /* margin-right: 24rem; */
+    margin-right: 29%;
 }
 .timeline-content #cold-box-3{
-    margin-left: 30.3rem;
+    /* margin-left: 30.3rem; */
+    margin-left: 37%;
 }
 .timeline-content #cold-box-4{
-    margin-right: 29.8rem;
+    /* margin-right: 29.8rem; */
+    margin-right: 36.5%;
 }
 .timeline-content #cold-box-5{
-    margin-left: 35rem;
+    /* margin-left: 35rem; */
+    margin-left: 42%;
 }
