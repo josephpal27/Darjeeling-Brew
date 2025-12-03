@@ -21,7 +21,7 @@ footer{
 }
 .footer-content .social-icons{
     display: flex;
-    gap: 2.7rem;
+    gap: 2.9rem;
     margin-top: 2rem;
 }
 .footer-content .social-icons .icon{
@@ -59,4 +59,64 @@ footer .copyright p{
     text-align: center;
     color: #000;
     margin: 0;
+}
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .footer-content{
+        padding: 3rem 7%;
+    }
+    .footer-content img{
+        width: 225px;
+    }
+    .footer-content .social-icons{
+        gap: 2.7rem;
+        margin-top: 1.9rem;
+    }
+    .footer-content .social-icons .icon{
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .footer-content span{
+        font-size: calc(1rem + 0.5vw);
+        margin-bottom: 0.9rem;
+    }
+    .footer-content a{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-bottom: 0.48rem;
+    }
+    footer .copyright{
+        padding: 0.9rem 7%;
+    }
+    footer .copyright p{
+        font-size: calc(0.45rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .footer-content{
+        padding: 2.5rem 7%;
+    }
+    .footer-content img{
+        width: 200px;
+    }
+    .footer-content .social-icons{
+        gap: 2.3rem;
+        margin-top: 1.8rem;
+    }
+    .footer-content .social-icons .icon{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .footer-content span{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-bottom: 0.8rem;
+    }
+    .footer-content a{
+        font-size: calc(0.5rem + 0.5vw);
+        margin-bottom: 0.45rem;
+    }
+    footer .copyright{
+        padding: 0.8rem 7%;
+    }
+    footer .copyright p{
+        font-size: calc(0.4rem + 0.5vw);
+    }
 }
