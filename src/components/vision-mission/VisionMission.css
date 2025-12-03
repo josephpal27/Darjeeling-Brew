@@ -85,3 +85,85 @@
     background: rgb(69, 69, 69) !important;
     opacity: 1;
 }
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .vision-mission{
+        padding: 0.5rem 7% 3.5rem 7%;
+    }
+    .vision-mission-tabs{
+        gap: 18rem;
+        margin-bottom: 2.3rem;
+    }
+    .vision-mission-tabs span{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .vision-mission-tabs span.active::after{
+        height: 2px;
+    }
+    .vm-slide .slide-image .layer{
+        right: -0.8rem;
+        bottom: -0.8rem;
+    }
+    .vm-slide .slide-content{
+        padding-right: 9rem;
+    }
+    .vm-slide span{
+        font-size: calc(1.3rem + 0.5vw);
+        margin-top: 4.5rem;
+        margin-bottom: 1.8rem;
+    }
+    .vm-slide p{
+        font-size: calc(0.65rem + 0.5vw);
+        margin-top: 1.3rem;
+    }
+
+    .swiper-pagination{
+        margin-top: 3.5rem;
+    }
+    .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        margin: 0 6px !important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .vision-mission{
+        padding: 0.5rem 7% 3.5rem 7%;
+    }
+    .vision-mission-tabs{
+        gap: 16rem;
+        margin-bottom: 2.3rem;
+    }
+    .vision-mission-tabs span{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .vision-mission-tabs span.active::after{
+        height: 2px;
+    }
+    .vm-slide .slide-image .layer{
+        right: -0.7rem;
+        bottom: -0.7rem;
+    }
+    .vm-slide .slide-content{
+        padding-right: 8rem;
+    }
+    .vm-slide span{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    .vm-slide p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 1.2rem;
+    }
+
+    .swiper-pagination{
+        margin-top: 3rem;
+    }
+    .swiper-pagination-bullet {
+        width: 13px;
+        height: 13px;
+        margin: 0 5px !important;
+    }
+}
