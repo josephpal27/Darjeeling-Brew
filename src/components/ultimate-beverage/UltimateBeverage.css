@@ -76,9 +76,52 @@
 }
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
-    
+    .ultimate-beverage{
+        padding: 1.5rem 7% 3.5rem 7%;
+    }
+    .ultimate-beverage h4{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+    .beverage-content-row{
+        padding: 0.8rem 1.8rem;
+        margin-top: 3rem;
+    }
+    .beverage-content-row .box{
+        padding: 1rem 0 0.3rem 0;
+    }
+    .beverage-content-row .box span{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .beverage-content-row .box ul{
+        margin-top: 0.9rem;
+    }
+    .beverage-content-row .box ul li{
+        font-size: calc(0.5rem + 0.5vw);
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
-    
+    .ultimate-beverage{
+        padding: 1rem 7% 3rem 7%;
+    }
+    .ultimate-beverage h4{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .beverage-content-row{
+        padding: 0.6rem 1.6rem;
+        margin-top: 2.5rem;
+    }
+    .beverage-content-row .box{
+        padding: 0.9rem 0 0.2rem 0;
+    }
+    .beverage-content-row .box span{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    .beverage-content-row .box ul{
+        margin-top: 0.8rem;
+    }
+    .beverage-content-row .box ul li{
+        font-size: calc(0.45rem + 0.5vw);
+        margin-bottom: 0.15rem;
+    }
 }
