@@ -1,5 +1,5 @@
 .our-products{
-    padding: 4rem 0 0 0;
+    padding: 3rem 0 0 0;
     background-color: #f5efe3;
     overflow: hidden;
 }
@@ -175,7 +175,7 @@
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .our-products{
-        padding: 3.5rem 0 0 0;
+        padding: 2.5rem 0 0 0;
     }
     .our-products-head h5{
         font-size: calc(2.1rem + 0.5vw);
@@ -250,7 +250,7 @@
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
     .our-products{
-        padding: 3rem 0 0 0;
+        padding: 2rem 0 0 0;
     }
     .our-products-head h5{
         font-size: calc(1.9rem + 0.5vw);

@@ -1,0 +1,120 @@
+.ultimate-beverage{
+    padding: 2rem 0 0 0;
+    background-color: #f2eadf;
+}
+.ultimate-beverage h4{
+    font-size: calc(2.3rem + 0.5vw);
+    text-align: center;
+    color: #000;
+}
+.beverage-content-row{
+    padding: 3rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+    background-image: url('/images/ultimate-beverage-bg.avif');
+    background-size: cover;
+    background-position: center;
+}
+.beverage-left{
+    width: 28%;
+}
+.beverage-center{
+    width: 35%;
+}
+.beverage-right{
+    width: 31%;
+}
+.beverage-center img{
+    width: 100%;
+    scale: 1.05;
+    margin-left: -1rem;
+}
+.beverage-content-row .box{
+    margin-bottom: 3.5rem;
+}
+.beverage-content-row .box span{
+    font-size: calc(1.1rem + 0.5vw);
+    font-family: "IvyOra", sans-serif !important;
+    color: #000;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: -2.7rem;
+}
+.beverage-content-row .box span img{
+    width: 50px;
+}
+.beverage-content-row .box ul{
+    margin-top: 1.5rem;
+}
+.beverage-content-row .box ul li{
+    font-size: calc(0.65rem + 0.5vw);
+    color: #000;
+    font-weight: 550;
+    font-family: "IvyOra", sans-serif !important;
+    margin-bottom: 0.3rem;
+}
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .ultimate-beverage{
+        padding: 1.5rem 0 0 0;
+    }
+    .ultimate-beverage h4{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+    .beverage-content-row{
+        padding: 2.7rem 7%;
+        margin-top: 3rem;
+    }
+    .beverage-content-row .box{
+        margin-bottom: 3.3rem;
+    }
+    .beverage-content-row .box span{
+        font-size: calc(1rem + 0.5vw);
+        margin-left: -2.6rem;
+    }
+    .beverage-content-row .box span img{
+        width: 46px;
+    }
+    .beverage-content-row .box ul{
+        margin-top: 1.4rem;
+    }
+    .beverage-content-row .box ul li{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-bottom: 0.28rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .ultimate-beverage{
+        padding: 1rem 0 0 0;
+    }
+    .ultimate-beverage h4{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .beverage-content-row{
+        padding: 2.5rem 7%;
+        margin-top: 2.5rem;
+    }
+    .beverage-content-row .box{
+        margin-bottom: 3.2rem;
+    }
+    .beverage-content-row .box span{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-left: -2.3rem;
+    }
+    .beverage-content-row .box span img{
+        width: 42px;
+    }
+    .beverage-content-row .box ul{
+        margin-top: 1.3rem;
+    }
+    .beverage-content-row .box ul li{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-bottom: 0.25rem;
+    }
+}
