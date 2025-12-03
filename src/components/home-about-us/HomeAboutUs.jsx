@@ -7,13 +7,13 @@ const HomeAboutUs = () => {
     return (
         <>
             <section className="home-about-us">
-                <h6>About Us</h6>
+                <h6 data-aos="fade-up">About Us</h6>
                 <div className="about-us-image-row">
                     <img src={aboutImage1} alt="About Image 1" loading="lazy" />
                     <img src={aboutImage2} alt="About Image 2" loading="lazy" />
                     <img src={aboutImage3} alt="About Image 3" loading="lazy" />
                 </div>
-                <p>With a 200-year legacy, The Darjeeling Brew is one of the largest marketers of Darjeeling tea. It is your one-stop source for premium Darjeeling Tea across all grades and qualities, sourced directly from the finest estates in Darjeeling.</p>
+                <p data-aos="fade">With a 200-year legacy, The Darjeeling Brew is one of the largest marketers of Darjeeling tea. It is your one-stop source for premium Darjeeling Tea across all grades and qualities, sourced directly from the finest estates in Darjeeling.</p>
             </section>
         </>
     )

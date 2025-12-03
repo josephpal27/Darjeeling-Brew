@@ -97,12 +97,12 @@ const ArtOfBrewing = () => {
     return (
         <>
             <section className="art-of-brewing">
-                <img src={leaf} alt="Leaf" loading="lazy" id="leaf-right" />
-                <img src={leaf} alt="Leaf" loading="lazy" id="leaf-left" />
+                <img src={leaf} alt="Leaf" loading="lazy" id="leaf-right" data-aos="fade" data-aos-once="true"/>
+                <img src={leaf} alt="Leaf" loading="lazy" id="leaf-left" data-aos="fade" data-aos-once="true"/>
 
                 <div className="art-of-brewing-head">
-                    <h6>The Art of Brewing - <br /> The Darjeeling Brew Way</h6>
-                    <p>Because Darjeeling Brew isn't just another cup - it's a story steeped in the mist of the Himalayas. Every swirl, every minute, and every breath of steam carries the spirit of the mountain. Brewing Darjeeling isn't an act of habit, it's an act of devotion.</p>
+                    <h6 data-aos="fade-up">The Art of Brewing - <br /> The Darjeeling Brew Way</h6>
+                    <p data-aos="fade">Because Darjeeling Brew isn't just another cup - it's a story steeped in the mist of the Himalayas. Every swirl, every minute, and every breath of steam carries the spirit of the mountain. Brewing Darjeeling isn't an act of habit, it's an act of devotion.</p>
                 </div>
 
                 <div className="brew-tabbing">
@@ -132,9 +132,9 @@ const ArtOfBrewing = () => {
                                         {hotBrewSteps.map((step) => (
                                             <div className="box" id={`hot-box-${step.id}`} key={step.id}>
                                                 <div className="box-image">
-                                                    <img src={step.img} alt={step.title} loading="lazy" />
+                                                    <img src={step.img} alt={step.title} loading="lazy" data-aos="fade" data-aos-once="true" />
                                                 </div>
-                                                <div className="box-content">
+                                                <div className="box-content" data-aos="fade" data-aos-once="true">
                                                     <span>{step.title}</span>
                                                     <p dangerouslySetInnerHTML={{ __html: step.text }} />
                                                 </div>
@@ -155,9 +155,9 @@ const ArtOfBrewing = () => {
                                         {coldBrewSteps.map((step) => (
                                             <div className="box" id={`cold-box-${step.id}`} key={step.id}>
                                                 <div className="box-image">
-                                                    <img src={step.img} alt={step.title} loading="lazy" />
+                                                    <img src={step.img} alt={step.title} loading="lazy" data-aos="fade" data-aos-once="true" />
                                                 </div>
-                                                <div className="box-content">
+                                                <div className="box-content" data-aos="fade" data-aos-once="true">
                                                     <span>{step.title}</span>
                                                     <p dangerouslySetInnerHTML={{ __html: step.text }} />
                                                 </div>

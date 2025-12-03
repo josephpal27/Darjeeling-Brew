@@ -54,9 +54,9 @@ const VisionMission = () => {
                     <div className="vm-slide">
                         <div className="slide-image">
                             <img src={visionImage} alt="Vision" loading="lazy" />
-                            <div className="layer"></div>
+                            <div className="layer" data-aos="fade-right"></div>
                         </div>
-                        <div className="slide-content">
+                        <div className="slide-content" data-aos="fade">
                             <span>Where every sip celebrates life, awakens the mind, and energises the body.</span>
                         </div>
                     </div>
@@ -67,9 +67,9 @@ const VisionMission = () => {
                     <div className="vm-slide">
                         <div className="slide-image">
                             <img src={missionImage} alt="Mission" loading="lazy" />
-                            <div className="layer"></div>
+                            <div className="layer" data-aos="fade-right"></div>
                         </div>
-                        <div className="slide-content">
+                        <div className="slide-content" data-aos="fade">
                             <span>Darjeeling Brew is not just tea</span>
                             <p>It is a Himalayan wellness elixir. Easy to brew, packed with antioxidants, and rooted in the romance of the mountains.</p>
                             <p>Consumers today want more than taste; they want health, sophistication, and lifestyle. That is why Darjeeling Brew is the new choice for mindful, health-conscious customers worldwide.</p>
