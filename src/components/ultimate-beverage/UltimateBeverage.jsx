@@ -9,10 +9,10 @@ const UltimateBeverage = () => {
     return (
         <>
             <section className="ultimate-beverage">
-                <h4>The Ultimate Beverage</h4>
+                <h4 data-aos="fade-up">The Ultimate Beverage</h4>
                 <div className="beverage-content-row">
                     <div className="beverage-left">
-                        <div className="box">
+                        <div className="box" data-aos="fade" data-aos-once="true">
                             <div className="box-image">
                                 <img src={icn1} alt="Icon" loading="lazy" />
                             </div>
@@ -25,7 +25,7 @@ const UltimateBeverage = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box" data-aos="fade" data-aos-once="true">
                             <div className="box-image">
                                 <img src={icn2} alt="Icon" loading="lazy" />
                             </div>
@@ -41,10 +41,10 @@ const UltimateBeverage = () => {
                         </div>
                     </div>
                     <div className="beverage-center">
-                        <img src={beverageCup} alt="Beverge Cup" loading="lazy" />
+                        <img src={beverageCup} alt="Beverge Cup" loading="lazy" data-aos="fade" data-aos-once="true" />
                     </div>
                     <div className="beverage-right">
-                        <div className="box">
+                        <div className="box" data-aos="fade" data-aos-once="true">
                             <div className="box-image">
                                 <img src={icn3} alt="Icon" loading="lazy" />
                             </div>
@@ -57,7 +57,7 @@ const UltimateBeverage = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box" data-aos="fade" data-aos-once="true">
                             <div className="box-image">
                                 <img src={icn4} alt="Icon" loading="lazy" />
                             </div>

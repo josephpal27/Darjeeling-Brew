@@ -10,9 +10,9 @@ const OurProducts = () => {
     <>
       <section className="our-products">
         <div className="our-products-head">
-          <h5>Our Products</h5>
-          <span>Serving Customers Worldwide</span>
-          <p>Select from our range of The Darjeeling Brew, <br /> handpicked for the discerning consumers of today.</p>
+          <h5 data-aos="fade-up">Our Products</h5>
+          <span data-aos="fade">Serving Customers Worldwide</span>
+          <p data-aos="fade">Select from our range of The Darjeeling Brew, <br /> handpicked for the discerning consumers of today.</p>
         </div>
 
         {/* Products Container */}
@@ -24,12 +24,12 @@ const OurProducts = () => {
             <span className="product-title">HIMALAYAN ELIXIR GOLD</span>
             <span className="product-sub-title">Available in Whole Leaf & Fannings/Flakes</span>
             <div className="product-image">
-              <img src={productImage1} alt="Product Image" loading="lazy" />
-              <div className="content-box left-content-box">
+              <img src={productImage1} alt="Product Image" loading="lazy" data-aos="fade" data-aos-once="true" />
+              <div className="content-box left-content-box" data-aos="fade-left" data-aos-once="true">
                 <img src={angleImage} alt="left Arrow" loading="lazy" />
                 <p>Fresh and Floral</p>
               </div>
-              <div className="content-box right-content-box">
+              <div className="content-box right-content-box" data-aos="fade-right" data-aos-once="true">
                 <p>Bright, golden with a delicate shimmer</p>
                 <img src={angleImage} alt="Right Arrow" loading="lazy" />
               </div>
@@ -45,12 +45,12 @@ const OurProducts = () => {
             <span className="product-title">HIMALAYAN ELIXIR RUBY</span>
             <span className="product-sub-title">Available in Whole Leaf & Fannings/Flakes</span>
             <div className="product-image">
-              <img src={productImage2} alt="Product Image" loading="lazy" />
-              <div className="content-box left-content-box">
+              <img src={productImage2} alt="Product Image" loading="lazy" data-aos="fade" data-aos-once="true" />
+              <div className="content-box left-content-box" data-aos="fade-left" data-aos-once="true">
                 <img src={angleImage} alt="left Arrow" loading="lazy" />
                 <p>Sweet and fragrant with undertones of honey</p>
               </div>
-              <div className="content-box right-content-box">
+              <div className="content-box right-content-box" data-aos="fade-right" data-aos-once="true">
                 <p>Ruby, Royal Amber</p>
                 <img src={angleImage} alt="Right Arrow" loading="lazy" />
               </div>
@@ -66,12 +66,12 @@ const OurProducts = () => {
             <span className="product-title">HIMALAYAN ELIXIR REGULAR</span>
             <span className="product-sub-title">Available in Whole Leaf & Fannings/Flakes</span>
             <div className="product-image">
-              <img src={productImage3} alt="Product Image" loading="lazy" />
-              <div className="content-box left-content-box">
+              <img src={productImage3} alt="Product Image" loading="lazy" data-aos="fade" data-aos-once="true" />
+              <div className="content-box left-content-box" data-aos="fade-left" data-aos-once="true">
                 <img src={angleImage} alt="left Arrow" loading="lazy" />
                 <p>Smokey and Smooth</p>
               </div>
-              <div className="content-box right-content-box">
+              <div className="content-box right-content-box" data-aos="fade-right" data-aos-once="true">
                 <p>Rich and Bold</p>
                 <img src={angleImage} alt="Right Arrow" loading="lazy" />
               </div>
@@ -86,7 +86,7 @@ const OurProducts = () => {
           <div className="product-box" id="product-box-4">
             <span className="product-category" id="retail">RETAIL</span>
             <div className="product-image">
-              <img src={productImage4} alt="Product Image" loading="lazy" />
+              <img src={productImage4} alt="Product Image" loading="lazy" data-aos="fade" data-aos-once="true" />
             </div>
             <div className="box-foot">
               <span>50 gm | 100 gm</span>
