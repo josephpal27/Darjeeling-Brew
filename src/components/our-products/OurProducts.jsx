@@ -3,6 +3,7 @@ import productImage1 from '../../assets/images/our-products/product-1.avif';
 import productImage2 from '../../assets/images/our-products/product-2.avif';
 import productImage3 from '../../assets/images/our-products/product-3.avif';
 import productImage4 from '../../assets/images/our-products/product-4.avif';
+import angleImage from '../../assets/images/icons/left-angle.png';
 
 const OurProducts = () => {
   return (
@@ -13,7 +14,7 @@ const OurProducts = () => {
           <span>Serving Customers Worldwide</span>
           <p>Select from our range of The Darjeeling Brew, <br /> handpicked for the discerning consumers of today.</p>
         </div>
-        
+
         {/* Products Container */}
         <div className="products-container">
           <span className="product-category">B2B</span>
@@ -24,6 +25,14 @@ const OurProducts = () => {
             <span className="product-sub-title">Available in Whole Leaf & Fannings/Flakes</span>
             <div className="product-image">
               <img src={productImage1} alt="Product Image" loading="lazy" />
+              <div className="content-box left-content-box">
+                <img src={angleImage} alt="left Arrow" loading="lazy" />
+                <p>Fresh and Floral</p>
+              </div>
+              <div className="content-box right-content-box">
+                <p>Bright, golden with a delicate shimmer</p>
+                <img src={angleImage} alt="Right Arrow" loading="lazy" />
+              </div>
             </div>
             <div className="box-foot">
               <span>Product Essence</span>
@@ -37,6 +46,14 @@ const OurProducts = () => {
             <span className="product-sub-title">Available in Whole Leaf & Fannings/Flakes</span>
             <div className="product-image">
               <img src={productImage2} alt="Product Image" loading="lazy" />
+              <div className="content-box left-content-box">
+                <img src={angleImage} alt="left Arrow" loading="lazy" />
+                <p>Sweet and fragrant with undertones of honey</p>
+              </div>
+              <div className="content-box right-content-box">
+                <p>Ruby, Royal Amber</p>
+                <img src={angleImage} alt="Right Arrow" loading="lazy" />
+              </div>
             </div>
             <div className="box-foot">
               <span>Product Essence</span>
@@ -50,6 +67,14 @@ const OurProducts = () => {
             <span className="product-sub-title">Available in Whole Leaf & Fannings/Flakes</span>
             <div className="product-image">
               <img src={productImage3} alt="Product Image" loading="lazy" />
+              <div className="content-box left-content-box">
+                <img src={angleImage} alt="left Arrow" loading="lazy" />
+                <p>Smokey and Smooth</p>
+              </div>
+              <div className="content-box right-content-box">
+                <p>Rich and Bold</p>
+                <img src={angleImage} alt="Right Arrow" loading="lazy" />
+              </div>
             </div>
             <div className="box-foot">
               <span>Product Essence</span>
