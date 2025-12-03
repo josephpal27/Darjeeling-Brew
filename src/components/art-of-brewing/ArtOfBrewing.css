@@ -42,11 +42,6 @@
 .brew-tabbing .tab-head{
     display: flex;
     justify-content: center;
-    gap: 2rem;
-}
-.brew-tabbing .tab-head{
-    display: flex;
-    justify-content: center;
     gap: 4rem;
     border: none;
 }
@@ -132,48 +127,161 @@
 
 /* Hot */
 .timeline-content #hot-box-1{
-    /* margin-left: 30rem; */
     margin-left: 37%;
 }
 .timeline-content #hot-box-2{
-    /* margin-right: 21.5rem; */
     margin-right: 26%;
 }
 .timeline-content #hot-box-3{
-    /* margin-left: 30.5rem; */
     margin-left: 37.3%;
 }
 .timeline-content #hot-box-4{
-    /* margin-right: 30rem; */
     margin-right: 36.3%;
 }
 .timeline-content #hot-box-5{
-    /* margin-left: 31rem; */
     margin-left: 38%;
 }
 .timeline-content #hot-box-6{
-    /* margin-right: 24.5rem; */
     margin-right: 30%;
 }
 
 /* Cold */
 .timeline-content #cold-box-1{
-    /* margin-left: 33rem; */
     margin-left: 39%;
 }
 .timeline-content #cold-box-2{
-    /* margin-right: 24rem; */
     margin-right: 29%;
 }
 .timeline-content #cold-box-3{
-    /* margin-left: 30.3rem; */
     margin-left: 37%;
 }
 .timeline-content #cold-box-4{
-    /* margin-right: 29.8rem; */
     margin-right: 36.5%;
 }
 .timeline-content #cold-box-5{
-    /* margin-left: 35rem; */
     margin-left: 42%;
+}
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .art-of-brewing{
+        padding: 1rem 7%;
+    }
+    .art-of-brewing #leaf-right{
+        top: -7.5rem;
+        width: 180px;
+    }
+    .art-of-brewing #leaf-left{
+        top: 14rem;
+        left: -1.5rem;
+        width: 150px;
+    }
+    .art-of-brewing .art-of-brewing-head h6{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+    .art-of-brewing .art-of-brewing-head p{
+        font-size: calc(0.75rem + 0.5vw);
+        margin-top: 1.8rem;
+    }
+
+    .brew-tabbing{
+        margin-top: 1.8rem;
+    }
+    .brew-tabbing .tab-head{
+        gap: 3.8rem;
+    }
+    .brew-tabbing .nav-link{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .brew-tabbing .nav-item .nav-link.active::after {
+        height: 2px;
+    }
+    .brew-tabbing .tab-content {
+        margin-top: 4.5rem;
+    }
+
+    .brew-timeline .curvy-line img{
+        margin-left: 5rem;
+        margin-top: 2.3rem;
+    }
+
+    .timeline-content .box{
+        gap: 1.8rem;
+        margin-bottom: 4.4rem;
+    }
+    .timeline-content .box img{
+        width: 90px;
+    }
+    .timeline-content .box span{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .timeline-content .box p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .art-of-brewing{
+        padding: 0.5rem 7%;
+    }
+    .art-of-brewing #leaf-right{
+        top: -7rem;
+        width: 160px;
+    }
+    .art-of-brewing #leaf-left{
+        top: 13rem;
+        left: -1rem;
+        width: 130px;
+    }
+    .art-of-brewing .art-of-brewing-head h6{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .art-of-brewing .art-of-brewing-head p{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-top: 1.6rem;
+    }
+
+    .brew-tabbing{
+        margin-top: 1.6rem;
+    }
+    .brew-tabbing .tab-head{
+        gap: 3.6rem;
+    }
+    .brew-tabbing .nav-link{
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .brew-tabbing .nav-item .nav-link.active::after {
+        height: 1.8px;
+    }
+    .brew-tabbing .tab-content {
+        margin-top: 4rem;
+    }
+
+    .brew-timeline .curvy-line img{
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+
+    .timeline-content .box{
+        gap: 1.6rem;
+        margin-bottom: 4rem;
+    }
+    .timeline-content .box img{
+        width: 75px;
+    }
+    .timeline-content .box span{
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .timeline-content .box p{
+        font-size: calc(0.5rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+
+    /* Cold */
+    .timeline-content #cold-box-3{
+        margin-left: 36.5%;
+    }
+    .timeline-content #cold-box-4{
+        margin-right: 36%;
+    }
 }
