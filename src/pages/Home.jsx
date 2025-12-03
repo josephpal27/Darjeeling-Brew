@@ -37,9 +37,9 @@ const Home = () => {
                     <SwiperSlide>
                         <img src={bannerSlide1} alt="Banner Slide 1" loading="lazy" />
                         <div className="slide-content">
-                            <img src={logo} alt="Logo" loading="lazy" />
-                            <h1>HIMALAYAN ELIXIR</h1>
-                            <div className="line"></div>
+                            <img src={logo} alt="Logo" loading="lazy" data-aos="fade-up" />
+                            <h1 data-aos="fade">HIMALAYAN ELIXIR</h1>
+                            <div className="line" data-aos="fade"></div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
