@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FiFacebook, FiYoutube } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { IoHomeSharp, IoMailOpen } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -30,9 +31,8 @@ const Footer = () => {
             </div>
             <div className="footer-box">
                 <span>Contact Info</span>
-                <a href="#">example@gmail.com</a>
-                <a href="#">+91 0000000000</a>
-                <a href="#">Address</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=wecare@thedarjeelingbrew.com" target="_blank"> <IoMailOpen className="icon"/> wecare@thedarjeelingbrew.com</a>
+                <a href="https://maps.app.goo.gl/m5Gd2rf88xP1sZhu7" target="_blank"> <IoHomeSharp className="icon" /> Kangchenjunga Darjeeling Beverages Pvt. Ltd., Tangra Industrial Estate -II, 45,Radhanath Chowdhury Road, Tangra, Kolkata - 700015</a>
             </div>
         </div>
         <div className="copyright">
