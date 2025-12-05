@@ -69,31 +69,25 @@
 /* Media Queries */
 @media (max-width: 992px) {
   .navbar {
-    padding: 0.8rem 1rem !important;
+    padding: 0.5rem 1rem !important;
   }
-
   .navbar .nav-brand img {
-    width: 50px;
+    width: 75px;
   }
-
   .navbar-toggler {
     border: none !important;
     box-shadow: none !important;
   }
-
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
-
   .offcanvas {
     background: #f4f7df;
     width: 70% !important;
   }
-
   .offcanvas .offCanvasLogo {
-    width: 60px;
+    width: 75px;
   }
-
   .offcanvas .nav-link {
     color: #000 !important;
     margin: 0.4rem 0;
@@ -101,9 +95,16 @@
     font-weight: 600;
     width: max-content;
   }
-
   .offcanvas .nav-link.active {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
+  }
+  .offcanvas .right-btn-wrapper .nav-icon {
+    font-size: calc(1.5rem + 0.5vw);
+    color: #000;
+    margin-top: 0.8rem;
+  }
+  .offcanvas .right-btn-wrapper .search-btn {
+    display: none;
   }
 }
 

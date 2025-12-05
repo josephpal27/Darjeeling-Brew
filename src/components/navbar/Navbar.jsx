@@ -63,7 +63,7 @@ const MyNavbar = () => {
                         <div className="search-btn">
                             <GoSearch className="nav-icon" />
                         </div>
-                        <NavLink to="/cart" className="cart-btn">
+                        <NavLink to="/cart" className="cart-btn" onClick={handleClose}>
                             <BsHandbag className="nav-icon" />
                         </NavLink>
                         
