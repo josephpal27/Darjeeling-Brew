@@ -47,6 +47,7 @@ const VisionMission = () => {
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 onSlideChange={(swiper) => setActiveTab(swiper.activeIndex)}
                 loop={false}
+                autoHeight={true}
                 className="vm-swiper"
             >
                 {/* VISION SLIDE */}
