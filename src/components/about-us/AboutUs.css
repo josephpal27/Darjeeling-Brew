@@ -68,3 +68,23 @@
         margin: 4rem auto 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .home-about-us{
+        padding: 3rem 1rem 2rem 1rem;
+    }
+    .home-about-us h6{
+        font-size: calc(1.7rem + 0.5vw);
+    }
+    .home-about-us .about-us-image-row{
+        margin-top: 2.5rem;
+    }
+    .home-about-us .about-us-image-row img{
+        width: 30.5%;
+    }
+    .home-about-us p{
+        font-size: calc(0.95rem + 0.5vw);
+        margin: 2.5rem auto 0;
+        width: 100%;
+    }
+}
