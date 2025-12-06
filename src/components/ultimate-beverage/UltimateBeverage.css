@@ -125,3 +125,50 @@
         margin-bottom: 0.15rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .ultimate-beverage{
+        padding: 1.5rem 1rem 3rem 1rem;
+        background: linear-gradient(to bottom, #f2eadf 50%, #f5efe3);
+    }
+    .ultimate-beverage h4{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .beverage-content-row{
+        padding: 1rem 1rem;
+        margin-top: 2rem;
+        background: linear-gradient(to bottom, #dcba71 57%, #e1d9ce 50%);
+    }
+    .beverage-left{
+        width: 100%;
+    }
+    .beverage-center{
+        width: 100%;
+    }
+    .beverage-right{
+        width: 100%;
+    }
+    .beverage-center img{
+        scale: 1.1;
+        margin-left: -0.9rem;
+    }
+    .beverage-content-row .box{
+        padding: 1rem 0 0.2rem 0;
+    }
+    .beverage-content-row .box .box-image{
+        width: 12%;
+    }
+    .beverage-content-row .box .box-content{
+        width: 86%;
+    }
+    .beverage-content-row .box span{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .beverage-content-row .box ul{
+        margin-top: 0.7rem;
+    }
+    .beverage-content-row .box ul li{
+        font-size: calc(0.8rem + 0.5vw);
+        margin-bottom: 0.3rem;
+    }
+}
