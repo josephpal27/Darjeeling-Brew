@@ -3,10 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
+
 import bannerSlide1 from '/images/banners/home-banner-1.avif';
 import bannerSlide2 from '/images/banners/home-banner-2.avif';
 import logo from '../assets/images/logo/logo.avif';
-import AboutContent from '../components/about-content/AboutContent';
+
+import DarjeelingStory from '../components/darjeeling-story/DarjeelingStory';
 import UltimateBeverage from '../components/ultimate-beverage/UltimateBeverage';
 import OurProducts from '../components/our-products/OurProducts';
 import HomeAboutUs from '../components/home-about-us/HomeAboutUs';
@@ -60,8 +62,8 @@ const Home = () => {
                 </Swiper>
             </section>
 
-            {/* About Content */}
-            <AboutContent />
+            {/* Darjeeling Story */}
+            <DarjeelingStory />
 
             {/* Ultimate Beverage */}
             <UltimateBeverage />

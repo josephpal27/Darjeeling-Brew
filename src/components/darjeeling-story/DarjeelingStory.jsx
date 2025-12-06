@@ -1,4 +1,4 @@
-import './AboutContent.css';
+import './DarjeelingStory.css';
 import aboutImage from '../../assets/images/about-content.avif';
 
 const AboutContent = () => {
