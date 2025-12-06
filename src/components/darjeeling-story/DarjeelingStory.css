@@ -90,3 +90,32 @@
         bottom: -0.7rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .about-content{
+        padding: 2rem 1rem;
+    }
+    .about-content .about-content-left{
+        width: 100%;
+    }
+    .about-content .about-content-left h3{
+        font-size: calc(1.3rem + 0.5vw);
+        margin-bottom: 0.3rem;
+    }
+    .about-content .about-content-left span{
+        font-size: calc(1rem + 0.5vw);
+        margin-bottom: 1.5rem;
+    }
+    .about-content .about-content-left p{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 1rem;
+    }
+    .about-content .about-content-right{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .about-content .about-content-right .layer{
+        left: -0.5rem;
+        bottom: -0.5rem;
+    }
+}

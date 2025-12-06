@@ -91,7 +91,7 @@
   .offcanvas .nav-link {
     color: #000 !important;
     margin: 0.4rem 0;
-    font-size: calc(0.9rem + 0.5vw);
+    font-size: calc(1rem + 0.5vw);
     font-weight: 600;
     width: max-content;
   }
@@ -99,7 +99,7 @@
     border-bottom: 2px solid #000;
   }
   .offcanvas .right-btn-wrapper .nav-icon {
-    font-size: calc(1.5rem + 0.5vw);
+    font-size: calc(1.7rem + 0.5vw);
     color: #000;
     margin-top: 0.8rem;
   }
