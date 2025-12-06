@@ -1,4 +1,4 @@
-import './HomeAboutUs.css';
+import './AboutUs.css';
 import aboutImage1 from '../../assets/images/about-1.avif';
 import aboutImage2 from '../../assets/images/about-2.avif';
 import aboutImage3 from '../../assets/images/about-3.avif';
