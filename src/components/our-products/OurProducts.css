@@ -332,4 +332,106 @@
         padding-bottom: 3rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .our-products{
+        padding: 1rem 1rem 0 1rem;
+    }
+    .our-products-head h5{
+        font-size: calc(1.6rem + 0.5vw);
+    }
+    .our-products-head span{
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .our-products-head p{
+        font-size: calc(0.8rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .our-products-head p br{
+        display: none;
+    }
+
+    .products-container{
+        padding-top: 1rem;
+    }
+    .products-container .product-category{
+        font-size: calc(1.2rem + 0.5vw);
+        border-bottom: 3px solid #8e2f2d;
+    }
+    .products-container #retail{
+        padding-top: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    .products-container .product-box{
+        padding: 0;
+        padding-top: 1.5rem;
+    }
+    .products-container .product-box .product-title{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .products-container .product-box .product-sub-title{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .products-container .product-box .product-image{
+        padding: 1.5rem 0;
+        flex-wrap: wrap;
+    }
+    .products-container #product-box-2 .product-image,
+    .products-container #product-box-3 .product-image{
+        padding: 2rem 0;
+    }
+    .products-container .product-box .product-image img{
+        width: 70%;
+        margin-bottom: 1.5rem;
+    }
+    .products-container #product-box-1 .product-image{
+        padding: 1.3rem 0 1.5rem 0;
+    }
+    .products-container #product-box-1 .product-image img{
+        width: 76%;
+    }
+    .products-container .product-image .content-box{
+        position: relative;
+        width: 100%;
+        align-items: center;
+    }
+    .products-container .product-image .content-box img{
+        display: none;
+    }
+    .products-container .product-image .content-box p{
+        font-size: calc(0.9rem + 0.5vw);
+        text-align: center;
+    }
+    .products-container .product-image .left-content-box p{
+        text-align: center;
+    }
+    .products-container .product-image .left-content-box{
+        left: 0;
+        margin-top: 0;
+        align-items: center;
+    }
+    .products-container .product-image .right-content-box{
+        left: 0;
+        top: 0;
+    }
+    .products-container #product-box-1 .left-content-box{
+        left: 0;
+    }
+    .products-container #product-box-1 .right-content-box{
+        left: 0;
+    }
+
+    .products-container .product-box .box-foot span{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .products-container .product-box .box-foot p{
+        font-size: calc(0.9rem + 0.5vw);
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .products-container #product-box-4{
+        padding-bottom: 3rem;
+    }
+}
  

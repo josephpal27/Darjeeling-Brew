@@ -99,8 +99,8 @@
         width: 100%;
     }
     .about-content .about-content-left h3{
-        font-size: calc(1.3rem + 0.5vw);
-        margin-bottom: 0.3rem;
+        font-size: calc(1.4rem + 0.5vw);
+        margin-bottom: 0.4rem;
     }
     .about-content .about-content-left span{
         font-size: calc(1rem + 0.5vw);
