@@ -89,4 +89,28 @@
         font-size: calc(0.5rem + 0.5vw);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .banner .swiper-slide .slide-content{
+        padding: 0 1rem;
+    }
+    .banner .swiper-slide .slide-content img{
+        width: 150px;
+        margin-top: -5rem;
+    }
+    .banner .swiper-slide .slide-content h1{
+        margin-top: 2rem;
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .banner .swiper-slide .slide-content h2{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .banner .swiper-slide .slide-content .line{
+        width: 50px;
+    }
+    .banner .swiper-slide .slide-content p{
+        font-size: calc(0.9rem + 0.5vw);
+        width: 100%;
+    }
+}
 /* Banner Slider End */
