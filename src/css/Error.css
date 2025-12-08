@@ -3,10 +3,20 @@
     justify-content: center;
     align-items: center;
     height: 87vh;
+    padding: 0 1rem;
 }
 .error-page h1{
     font-size: calc(3rem + 0.5vw);
     color: #000;
     word-spacing: 8px;
     letter-spacing: 3px;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .error-page h1{
+        font-size: calc(2rem + 0.5vw);
+        word-spacing: 1px;
+    }
 }
