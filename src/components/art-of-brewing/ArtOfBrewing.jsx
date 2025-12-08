@@ -111,10 +111,10 @@ const ArtOfBrewing = () => {
                         {/* Tabs Navigation */}
                         <Nav variant="tabs" className="tab-head">
                             <Nav.Item>
-                                <Nav.Link eventKey="tabOne">The Ritual of Hot Brewing</Nav.Link>
+                                <Nav.Link eventKey="tabOne"><span>The Ritual of</span> Hot Brewing</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="tabTwo">The Ritual of Cold Brewing</Nav.Link>
+                                <Nav.Link eventKey="tabTwo"><span>The Ritual of</span> Cold Brewing</Nav.Link>
                             </Nav.Item>
                         </Nav>
 
