@@ -285,3 +285,113 @@
         margin-right: 36%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .art-of-brewing{
+        padding: 1rem 1rem;
+    }
+    .art-of-brewing #leaf-right{
+        top: -7rem;
+        width: 90px;
+    }
+    .art-of-brewing #leaf-left{
+        top: 16rem;
+        left: -1rem;
+        width: 90px;
+    }
+    .art-of-brewing .art-of-brewing-head h6{
+        font-size: calc(1.4rem + 0.5vw);
+    }
+    .art-of-brewing .art-of-brewing-head p{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .brew-tabbing{
+        margin-top: 1.5rem;
+    }
+    .brew-tabbing .tab-head{
+        gap: 1rem;
+    }
+    .brew-tabbing .nav-link{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .brew-tabbing .tab-content {
+        margin-top: 3rem;
+    }
+
+    .brew-timeline .curvy-line{
+        display: none;
+    }
+
+    .timeline-content .box{
+        width: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .timeline-content .box:nth-child(even){
+        flex-direction: row;
+        text-align: left;
+    }
+    .timeline-content .box .box-image{
+        width: 17%;
+    }
+    .timeline-content .box img{
+        width: 100%;
+    }
+    .timeline-content .box .box-content{
+        width: 80%;
+    }
+    #cold-timeline-content .box .box-content{
+        width: 80%;
+    }
+    .timeline-content .box span{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .timeline-content .box p{
+        font-size: calc(0.8rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .timeline-content .box p br{
+        display: none;
+    }
+
+    /* Hot */
+    .timeline-content #hot-box-1{
+        margin-left: 0;
+    }
+    .timeline-content #hot-box-2{
+        margin-right: 0;
+    }
+    .timeline-content #hot-box-3{
+        margin-left: 0;
+    }
+    .timeline-content #hot-box-4{
+        margin-right: 0;
+    }
+    .timeline-content #hot-box-5{
+        margin-left: 0;
+    }
+    .timeline-content #hot-box-6{
+        margin-right: 0;
+    }
+
+    /* Cold */
+    .timeline-content #cold-box-1{
+        margin-left: 0;
+    }
+    .timeline-content #cold-box-2{
+        margin-right: 0;
+    }
+    .timeline-content #cold-box-3{
+        margin-left: 0;
+    }
+    .timeline-content #cold-box-4{
+        margin-right: 0;
+    }
+    .timeline-content #cold-box-5{
+        margin-left: 0;
+    }
+}
