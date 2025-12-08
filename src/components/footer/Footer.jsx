@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright">
-          <p>Copyright © 2025 | The Darjeeling Brew | All Rights Reserved</p>
+          <p>Copyright © 2025 <span>| The Darjeeling Brew</span> | All Rights Reserved</p>
         </div>
       </footer>
     </>
