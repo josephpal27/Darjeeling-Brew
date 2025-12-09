@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
           <div className="footer-box">
             <span>Contact Info</span>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=wecare@thedarjeelingbrew.com" target="_blank"> <IoMailOpen className="icon" /> wecare@thedarjeelingbrew.com</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vcare@thedarjeelingbrew.com" target="_blank"> <IoMailOpen className="icon" /> vcare@thedarjeelingbrew.com</a>
             <a href="https://maps.app.goo.gl/m5Gd2rf88xP1sZhu7" target="_blank"> <IoHomeSharp className="icon" /> Kangchenjunga Darjeeling Beverages Pvt. Ltd., Tangra Industrial Estate - II, 45,Radhanath Chowdhury Road, Tangra, Kolkata - 700015</a>
           </div>
         </div>
