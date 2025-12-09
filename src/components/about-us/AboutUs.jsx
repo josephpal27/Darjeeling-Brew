@@ -6,7 +6,7 @@ import aboutImage3 from '../../assets/images/about-3.avif';
 const HomeAboutUs = () => {
     return (
         <>
-            <section className="home-about-us">
+            <section className="home-about-us" id="about-us">
                 <h6 data-aos="fade-up">About Us</h6>
                 <div className="about-us-image-row">
                     <img src={aboutImage1} alt="About Image 1" loading="lazy" />

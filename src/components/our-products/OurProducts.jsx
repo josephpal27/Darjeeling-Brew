@@ -8,7 +8,7 @@ import angleImage from '../../assets/images/icons/left-angle.png';
 const OurProducts = () => {
   return (
     <>
-      <section className="our-products">
+      <section className="our-products" id="products">
         <div className="our-products-head">
           <h5 data-aos="fade-up">Our Products</h5>
           <span data-aos="fade">Serving Customers Worldwide</span>

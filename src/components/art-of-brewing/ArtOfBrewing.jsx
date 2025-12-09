@@ -96,7 +96,7 @@ const coldBrewSteps = [
 const ArtOfBrewing = () => {
     return (
         <>
-            <section className="art-of-brewing">
+            <section className="art-of-brewing" id="art-of-brewing">
                 <img src={leaf} alt="Leaf" loading="lazy" id="leaf-right" data-aos="fade" data-aos-once="true"/>
                 <img src={leaf} alt="Leaf" loading="lazy" id="leaf-left" data-aos="fade" data-aos-once="true"/>
 

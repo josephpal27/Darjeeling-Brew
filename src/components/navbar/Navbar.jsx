@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
@@ -44,16 +45,16 @@ const MyNavbar = () => {
                         <Nav.Link as={NavLink} to="/origin-of-the-brew" onClick={handleClose}>
                             Origin of the Brew
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/products" onClick={handleClose}>
+                        <Nav.Link as={HashLink} smooth to="/#products" onClick={handleClose}>
                             Products
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/darjeeling-story" onClick={handleClose}>
+                        <Nav.Link as={HashLink} smooth to="/#darjeeling-story" onClick={handleClose}>
                             Darjeeling Story
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/about-us" onClick={handleClose}>
+                        <Nav.Link as={HashLink} smooth to="/#about-us" onClick={handleClose}>
                             About Us
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/art-of-brewing" onClick={handleClose}>
+                        <Nav.Link as={HashLink} smooth to="/#art-of-brewing" onClick={handleClose}>
                             Art of Brewing
                         </Nav.Link>
                     </Nav>

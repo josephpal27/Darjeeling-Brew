@@ -4,7 +4,7 @@ import aboutImage from '../../assets/images/about-content.avif';
 const AboutContent = () => {
     return (
         <>
-            <section className="about-content">
+            <section className="about-content" id="darjeeling-story">
                 <div className="about-content-left">
                     <h3 data-aos="fade-right">The Darjeeling Story</h3>
                     <span data-aos="fade">Taste the Himalayas. Feel the Romance.</span>
