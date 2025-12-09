@@ -29,9 +29,12 @@ const MyNavbar = () => {
                 onHide={handleClose}
                 scroll={true}
                 backdrop={true}
+                enforceFocus={false}
+                restoreFocus={false}
+                autoFocus={false}
+                placement="start"
                 id="offcanvasNavbar-expand-lg"
                 aria-labelledby="offcanvasNavbarLabel-expand-lg"
-                placement="start"
             >
                 <Offcanvas.Header>
                     <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
