@@ -1,6 +1,7 @@
 import './Footer.css';
 import footerLogo from '../../assets/images/logo/logo.avif';
 import { Link } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 import { FiFacebook, FiYoutube } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -23,11 +24,11 @@ const Footer = () => {
           <div className="footer-box">
             <span>Quick Links</span>
             <Link to="/">Home</Link>
-            <Link to="/origin-of-the-brew">Origin of the Brew</Link>
-            <Link to="/products">Products</Link>
-            <Link to="/darjeeling-story">Darjeeling Story</Link>
-            <Link to="/about-us">About Us</Link>
-            <Link to="/art-of-brewing">Art of Brewing</Link>
+            <HashLink smooth to="/#about-us">Origin of the Brew</HashLink>
+            <HashLink smooth to="/#products">Products</HashLink>
+            <HashLink smooth to="/#darjeeling-story">Darjeeling Story</HashLink>
+            <HashLink smooth to="/#about-us">About Us</HashLink>
+            <HashLink smooth to="/#art-of-brewing">Art of Brewing</HashLink>
           </div>
           <div className="footer-box">
             <span>Contact Info</span>

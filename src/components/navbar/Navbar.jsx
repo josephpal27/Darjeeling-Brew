@@ -27,6 +27,8 @@ const MyNavbar = () => {
             <Navbar.Offcanvas
                 show={show}
                 onHide={handleClose}
+                scroll={true}
+                backdrop={true}
                 id="offcanvasNavbar-expand-lg"
                 aria-labelledby="offcanvasNavbarLabel-expand-lg"
                 placement="start"
@@ -42,7 +44,7 @@ const MyNavbar = () => {
                         <Nav.Link as={NavLink} to="/" onClick={handleClose}>
                             Home
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/origin-of-the-brew" onClick={handleClose}>
+                        <Nav.Link as={HashLink} smooth to="/#about-us" onClick={handleClose}>
                             Origin of the Brew
                         </Nav.Link>
                         <Nav.Link as={HashLink} smooth to="/#products" onClick={handleClose}>
