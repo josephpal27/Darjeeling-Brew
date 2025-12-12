@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-box">
-            <span>Quick Links</span>
+            <span>Quick Links </span>
             <Link to="/">Home</Link>
             <HashLink smooth to="/#about-us">Origin of the Brew</HashLink>
             <HashLink smooth to="/#products">Products</HashLink>
