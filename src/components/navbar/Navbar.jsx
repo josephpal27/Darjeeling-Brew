@@ -47,32 +47,34 @@ const MyNavbar = () => {
                         <Nav.Link as={NavLink} to="/" onClick={handleClose}>
                             Home
                         </Nav.Link>
-                        <Nav.Link as={HashLink} smooth to="/#about-us" onClick={handleClose}>
-                            Origin of the Brew
-                        </Nav.Link>
                         <Nav.Link as={HashLink} smooth to="/#products" onClick={handleClose}>
-                            Products
-                        </Nav.Link>
-                        <Nav.Link as={HashLink} smooth to="/#darjeeling-story" onClick={handleClose}>
-                            Darjeeling Story
+                            Our Products
                         </Nav.Link>
                         <Nav.Link as={HashLink} smooth to="/#about-us" onClick={handleClose}>
                             About Us
                         </Nav.Link>
+                        <Nav.Link as={HashLink} smooth to="/#" onClick={handleClose}>
+                            The Ultimate Beverage
+                        </Nav.Link>
                         <Nav.Link as={HashLink} smooth to="/#art-of-brewing" onClick={handleClose}>
                             Art of Brewing
+                        </Nav.Link>
+                        <Nav.Link as={HashLink} smooth to="/#" onClick={handleClose}>
+                            Recipes
+                        </Nav.Link>
+                        <Nav.Link as={HashLink} smooth to="/#" onClick={handleClose}>
+                            Contact
                         </Nav.Link>
                     </Nav>
 
                     {/* Right Side */}
                     <div className="right-btn-wrapper">
-                        <div className="search-btn">
+                        {/* <div className="search-btn">
                             <GoSearch className="nav-icon" />
-                        </div>
+                        </div> */}
                         <NavLink to="/cart" className="cart-btn" onClick={handleClose}>
                             <BsHandbag className="nav-icon" />
                         </NavLink>
-                        
                     </div>
                 </Offcanvas.Body>
             </Navbar.Offcanvas>
