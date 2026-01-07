@@ -1,10 +1,12 @@
 import './DarjeelingStory.css';
 import aboutImage from '../../assets/images/about-content.avif';
+import aboutBg from '../../assets/images/darjeeling-story-bg.avif';
 
 const AboutContent = () => {
     return (
         <>
             <section className="about-content" id="darjeeling-story">
+                <img src={aboutBg} alt="Image" loading="lazy" id="darjeeling-story-bg" />
                 <div className="about-content-left">
                     <h3 data-aos="fade-right">The Darjeeling Story</h3>
                     <span data-aos="fade">Taste the Himalayas. Feel the Romance.</span>

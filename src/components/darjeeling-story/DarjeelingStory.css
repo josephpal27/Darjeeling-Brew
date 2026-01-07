@@ -1,9 +1,16 @@
 .about-content{
     padding: 5rem 7%;
-    background-color: #f2eade;
+    background-color: #f4f8e1;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+}
+.about-content #darjeeling-story-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
 }
 .about-content .about-content-left{
     width: 47%;
@@ -44,7 +51,7 @@
     position: absolute;
     left: -0.8rem;
     bottom: -0.8rem;
-    background-color: #d6ad58;
+    background-color: #8e2f2d;
 }
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
