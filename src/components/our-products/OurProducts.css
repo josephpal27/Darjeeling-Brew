@@ -2,6 +2,9 @@
     padding: 2rem 0 0 0;
     background-color: #f4f8e1;
     overflow: hidden;
+    background-image: url('/images/our-products-bg.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .our-products-head{
     display: flex;
@@ -169,6 +172,9 @@
 .products-slider .swiper-slide .container-boxes button:hover{
     background-color: #7a1f1e;
 }
+.products-slider .swiper-slide .container-boxes button:active{
+    scale: 0.95;
+}
 
 .products-slider .swiper-button-next,
 .products-slider .swiper-button-prev{
@@ -178,6 +184,10 @@
     scale: 0.7;
     position: absolute;
     z-index: 10;
+}
+.products-slider .swiper-button-next:hover,
+.products-slider .swiper-button-prev:hover{
+    color: #3d3d3d;
 }
 .products-slider .swiper-button-prev{
     left: 2rem !important;

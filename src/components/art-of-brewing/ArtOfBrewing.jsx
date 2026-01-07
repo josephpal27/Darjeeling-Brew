@@ -42,7 +42,7 @@ const hotBrewSteps = [
     },
     {
         id: 5,
-        img: hotBrew5,
+        img: coldBrew4,
         title: "Golden Perfection",
         text: "Savour the golden perfection in a cup- smooth, crisp, and fragrant, like a Himalayan morning."
     },
