@@ -1,5 +1,5 @@
 .our-products{
-    padding: 2rem 0 0 0;
+    padding: 2rem 0 1rem 0;
     background-color: #f4f8e1;
     overflow: hidden;
     background-image: url('/images/our-products-bg.avif');
@@ -121,13 +121,15 @@
 }
 
 .products-slider .swiper-slide .container-boxes{
-    /* margin-top: 1rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .products-slider .swiper-slide .container-boxes img{
     width: 40%;
+}
+.products-slider #slide-1 .container-boxes img{
+    margin-left: -1rem;
 }
 .products-slider .swiper-slide .container-boxes span{
     color: #002c5b;

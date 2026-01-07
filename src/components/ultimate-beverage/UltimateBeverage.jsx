@@ -51,7 +51,7 @@ const UltimateBeverage = () => {
                 <h4 data-aos="fade-up">The Ultimate Beverage</h4>
 
                 {beverageData.map((item, index) => (
-                    <div className="beverage-box" key={index}>
+                    <div className="beverage-box" key={index} data-aos="fade" data-aos-once="true">
                         <div className="beverage-box-left">
                             <img src={item.icon} alt="Icon" loading="lazy" />
                         </div>
