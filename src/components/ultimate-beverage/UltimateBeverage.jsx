@@ -1,80 +1,76 @@
 import './UltimateBeverage.css';
-import beverageCup from '../../assets/images/beverage-cup.avif';
-import icn1 from '../../assets/images/icons/beverage/1.webp';
-import icn2 from '../../assets/images/icons/beverage/2.webp';
-import icn3 from '../../assets/images/icons/beverage/3.webp';
-import icn4 from '../../assets/images/icons/beverage/4.webp';
+import icn1 from '../../assets/images/icons/beverage/1.png';
+import icn2 from '../../assets/images/icons/beverage/2.png';
+import icn3 from '../../assets/images/icons/beverage/3.png';
+import icn4 from '../../assets/images/icons/beverage/4.png';
+
+const beverageData = [
+    {
+        icon: icn1,
+        title: "Beyond Tea, Beyond Coffee",
+        points: [
+            "Light yet energizing",
+            "Zero bitterness, zero acidity",
+            "No jitters — just a smooth, balanced uplift",
+        ],
+    },
+    {
+        icon: icn2,
+        title: "Effortless Brew",
+        points: [
+            "A spoon or pinch of Darjeeling tea leaves",
+            "Steep in water for in 3–4 mins",
+            "Enjoy hot, cold, or as a sparkling infusion",
+            "No complicated rituals — beauty in simplicity",
+        ],
+    },
+    {
+        icon: icn3,
+        title: "Wellness in Every Cup",
+        points: [
+            "Rich in polyphenols & antioxidants",
+            "Supports heart health, metabolism, skin vitality",
+            "Natural detox & hydration",
+        ],
+    },
+    {
+        icon: icn4,
+        title: "Romance of Origin",
+        points: [
+            "Grown on Himalayan slopes kissed by clouds",
+            "Hand-picked, artisanal processing",
+            "UNESCO-protected Geographical Indication heritage",
+        ],
+    },
+];
 
 const UltimateBeverage = () => {
     return (
         <>
             <section className="ultimate-beverage">
                 <h4 data-aos="fade-up">The Ultimate Beverage</h4>
-                <div className="beverage-content-row">
-                    <div className="beverage-left">
-                        <div className="box" data-aos="fade" data-aos-once="true">
-                            <div className="box-image">
-                                <img src={icn1} alt="Icon" loading="lazy" />
-                            </div>
-                            <div className="box-content">
-                                <span>Beyond Tea, Beyond Coffee</span>
-                                <ul>
-                                    <li>Light yet energizing</li>
-                                    <li>Zero bitterness, zero acidity</li>
-                                    <li>No jitters - just a smooth, balanced uplift</li>
-                                </ul>
-                            </div>
+
+                {beverageData.map((item, index) => (
+                    <div className="beverage-box" key={index}>
+                        <div className="beverage-box-left">
+                            <img src={item.icon} alt="Icon" loading="lazy" />
                         </div>
-                        <div className="box" data-aos="fade" data-aos-once="true">
-                            <div className="box-image">
-                                <img src={icn2} alt="Icon" loading="lazy" />
-                            </div>
-                            <div className="box-content">
-                                <span>Effortless Brew</span>
-                                <ul>
-                                    <li>A spoon or pinch of Darjeeling tea leaves</li>
-                                    <li>Steep in water for in 3-4 minutes</li>
-                                    <li>Enjoy hot, cold, or as a sparkling infusion</li>
-                                    <li>No complicated rituals - beauty in simplicity</li>
-                                </ul>
-                            </div>
+
+                        <div className="beverage-box-right">
+                            <span>{item.title}</span>
+                            <ul>
+                                {item.points.map((point, i) => (
+                                    <li key={i}>{point}</li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
-                    <div className="beverage-center">
-                        <img src={beverageCup} alt="Beverge Cup" loading="lazy" data-aos="fade" data-aos-once="true" />
-                    </div>
-                    <div className="beverage-right">
-                        <div className="box" data-aos="fade" data-aos-once="true">
-                            <div className="box-image">
-                                <img src={icn3} alt="Icon" loading="lazy" />
-                            </div>
-                            <div className="box-content">
-                                <span>Wellness in Every Cup</span>
-                                <ul>
-                                    <li>Rich in polyphenols & antioxidants</li>
-                                    <li>Supports heart health, metabolism, skin vitality</li>
-                                    <li>Natural detox & hydration</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="box" data-aos="fade" data-aos-once="true">
-                            <div className="box-image">
-                                <img src={icn4} alt="Icon" loading="lazy" />
-                            </div>
-                            <div className="box-content">
-                                <span>Romance of Origin</span>
-                                <ul>
-                                    <li>Grown on Himalayan slopes kissed by clouds</li>
-                                    <li>Hand-picked, artisanal processing</li>
-                                    <li>UNESCO-protected Geographical Indication heritage</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                ))}
+
+                {/* <img src="/images/ultimate-beverage-bg.avif" alt="Beverage Background" loading="lazy" id="beverage-bg" /> */}
             </section>
         </>
-    )
-}
+    );
+};
 
-export default UltimateBeverage
+export default UltimateBeverage;

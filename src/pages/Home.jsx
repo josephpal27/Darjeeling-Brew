@@ -65,17 +65,17 @@ const Home = () => {
             {/* Darjeeling Story */}
             <DarjeelingStory />
 
-            {/* Ultimate Beverage */}
-            <UltimateBeverage />
-
             {/* Our Products */}
             <OurProducts />
 
             {/* About Us */}
             <AboutUs />
 
+            {/* Ultimate Beverage */}
+            <UltimateBeverage />
+
             {/* Vision & Mission */}
-            <VisionMission />
+            {/* <VisionMission /> */}
 
             {/* Art Of Brewing */}
             <ArtOfBrewing />

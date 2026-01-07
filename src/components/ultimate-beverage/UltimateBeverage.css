@@ -1,79 +1,45 @@
 .ultimate-beverage{
     padding: 2rem 7% 4rem 7%;
-    background: #f2eadf;
-    background: linear-gradient(to bottom, #f2eadf 50%, #f5efe3);
+    /* padding: 2rem 7% 30rem 7%; */
+    background: #f4f8e1;
+    position: relative;
 }
 .ultimate-beverage h4{
     font-size: calc(2.3rem + 0.5vw);
     text-align: center;
-    color: #000;
+    color: #8e2f2d;
+    margin-bottom: 3rem;
 }
-.beverage-content-row{
-    padding: 1rem 2rem;
+.ultimate-beverage .beverage-box{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 3.5rem;
-    background: linear-gradient(to right, #dcba71 50%, #e1d9ce 50%);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
 }
-.beverage-left{
-    width: 28%;
+.ultimate-beverage .beverage-box img{
+    width: 70px;
 }
-.beverage-center{
-    width: 30%;
-}
-.beverage-right{
-    width: 30%;
-}
-.beverage-center img{
-    width: 100%;
-    scale: 1.2;
-    margin-left: -1rem;
-}
-.beverage-content-row .box{
-    padding: 1.2rem 0 0.5rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.beverage-left .box:nth-child(1){
-    border-bottom: 1px solid #f3d79a;
-}
-.beverage-right .box:nth-child(1){
-    border-bottom: 1px solid #f4f4f4;
-}
-.beverage-right .box{
-    flex-direction: row-reverse;
-}
-.beverage-content-row .box .box-image{
-    width: 17%;
-}
-.beverage-content-row .box .box-image img{
-    width: 100%;
-}
-.beverage-content-row .box .box-content{
-    width: 78%;
-}
-.beverage-content-row .box span{
-    font-size: calc(0.8rem + 0.5vw);
-    font-family: "IvyOra", sans-serif !important;
-    color: #000;
-    font-weight: 550;
+.ultimate-beverage .beverage-box span{
+    font-size: calc(1.1rem + 0.5vw);
+    color: #8e2f2d;
+    font-family: "IvyOra", sans-serif;
     display: block;
-    white-space: nowrap;
+    margin-top: 0.7rem;
 }
-.beverage-content-row .box ul{
+.ultimate-beverage .beverage-box ul{
     margin-top: 1rem;
+    font-family: "IvyOra", sans-serif;
 }
-.beverage-content-row .box ul li{
-    font-size: calc(0.55rem + 0.5vw);
-    color: #000;
-    font-weight: 550;
-    font-family: "IvyOra", sans-serif !important;
-    margin-bottom: 0.2rem;
+.ultimate-beverage .beverage-box li{
+    font-size: calc(0.6rem + 0.5vw);
+    color: #002c5b;
+    margin-top: 3px;
 }
+/* .ultimate-beverage #beverage-bg{
+    width: 100%;
+    position: absolute;
+    top: -80%;
+    left: 0;
+} */
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .ultimate-beverage{
@@ -81,22 +47,6 @@
     }
     .ultimate-beverage h4{
         font-size: calc(2.1rem + 0.5vw);
-    }
-    .beverage-content-row{
-        padding: 0.8rem 1.8rem;
-        margin-top: 3rem;
-    }
-    .beverage-content-row .box{
-        padding: 1rem 0 0.3rem 0;
-    }
-    .beverage-content-row .box span{
-        font-size: calc(0.75rem + 0.5vw);
-    }
-    .beverage-content-row .box ul{
-        margin-top: 0.9rem;
-    }
-    .beverage-content-row .box ul li{
-        font-size: calc(0.5rem + 0.5vw);
     }
 }
 
@@ -107,23 +57,6 @@
     .ultimate-beverage h4{
         font-size: calc(1.9rem + 0.5vw);
     }
-    .beverage-content-row{
-        padding: 0.6rem 1.6rem;
-        margin-top: 2.5rem;
-    }
-    .beverage-content-row .box{
-        padding: 0.9rem 0 0.2rem 0;
-    }
-    .beverage-content-row .box span{
-        font-size: calc(0.7rem + 0.5vw);
-    }
-    .beverage-content-row .box ul{
-        margin-top: 0.8rem;
-    }
-    .beverage-content-row .box ul li{
-        font-size: calc(0.45rem + 0.5vw);
-        margin-bottom: 0.15rem;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -133,42 +66,5 @@
     }
     .ultimate-beverage h4{
         font-size: calc(1.4rem + 0.5vw);
-    }
-    .beverage-content-row{
-        padding: 1rem 1rem;
-        margin-top: 2rem;
-        background: linear-gradient(to bottom, #dcba71 57%, #e1d9ce 50%);
-    }
-    .beverage-left{
-        width: 100%;
-    }
-    .beverage-center{
-        width: 100%;
-    }
-    .beverage-right{
-        width: 100%;
-    }
-    .beverage-center img{
-        scale: 1.1;
-        margin-left: -0.9rem;
-    }
-    .beverage-content-row .box{
-        padding: 1rem 0 0.2rem 0;
-    }
-    .beverage-content-row .box .box-image{
-        width: 12%;
-    }
-    .beverage-content-row .box .box-content{
-        width: 86%;
-    }
-    .beverage-content-row .box span{
-        font-size: calc(1rem + 0.5vw);
-    }
-    .beverage-content-row .box ul{
-        margin-top: 0.7rem;
-    }
-    .beverage-content-row .box ul li{
-        font-size: calc(0.8rem + 0.5vw);
-        margin-bottom: 0.3rem;
     }
 }
