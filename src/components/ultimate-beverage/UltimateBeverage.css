@@ -1,6 +1,6 @@
 .ultimate-beverage{
-    padding: 2rem 7% 4rem 7%;
-    /* padding: 2rem 7% 30rem 7%; */
+    /* padding: 2rem 7% 4rem 7%; */
+    padding: 2rem 7% 30rem 7%;
     background: #f4f8e1;
     position: relative;
 }
@@ -34,12 +34,30 @@
     color: #002c5b;
     margin-top: 3px;
 }
-/* .ultimate-beverage #beverage-bg{
+
+.ultimate-beverage #beverage-bg {
     width: 100%;
     position: absolute;
-    top: -80%;
+    top: 0;
     left: 0;
-} */
+    z-index: 1;
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(255, 255, 255, 0.788) 20%,
+        rgba(255, 255, 255, 0.788) 80%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgb(255, 255, 255, 0.788) 20%,
+        rgb(255, 255, 255, 0.788) 80%,
+        transparent 100%
+    );
+}
+
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .ultimate-beverage{
