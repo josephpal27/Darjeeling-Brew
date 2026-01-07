@@ -197,3 +197,161 @@
 .products-slider .swiper-button-next{
     right: 2rem !important;
 }
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .our-products{
+        padding: 1.5rem 0 0.8rem 0;
+    }
+    .our-products-head h5{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+    .our-products-head span{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .our-products-head p{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+
+    .products-slider .swiper-slide{
+        margin-top: 0.8rem;
+        padding-bottom: 1.8rem;
+    }
+    .products-slider .swiper-slide .product-category{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .products-slider .swiper-slide .line{
+        width: 32px;
+        height: 2.7px;
+    }
+    .products-slider .swiper-slide .product-title{
+        font-size: calc(1.1rem + 0.5vw);
+        margin-top: 1.1rem;
+    }
+    .products-slider .swiper-slide .product-sub-title{
+        font-size: calc(0.95rem + 0.5vw);
+    }
+
+    .products-slider .swiper-slide .cup-boxes{
+        gap: 1.8rem;
+        margin-top: 1.9rem;
+    }
+    .products-slider .swiper-slide .left-cup-content img{
+        width: 65px;
+        margin-top: 2.5rem;
+    }
+    .products-slider .swiper-slide .right-cup-content img{
+        width: 65px;
+    }
+    .products-slider .swiper-slide .cup-boxes p{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+    .products-slider .swiper-slide .right-cup-content p{
+        margin-top: 2.5rem;
+    }
+    .products-slider #slide-1 .cup-image img{
+        scale: 1.1;
+    }
+
+    .products-slider .swiper-slide .container-boxes span{
+        font-size: calc(1.1rem + 0.5vw);
+        margin-top: 0.2rem;
+    }
+    .products-slider .swiper-slide .container-boxes p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.7rem;
+    }
+    .products-slider .swiper-slide .container-boxes .container-box-desc{
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .products-slider .swiper-slide .container-boxes button{
+        padding: 0.65rem 2.4rem;
+        font-size: calc(0.65rem + 0.5vw);
+        margin-top: 0.9rem;
+    }
+
+    .products-slider .swiper-button-next,
+    .products-slider .swiper-button-prev{
+        scale: 0.6;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .our-products{
+        padding: 1rem 0 0.5rem 0;
+    }
+    .our-products-head h5{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .our-products-head span{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .our-products-head p{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+
+    .products-slider .swiper-slide{
+        margin-top: 0.6rem;
+        padding-bottom: 1.6rem;
+    }
+    .products-slider .swiper-slide .product-category{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .products-slider .swiper-slide .line{
+        width: 28px;
+        height: 2.5px;
+    }
+    .products-slider .swiper-slide .product-title{
+        font-size: calc(1rem + 0.5vw);
+        margin-top: 1rem;
+    }
+    .products-slider .swiper-slide .product-sub-title{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+
+    .products-slider .swiper-slide .cup-boxes{
+        gap: 1.7rem;
+        margin-top: 1.8rem;
+    }
+    .products-slider .swiper-slide .left-cup-content img{
+        width: 60px;
+        margin-top: 2rem;
+    }
+    .products-slider .swiper-slide .right-cup-content img{
+        width: 60px;
+    }
+    .products-slider .swiper-slide .cup-boxes p{
+        font-size: calc(0.48rem + 0.5vw);
+    }
+    .products-slider .swiper-slide .right-cup-content p{
+        margin-top: 2rem;
+    }
+    .products-slider #slide-1 .cup-image img{
+        scale: 1.05;
+    }
+
+    .products-slider .swiper-slide .container-boxes span{
+        font-size: calc(1rem + 0.5vw);
+        margin-top: 0.1rem;
+    }
+    .products-slider .swiper-slide .container-boxes p{
+        font-size: calc(0.5rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .products-slider .swiper-slide .container-boxes .container-box-desc{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .products-slider .swiper-slide .container-boxes button{
+        padding: 0.6rem 2.2rem;
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 0.7rem;
+    }
+
+    .products-slider .swiper-button-next,
+    .products-slider .swiper-button-prev{
+        scale: 0.5;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
