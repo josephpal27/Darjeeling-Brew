@@ -114,3 +114,12 @@
     }
 }
 /* Banner Slider End */
+
+/* Mountain Image Start */
+.mountain{
+    background-color: #f4f8e1;
+}
+.mountain img{
+    width: 100%;
+}
+/* Mountain Image End */

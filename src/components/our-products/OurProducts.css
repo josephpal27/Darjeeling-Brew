@@ -69,11 +69,11 @@
 .products-slider .swiper-slide .cup-boxes{
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 .products-slider .swiper-slide .left-cup-content{
-    width: 32%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +85,7 @@
     margin-top: 3rem;
 }
 .products-slider .swiper-slide .right-cup-content{
-    width: 32%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -96,15 +96,25 @@
 }
 .products-slider .swiper-slide .cup-boxes p{
     margin: 0;
+    font-size: calc(0.55rem + 0.5vw);
+    color: #000;
+    font-weight: 500;
+    font-family: "IvyOra", sans-serif !important;
+}
+.products-slider .swiper-slide .left-cup-content p{
+    text-align: right;
 }
 .products-slider .swiper-slide .right-cup-content p{
     margin-top: 3rem;
 }
 .products-slider .swiper-slide .cup-image{
-    width: 32%;
+    width: 23%;
 }
 .products-slider .swiper-slide .cup-image img{
     width: 100%;
+}
+.products-slider #slide-1 .cup-image img{
+    scale: 1.11;
 }
 
 .products-slider .swiper-slide .container-boxes{
@@ -114,7 +124,7 @@
     align-items: center;
 }
 .products-slider .swiper-slide .container-boxes img{
-    width: 45%;
+    width: 40%;
 }
 .products-slider .swiper-slide .container-boxes span{
     color: #002c5b;
@@ -163,7 +173,7 @@
 .products-slider .swiper-button-next,
 .products-slider .swiper-button-prev{
     color: #7c7c7c;
-    top: 42% !important;
+    top: 37% !important;
     transform: translateY(-50%);
     scale: 0.7;
     position: absolute;

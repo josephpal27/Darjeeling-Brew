@@ -1,7 +1,10 @@
 .art-of-brewing{
-    padding: 1.5rem 7%;
-    background-color: #f2eade;
+    padding: 1.5rem 7% 0 7%;
+    background-color: #f4f8e1;
     position: relative;
+    background-image: url('/images/art-of-brewing-bg.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .art-of-brewing #leaf-right{
     position: absolute;
@@ -23,12 +26,12 @@
 }
 .art-of-brewing .art-of-brewing-head h6{
     font-size: calc(2.3rem + 0.5vw);
-    color: #000;
+    color: #8e2f2d;
     text-align: center;
 }
 .art-of-brewing .art-of-brewing-head p{
     font-size: calc(0.8rem + 0.5vw);
-    color: #000;
+    color: #002c5b;
     margin-top: 2rem;
     line-height: 1.6;
     width: 65%;
@@ -164,7 +167,7 @@
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .art-of-brewing{
-        padding: 1rem 7%;
+        padding: 1rem 7% 0 7%;
     }
     .art-of-brewing #leaf-right{
         top: -7.5rem;
@@ -222,7 +225,7 @@
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
     .art-of-brewing{
-        padding: 0.5rem 7%;
+        padding: 0.5rem 7% 0 7%;
     }
     .art-of-brewing #leaf-right{
         top: -7rem;

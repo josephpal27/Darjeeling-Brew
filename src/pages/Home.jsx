@@ -13,7 +13,6 @@ import UltimateBeverage from '../components/ultimate-beverage/UltimateBeverage';
 import OurProducts from '../components/our-products/OurProducts';
 import AboutUs from '../components/about-us/AboutUs';
 import ArtOfBrewing from '../components/art-of-brewing/ArtOfBrewing';
-import VisionMission from '../components/vision-mission/VisionMission';
 
 const Home = () => {
     return (
@@ -74,11 +73,13 @@ const Home = () => {
             {/* Ultimate Beverage */}
             <UltimateBeverage />
 
-            {/* Vision & Mission */}
-            {/* <VisionMission /> */}
-
             {/* Art Of Brewing */}
             <ArtOfBrewing />
+
+            {/* Mountain Image */}
+            <section className="mountain">
+                <img src="/images/mountain.avif" alt="Mountain" loading="lazy" />
+            </section>
         </>
     )
 }
