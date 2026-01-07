@@ -1,5 +1,4 @@
 .ultimate-beverage{
-    /* padding: 2rem 7% 4rem 7%; */
     padding: 2rem 7% 30rem 7%;
     background: #f4f8e1;
     position: relative;
@@ -61,26 +60,59 @@
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .ultimate-beverage{
-        padding: 1.5rem 7% 3.5rem 7%;
+        padding: 1.5rem 7% 27rem 7%;
     }
     .ultimate-beverage h4{
         font-size: calc(2.1rem + 0.5vw);
+    }
+    .ultimate-beverage .beverage-box{
+        gap: 1.3rem;
+        margin-bottom: 2.8rem;
+    }
+    .ultimate-beverage .beverage-box img{
+        width: 65px;
+    }
+    .ultimate-beverage .beverage-box span{
+        font-size: calc(1rem + 0.5vw);
+        margin-top: 0.6rem;
+    }
+    .ultimate-beverage .beverage-box ul{
+        margin-top: 0.9rem;
+    }
+    .ultimate-beverage .beverage-box li{
+        font-size: calc(0.55rem + 0.5vw);
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
     .ultimate-beverage{
-        padding: 1rem 7% 3rem 7%;
+        padding: 1.5rem 7% 23rem 7%;
     }
     .ultimate-beverage h4{
         font-size: calc(1.9rem + 0.5vw);
+    }
+    .ultimate-beverage .beverage-box{
+        gap: 1.2rem;
+        margin-bottom: 2.5rem;
+    }
+    .ultimate-beverage .beverage-box img{
+        width: 60px;
+    }
+    .ultimate-beverage .beverage-box span{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 0.55rem;
+    }
+    .ultimate-beverage .beverage-box ul{
+        margin-top: 0.85rem;
+    }
+    .ultimate-beverage .beverage-box li{
+        font-size: calc(0.5rem + 0.5vw);
     }
 }
 
 @media screen and (max-width: 768px) {
     .ultimate-beverage{
         padding: 1.5rem 1rem 3rem 1rem;
-        background: linear-gradient(to bottom, #f2eadf 50%, #f5efe3);
     }
     .ultimate-beverage h4{
         font-size: calc(1.4rem + 0.5vw);
