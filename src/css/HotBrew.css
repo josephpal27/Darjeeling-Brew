@@ -28,3 +28,24 @@
     margin-top: 0.5rem;
 }
 /* Banner End */
+
+/* Brew Serves Start */
+.brew-serves{
+    padding: 5rem 7%;
+    background-color: #f4f8e1;
+}
+.brew-serves-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brew-serves-head h2{
+    font-size: calc(2.3rem + 0.5vw);
+    color: #8e2f2d;
+}
+.brew-serves-head p{
+    font-size: calc(2rem + 0.5vw);
+    color: #002c5b;
+    font-family: "IvyOra", sans-serif !important;
+}
+/* Brew Serves End */
