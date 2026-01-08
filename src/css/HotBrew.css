@@ -1,0 +1,30 @@
+/* Banner Start */
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    min-height: 90vh;
+    object-fit: cover;
+}
+.banner .banner-content{
+    padding: 2rem 7% 5rem 7%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #fff;
+}
+.banner .banner-content h1{
+    font-size: calc(2.3rem + 0.5vw);
+}
+.banner .banner-content p{
+    font-size: calc(0.65rem + 0.5vw);
+    font-weight: 500;
+    width: 40%;
+    margin-top: 0.5rem;
+}
+/* Banner End */

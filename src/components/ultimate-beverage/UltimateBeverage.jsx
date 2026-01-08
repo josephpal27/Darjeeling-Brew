@@ -67,7 +67,7 @@ const UltimateBeverage = () => {
                     </div>
                 ))}
 
-                <img src="/images/ultimate-beverage-bg-2.png" alt="Beverage Background" loading="lazy" id="beverage-bg" />
+                <img src="/images/ultimate-beverage-bg.avif" alt="Beverage Background" loading="lazy" id="beverage-bg" />
             </section>
         </>
     );

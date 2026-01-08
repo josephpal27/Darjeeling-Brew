@@ -9,9 +9,9 @@ import "swiper/css/navigation";
 import productImage1 from "../../assets/images/our-products/product-1.avif";
 import productImage2 from "../../assets/images/our-products/product-2.avif";
 import productImage3 from "../../assets/images/our-products/product-3.avif";
-import productBox1 from "../../assets/images/our-products/product-box-1.png";
-import productBox2 from "../../assets/images/our-products/product-box-2.png";
-import productBox3 from "../../assets/images/our-products/product-box-3.png";
+import productBox1 from "../../assets/images/our-products/product-box-1.avif";
+import productBox2 from "../../assets/images/our-products/product-box-2.avif";
+import productBox3 from "../../assets/images/our-products/product-box-3.avif";
 
 import angleImage from "../../assets/images/icons/left-angle.png";
 
