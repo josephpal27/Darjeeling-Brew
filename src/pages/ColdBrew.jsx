@@ -63,16 +63,16 @@ const ColdBrew = () => {
             <section className="banner">
                 <img src="/images/banners/hot-brew-banner.avif" alt="Banner" loading="eager" />
                 <div className="banner-content">
-                    <h1>SIGNATURE SERVES</h1>
-                    <p>A curated collection of modern recipes crafted to highlight the versatility of The Darjeeling Brew</p>
+                    <h1 data-aos="fade-up">SIGNATURE SERVES</h1>
+                    <p data-aos="fade">A curated collection of modern recipes crafted to highlight the versatility of The Darjeeling Brew</p>
                 </div>
             </section>
 
             {/* Brew Serves */}
             <section className="brew-serves">
                 <div className="brew-serves-head">
-                    <h2>COLD BREW SERVES</h2>
-                    <p>A cooler way to brew - smooth and easy</p>
+                    <h2 data-aos="fade-up">COLD BREW SERVES</h2>
+                    <p data-aos="fade">A cooler way to brew - smooth and easy</p>
                 </div>
                 {/* Brew Serves Row */}
                 <BrewServes data={coldBrewServesData} />
@@ -80,7 +80,7 @@ const ColdBrew = () => {
 
             {/* Brew Serves Footer */}
             <section className="brew-serves-footer">
-                <p>Cold brewed for clarity, lightness, and a smooth, refreshing finish.</p>
+                <p data-aos="fade" data-aos-once="true">Cold brewed for clarity, lightness, and a smooth, refreshing finish.</p>
             </section>
         </>
     )

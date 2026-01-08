@@ -7,7 +7,7 @@ const BrewServes = ({ data }) => {
                 {
                     data.map((item, index) => (
                         <div className="serve-box" id={item.id} key={index}>
-                            <div className="serve-box-content">
+                            <div className="serve-box-content" data-aos="fade" data-aos-once="true">
                                 <span className="recipe-count">RECIPE {item.count}</span>
                                 <span>{item.name}</span>
                                 <p>{item.description}</p>
@@ -16,7 +16,7 @@ const BrewServes = ({ data }) => {
                                     <p>{item.method}</p>
                                 </div>
                             </div>
-                            <div className="serve-box-image">
+                            <div className="serve-box-image" data-aos="fade" data-aos-once="true">
                                 <img src={item.recipeImage} alt="Recipe Image" loading="lazy" />
                             </div>
                             {item.backgroundImage && (
