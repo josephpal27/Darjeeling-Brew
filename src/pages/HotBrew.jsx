@@ -1,4 +1,4 @@
-import '../css/HotBrew.css';
+import '../css/Recipes.css';
 
 import BrewServes from '../components/brew-serves/BrewServes';
 
