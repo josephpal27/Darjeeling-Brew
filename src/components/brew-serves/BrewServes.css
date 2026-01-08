@@ -59,8 +59,8 @@
     width: 100%;
 }
 
-/* Hot Brew Background Adjustments */
-#hot-serve-box-1 .serve-box-bg img{
+/* Background Adjustments */
+#serve-box-1 .serve-box-bg img{
     -webkit-mask-image: linear-gradient(
         to bottom,
         transparent 0%,
@@ -77,21 +77,21 @@
     );
 }
 
-#hot-serve-box-2 .serve-box-bg{
+#serve-box-2 .serve-box-bg{
     justify-content: flex-end;
     top: 50%;
 }
-#hot-serve-box-2 .serve-box-bg img{
+#serve-box-2 .serve-box-bg img{
     width: 50%;
 }
 
-#hot-serve-box-4 .serve-box-bg img{
+#serve-box-4 .serve-box-bg img{
     width: 60%;
 }
 
-#hot-serve-box-5 .serve-box-bg{
+#serve-box-5 .serve-box-bg{
     justify-content: flex-end;
 }
-#hot-serve-box-5 .serve-box-bg img{
+#serve-box-5 .serve-box-bg img{
     width: 60%;
 }

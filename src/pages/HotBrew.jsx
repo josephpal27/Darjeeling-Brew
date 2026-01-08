@@ -10,7 +10,7 @@ import hotRecipe5 from '../assets/images/recipes/hot/5.avif';
 
 const hotBrewServesData = [
     {
-        id: "hot-serve-box-1",
+        id: "serve-box-1",
         count: "01",
         name: "Darjeeling Ginger Honey Infusion", 
         description: "Fresh ginger warmth balanced by the floral character of The Darjeeling Brew and natural honey sweetness.", 
@@ -19,7 +19,7 @@ const hotBrewServesData = [
         backgroundImage: "/images/brew-serve-bg-1.avif"
     },
     {
-        id: "hot-serve-box-2",
+        id: "serve-box-2",
         count: "02",
         name: "Darjeeling Citrus Glow", 
         description: "Zesty orange and lemon layered over the light, refined profile of The Darjeeling Brew.", 
@@ -28,7 +28,7 @@ const hotBrewServesData = [
         backgroundImage: "/images/brew-serve-bg-2.avif"
     },
     {
-        id: "hot-serve-box-3",
+        id: "serve-box-3",
         count: "03",
         name: "Darjeeling Berry Comfort Brew", 
         description: "Mild berry richness blended into the smooth, warm base of The Darjeeling Brew.", 
@@ -37,7 +37,7 @@ const hotBrewServesData = [
         backgroundImage: null
     },
     {
-        id: "hot-serve-box-4",
+        id: "serve-box-4",
         count: "04",
         name: "Darjeeling Mint Honey Brew", 
         description: "Cooling mint and gentle sweetness rounded by a hot pour of The Darjeeling Brew.", 
@@ -46,7 +46,7 @@ const hotBrewServesData = [
         backgroundImage: "/images/brew-serve-bg-4.avif"
     },
     {
-        id: "hot-serve-box-5",
+        id: "serve-box-5",
         count: "05",
         name: "Darjeeling Spiced Citrus Brew", 
         description: "Light spice and citrus peel adding depth to the naturally clean profile of The Darjeeling Brew.", 
