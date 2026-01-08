@@ -31,7 +31,7 @@
 
 /* Brew Serves Start */
 .brew-serves{
-    padding: 5rem 7%;
+    padding: 5rem 0;
     background-color: #f4f8e1;
 }
 .brew-serves-head{
@@ -49,3 +49,20 @@
     font-family: "IvyOra", sans-serif !important;
 }
 /* Brew Serves End */
+
+/* Brew Serves Footer Start */
+.brew-serves-footer{
+    padding: 1rem 7% 5rem 7%;
+    background-color: #f4f8e1;
+    display: flex;
+    justify-content: center;
+}
+.brew-serves-footer p{
+    font-size: calc(0.65rem + 0.5vw);
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    width: 70%;
+    margin: 0;
+}
+/* Brew Serves Footer End */

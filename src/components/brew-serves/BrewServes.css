@@ -1,12 +1,13 @@
 .brew-serves-row{
-    margin-top: 3rem;
+    overflow: hidden;
 }
 .serve-box{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    padding: 4rem 7%;
+    position: relative;
 }
 .serve-box:last-child{
     margin-bottom: 0;
@@ -16,6 +17,7 @@
 }
 .serve-box-content{
     width: 50%;
+    z-index: 1;
 }
 .serve-box-content span{
     display: block;
@@ -38,7 +40,58 @@
 }
 .serve-box-image{
     width: 45%;
+    z-index: 1;
 }
 .serve-box-image img{
     width: 100%;
+}
+
+.serve-box .serve-box-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.serve-box .serve-box-bg img{
+    width: 100%;
+}
+
+/* Hot Brew Background Adjustments */
+#hot-serve-box-1 .serve-box-bg img{
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(255, 255, 255, 0.788) 20%,
+        rgba(255, 255, 255, 0.788) 80%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgb(255, 255, 255, 0.788) 20%,
+        rgb(255, 255, 255, 0.788) 80%,
+        transparent 100%
+    );
+}
+
+#hot-serve-box-2 .serve-box-bg{
+    justify-content: flex-end;
+    top: 50%;
+}
+#hot-serve-box-2 .serve-box-bg img{
+    width: 50%;
+}
+
+#hot-serve-box-4 .serve-box-bg img{
+    width: 60%;
+}
+
+#hot-serve-box-5 .serve-box-bg{
+    justify-content: flex-end;
+}
+#hot-serve-box-5 .serve-box-bg img{
+    width: 60%;
 }
