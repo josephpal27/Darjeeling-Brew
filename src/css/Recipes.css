@@ -27,6 +27,33 @@
     width: 40%;
     margin-top: 0.5rem;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .banner .banner-content{
+        padding: 2rem 7% 4.5rem 7%;
+    }
+    .banner .banner-content h1{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+    .banner .banner-content p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 0.45rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .banner .banner-content{
+        padding: 2rem 7% 4.5rem 7%;
+    }
+    .banner .banner-content h1{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .banner .banner-content p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.4rem;
+    }
+}
 /* Banner End */
 
 /* Brew Serves Start */
@@ -48,6 +75,31 @@
     color: #002c5b;
     font-family: "IvyOra", sans-serif !important;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .brew-serves{
+        padding: 4.5rem 0;
+    }
+    .brew-serves-head h2{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+    .brew-serves-head p{
+        font-size: calc(1.8rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .brew-serves{
+        padding: 4rem 0;
+    }
+    .brew-serves-head h2{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .brew-serves-head p{
+        font-size: calc(1.6rem + 0.5vw);
+    }
+}
 /* Brew Serves End */
 
 /* Brew Serves Footer Start */
@@ -64,5 +116,24 @@
     text-align: center;
     width: 70%;
     margin: 0;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .brew-serves-footer{
+        padding: 0.5rem 7% 4.5rem 7%;
+    }
+    .brew-serves-footer p{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .brew-serves-footer{
+        padding: 0 7% 4rem 7%;
+    }
+    .brew-serves-footer p{
+        font-size: calc(0.55rem + 0.5vw);
+    }
 }
 /* Brew Serves Footer End */
