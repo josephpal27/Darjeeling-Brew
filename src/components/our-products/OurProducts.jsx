@@ -49,7 +49,7 @@ const productsData = [
 const OurProducts = () => {
   return (
     <>
-      <section className="our-products" id="products">
+      <section className="our-products" id="our-products">
         <div className="our-products-head">
           <h5 data-aos="fade-up">Our Products</h5>
           <span data-aos="fade">Serving Customers Worldwide</span>

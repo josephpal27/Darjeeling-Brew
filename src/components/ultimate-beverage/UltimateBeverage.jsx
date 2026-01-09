@@ -47,7 +47,7 @@ const beverageData = [
 const UltimateBeverage = () => {
     return (
         <>
-            <section className="ultimate-beverage">
+            <section className="ultimate-beverage" id="the-ultimate-beverage">
                 <h4 data-aos="fade-up">The Ultimate Beverage</h4>
 
                 {beverageData.map((item, index) => (

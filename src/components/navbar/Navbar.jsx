@@ -47,22 +47,22 @@ const MyNavbar = () => {
                         <Nav.Link as={NavLink} to="/" onClick={handleClose}>
                             Home
                         </Nav.Link>
-                        <Nav.Link as={HashLink} smooth to="/#products" onClick={handleClose}>
+                        <Nav.Link as={HashLink} smooth to="/#our-products" onClick={handleClose}>
                             Our Products
                         </Nav.Link>
                         {/* Bootstrap Dropdown */}
                         <NavDropdown title="About Us" id="navbarDropdown">
-                            <NavDropdown.Item as={NavLink} to="/vision" onClick={handleClose}>
+                            <NavDropdown.Item as={NavLink} to="/#" onClick={handleClose}>
                                 Vision
                             </NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} to="/mission" onClick={handleClose}>
+                            <NavDropdown.Item as={NavLink} to="/#" onClick={handleClose}>
                                 Mission
                             </NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} to="/sustainability" onClick={handleClose}>
                                 Sustainability
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link as={HashLink} smooth to="/#" onClick={handleClose}>
+                        <Nav.Link as={HashLink} smooth to="/#the-ultimate-beverage" onClick={handleClose}>
                             The Ultimate Beverage
                         </Nav.Link>
                         <Nav.Link as={HashLink} smooth to="/#art-of-brewing" onClick={handleClose}>
@@ -84,10 +84,7 @@ const MyNavbar = () => {
 
                     {/* Right Side */}
                     <div className="right-btn-wrapper">
-                        {/* <div className="search-btn">
-                            <GoSearch className="nav-icon" />
-                        </div> */}
-                        <NavLink to="/cart" className="cart-btn" onClick={handleClose}>
+                        <NavLink to="/#" className="cart-btn" onClick={handleClose}>
                             <BsHandbag className="nav-icon" />
                         </NavLink>
                     </div>
