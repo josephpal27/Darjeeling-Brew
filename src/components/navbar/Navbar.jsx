@@ -4,9 +4,9 @@ import { HashLink } from "react-router-hash-link";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import "./Navbar.css";
 import logo from "../../assets/images/logo/logo.avif";
-import { GoSearch } from "react-icons/go";
 import { BsHandbag } from "react-icons/bs";
 
 const MyNavbar = () => {
@@ -50,18 +50,33 @@ const MyNavbar = () => {
                         <Nav.Link as={HashLink} smooth to="/#products" onClick={handleClose}>
                             Our Products
                         </Nav.Link>
-                        <Nav.Link as={HashLink} smooth to="/#about-us" onClick={handleClose}>
-                            About Us
-                        </Nav.Link>
+                        {/* Bootstrap Dropdown */}
+                        <NavDropdown title="About Us" id="navbarDropdown">
+                            <NavDropdown.Item as={NavLink} to="/vision" onClick={handleClose}>
+                                Vision
+                            </NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/mission" onClick={handleClose}>
+                                Mission
+                            </NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/sustainability" onClick={handleClose}>
+                                Sustainability
+                            </NavDropdown.Item>
+                        </NavDropdown>
                         <Nav.Link as={HashLink} smooth to="/#" onClick={handleClose}>
                             The Ultimate Beverage
                         </Nav.Link>
                         <Nav.Link as={HashLink} smooth to="/#art-of-brewing" onClick={handleClose}>
                             Art of Brewing
                         </Nav.Link>
-                        <Nav.Link as={HashLink} smooth to="/#" onClick={handleClose}>
-                            Recipes
-                        </Nav.Link>
+                        {/* Bootstrap Dropdown */}
+                        <NavDropdown title="Recipes" id="navbarDropdown">
+                            <NavDropdown.Item as={NavLink} to="/hot-brew" onClick={handleClose}>
+                                Hot Brew
+                            </NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/cold-brew" onClick={handleClose}>
+                                Cold Brew
+                            </NavDropdown.Item>
+                        </NavDropdown>
                         <Nav.Link as={HashLink} smooth to="/#" onClick={handleClose}>
                             Contact
                         </Nav.Link>

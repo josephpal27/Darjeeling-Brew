@@ -1,13 +1,13 @@
 /* Banner Start */
-.banner{
+.sustainability-banner{
     position: relative;
 }
-.banner img{
+.sustainability-banner img{
     width: 100%;
     min-height: 90vh;
     object-fit: cover;
 }
-.banner .banner-content{
+.sustainability-banner .banner-content{
     padding: 2rem 7% 5.5rem 7%;
     width: 100%;
     height: 100%;
@@ -18,7 +18,7 @@
     justify-content: end;
     color: #fff;
 }
-.banner .banner-content h1{
+.sustainability-banner .banner-content h1{
     font-size: calc(2.3rem + 0.5vw);
     text-align: center;
     width: 85%;

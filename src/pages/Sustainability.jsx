@@ -6,7 +6,7 @@ const Sustainability = () => {
     return (
         <>
             {/* Banner */}
-            <section className="banner">
+            <section className="sustainability-banner">
                 <img src="/images/banners/sustainability-banner.avif" alt="Banner" loading="eager" />
                 <div className="banner-content">
                     <h1 data-aos="fade-up">How The Darjeeling Brew Champions Sustainability From Mountain Gardens to Global Cups</h1>
