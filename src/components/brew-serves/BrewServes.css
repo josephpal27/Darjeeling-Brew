@@ -95,3 +95,44 @@
 #serve-box-5 .serve-box-bg img{
     width: 60%;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .serve-box{
+        padding: 3.5rem 7%;
+    }
+    .serve-box-content span{
+        font-size: calc(1.4rem + 0.5vw);
+    }
+    .serve-box-content .recipe-count{
+        font-size: calc(1.5rem + 0.5vw);
+        margin-bottom: 0.9rem;
+    }
+    .serve-box-content p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 0.9rem;
+    }
+    .serve-box-content .method{
+        margin-top: 2.8rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .serve-box{
+        padding: 3rem 7%;
+    }
+    .serve-box-content span{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .serve-box-content .recipe-count{
+        font-size: calc(1.3rem + 0.5vw);
+        margin-bottom: 0.7rem;
+    }
+    .serve-box-content p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .serve-box-content .method{
+        margin-top: 2.5rem;
+    }
+}
