@@ -27,10 +27,10 @@ const Sustainability = () => {
                     <p data-aos="fade">By investing in responsible cultivation and quality-focused practices, we honor both tradition and progress while bringing Darjeeling’s finest brew to global audiences.</p>
                 </div>
                 <div className="leaf" id="left-leaf">
-                    <img src={leaf} alt="Leaf" loading="lazy" />
+                    <img src={leaf} alt="Leaf" loading="lazy" data-aos="zoom-in" data-aos-once="true" />
                 </div>
                 <div className="leaf" id="right-leaf">
-                    <img src={leaf} alt="Leaf" loading="lazy" />
+                    <img src={leaf} alt="Leaf" loading="lazy" data-aos="zoom-in" data-aos-once="true" />
                 </div>
             </section>
 

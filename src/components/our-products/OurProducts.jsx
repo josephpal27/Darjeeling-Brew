@@ -15,6 +15,8 @@ import productBox3 from "../../assets/images/our-products/product-box-3.avif";
 
 import angleImage from "../../assets/images/icons/left-angle.png";
 
+import leaf from "../../assets/images/tea-leaf.avif";
+
 const productsData = [
   {
     id: "slide-1",
@@ -120,6 +122,13 @@ const OurProducts = () => {
 
           <div className="swiper-button-next"></div>
           <div className="swiper-button-prev"></div>
+        </div>
+
+        <div className="leaf" id="left-leaf">
+          <img src={leaf} alt="Leaf" loading="lazy" data-aos="zoom-in" data-aos-once="true" />
+        </div>
+        <div className="leaf" id="right-leaf">
+          <img src={leaf} alt="Leaf" loading="lazy" data-aos="zoom-in" data-aos-once="true" />
         </div>
       </section>
     </>

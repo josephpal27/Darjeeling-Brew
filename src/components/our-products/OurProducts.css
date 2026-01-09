@@ -5,6 +5,7 @@
     background-image: url('/images/our-products-bg.avif');
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 .our-products-head{
     display: flex;
@@ -198,6 +199,22 @@
     right: 2rem !important;
 }
 
+.our-products .leaf{
+    position: absolute;
+}
+.our-products .leaf img{
+    width: 100px;
+}
+.our-products #left-leaf{
+    top: 15%;
+    left: 7%;
+}
+.our-products #right-leaf{
+    top: 55%;
+    right: 20%;
+    transform: rotate(25deg);
+}
+
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .our-products{
         padding: 1.5rem 0 0.8rem 0;
@@ -272,6 +289,10 @@
     .products-slider .swiper-button-next,
     .products-slider .swiper-button-prev{
         scale: 0.6;
+    }
+
+    .our-products .leaf img{
+        width: 88px;
     }
 }
 
@@ -349,6 +370,10 @@
     .products-slider .swiper-button-next,
     .products-slider .swiper-button-prev{
         scale: 0.5;
+    }
+
+    .our-products .leaf img{
+        width: 77px;
     }
 }
 
