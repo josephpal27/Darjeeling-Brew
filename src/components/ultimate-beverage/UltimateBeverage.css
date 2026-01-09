@@ -3,7 +3,7 @@
     background: #f4f8e1;
     position: relative;
 }
-.ultimate-beverage h4{
+.ultimate-beverage h6{
     font-size: calc(2.3rem + 0.5vw);
     text-align: center;
     color: #8e2f2d;
@@ -62,7 +62,7 @@
     .ultimate-beverage{
         padding: 1.5rem 7% 27rem 7%;
     }
-    .ultimate-beverage h4{
+    .ultimate-beverage h6{
         font-size: calc(2.1rem + 0.5vw);
     }
     .ultimate-beverage .beverage-box{
@@ -88,7 +88,7 @@
     .ultimate-beverage{
         padding: 1.5rem 7% 23rem 7%;
     }
-    .ultimate-beverage h4{
+    .ultimate-beverage h6{
         font-size: calc(1.9rem + 0.5vw);
     }
     .ultimate-beverage .beverage-box{
@@ -114,7 +114,7 @@
     .ultimate-beverage{
         padding: 1.5rem 1rem 3rem 1rem;
     }
-    .ultimate-beverage h4{
+    .ultimate-beverage h6{
         font-size: calc(1.4rem + 0.5vw);
     }
 }

@@ -53,7 +53,7 @@ const OurProducts = () => {
     <>
       <section className="our-products" id="our-products">
         <div className="our-products-head">
-          <h5 data-aos="fade-up">Our Products</h5>
+          <h4 data-aos="fade-up">Our Products</h4>
           <span data-aos="fade">Serving Customers Worldwide</span>
           <p data-aos="fade">
             Select from our range of The Darjeeling Brew All Flushes and Grades
