@@ -24,6 +24,25 @@
     width: 85%;
     margin: 0 auto;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .sustainability-banner .banner-content{
+        padding: 2rem 7% 5rem 7%;
+    }
+    .sustainability-banner .banner-content h1{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .sustainability-banner .banner-content{
+        padding: 2rem 7% 4.5rem 7%;
+    }
+    .sustainability-banner .banner-content h1{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+}
 /* Banner End */
 
 /* Sustainability Start */
@@ -71,6 +90,37 @@
     color: #8e2f2d;
     font-family: "IvyOra", sans-serif !important;
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .sustainability{
+        padding: 3.7rem 7% 0 7%;
+    }
+    .sustainability .sus-left{
+        padding-top: 4.5rem;
+    }
+    .sustainability .sus-center img{
+        margin-left: -3.5rem;
+    }
+    .sustainability p{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .sustainability{
+        padding: 3.5rem 7% 0 7%;
+    }
+    .sustainability .sus-left{
+        padding-top: 4rem;
+    }
+    .sustainability .sus-center img{
+        margin-left: -3rem;
+    }
+    .sustainability p{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}
 /* Sustainability End */
 
 /* Sustainability Foot Start */
@@ -85,5 +135,26 @@
     font-weight: 500;
     color: #000;
     text-align: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .sustainability-foot{
+        padding: 0 7% 4.5rem 7%;
+        margin-top: -5.5rem;
+    }
+    .sustainability-foot p{
+        font-size: calc(0.65rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .sustainability-foot{
+        padding: 0 7% 4rem 7%;
+        margin-top: -5rem;
+    }
+    .sustainability-foot p{
+        font-size: calc(0.6rem + 0.5vw);
+    }
 }
 /* Sustainability Foot End */
