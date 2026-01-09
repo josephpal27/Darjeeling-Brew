@@ -25,3 +25,65 @@
     margin: 0 auto;
 }
 /* Banner End */
+
+/* Sustainability Start */
+.sustainability{
+    padding: 4rem 7% 0 7%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url('/images/our-products-bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.sustainability .layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 50%, #fff 90%);
+}
+.sustainability .sus-left,
+.sustainability .sus-right{
+    width: 30%;
+    z-index: 1;
+}
+.sustainability .sus-left{
+    padding-top: 5rem;
+}
+.sustainability .sus-right{
+    padding-top: 40%;
+}
+.sustainability .sus-center{
+    width: 40%;
+    z-index: 1;
+}
+.sustainability .sus-center img{
+    width: 100%;
+    margin-left: -4rem;
+}
+.sustainability p{
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 500;
+    color: #8e2f2d;
+    font-family: "IvyOra", sans-serif !important;
+}
+/* Sustainability End */
+
+/* Sustainability Foot Start */
+.sustainability-foot{
+    padding: 0 7% 5rem 7%;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 1;
+}
+.sustainability-foot p{
+    font-size: calc(0.7rem + 0.5vw);
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+/* Sustainability Foot End */
