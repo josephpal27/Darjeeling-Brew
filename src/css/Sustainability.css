@@ -45,6 +45,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .sustainability-banner #web-banner{
+        display: none;
+    }
     .sustainability-banner img{
         min-height: auto;
     }
@@ -54,6 +57,12 @@
     .sustainability-banner .banner-content h1{
         font-size: calc(1.1rem + 0.5vw);
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sustainability-banner #mobile-banner{
+        display: none;
     }
 }
 /* Banner End */
@@ -171,6 +180,7 @@
     .sustainability .sus-right{
         padding-top: 0;
         margin-top: -6rem;
+        text-align: end;
     }
     .sustainability .sus-center{
         width: 100%;

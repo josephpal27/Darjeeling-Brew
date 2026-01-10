@@ -8,7 +8,8 @@ const Sustainability = () => {
         <>
             {/* Banner */}
             <section className="sustainability-banner">
-                <img src="/images/banners/sustainability-banner.avif" alt="Banner" loading="eager" />
+                <img src="/images/banners/sustainability-banner.avif" alt="Banner" loading="eager" id="web-banner" />
+                <img src="/images/banners/sustainability-mobile-banner.avif" alt="Banner" loading="eager" id="mobile-banner" />
                 <div className="banner-content">
                     <h1 data-aos="fade-up">How The Darjeeling Brew Champions Sustainability From Mountain Gardens to Global Cups</h1>
                 </div>
