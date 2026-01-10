@@ -136,3 +136,63 @@
         margin-top: 2.5rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .serve-box{
+        padding: 1rem 0;
+        flex-direction: column-reverse;
+        margin-bottom: 2rem;
+    }
+    .serve-box:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .serve-box-content{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .serve-box-content span{
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .serve-box-content .recipe-count{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-bottom: 0.4rem;
+    }
+    .serve-box-content p{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .serve-box-content .method{
+        margin-top: 1.5rem;
+    }
+    .serve-box-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .serve-box-image img{
+        width: 70%;
+    }
+
+    /* Background Adjustments */
+    #serve-box-1 .serve-box-bg{
+        top: -25%;
+    }
+    #serve-box-2 .serve-box-bg{
+        top: 7%;
+    }
+    #serve-box-2 .serve-box-bg img{
+        width: 100%;
+    }
+    #serve-box-4 .serve-box-bg{
+        top: -35%;
+    }
+    #serve-box-4 .serve-box-bg img{
+        width: 100%;
+    }
+    #serve-box-5 .serve-box-bg{
+        top: -20%;
+    }
+    #serve-box-5 .serve-box-bg img{
+        width: 100%;
+    }
+}

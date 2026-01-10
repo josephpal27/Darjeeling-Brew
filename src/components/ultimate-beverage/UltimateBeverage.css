@@ -112,9 +112,31 @@
 
 @media screen and (max-width: 768px) {
     .ultimate-beverage{
-        padding: 1.5rem 1rem 3rem 1rem;
+        padding: 1.5rem 1rem 4rem 1rem;
     }
     .ultimate-beverage h6{
         font-size: calc(1.4rem + 0.5vw);
+    }
+    .ultimate-beverage .beverage-box{
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .ultimate-beverage .beverage-box img{
+        width: 50px;
+    }
+    .ultimate-beverage .beverage-box span{
+        font-size: calc(1.1rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .ultimate-beverage .beverage-box ul{
+        margin-top: 0.5rem;
+    }
+    .ultimate-beverage .beverage-box li{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 5px;
+    }
+
+    .ultimate-beverage #beverage-bg {
+        display: none;
     }
 }

@@ -54,6 +54,27 @@
         margin-top: 0.4rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .banner img{
+        min-height: auto;
+    }
+    .banner .banner-content{
+        padding: 1rem 1rem 1rem 1rem;
+        height: auto;
+        position: relative;
+        color: #000;
+        background-color: #f4f8e1;
+    }
+    .banner .banner-content h1{
+        font-size: calc(1.4rem + 0.5vw);
+    }
+    .banner .banner-content p{
+        font-size: calc(0.9rem + 0.5vw);
+        width: 100%;
+        margin-top: 0.2rem;
+    }
+}
 /* Banner End */
 
 /* Brew Serves Start */
@@ -100,6 +121,20 @@
         font-size: calc(1.6rem + 0.5vw);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .brew-serves{
+        padding: 0.5rem 1rem;
+    }
+    .brew-serves-head h2{
+        font-size: calc(1.3rem + 0.5vw);
+        margin-bottom: 0.2rem;
+    }
+    .brew-serves-head p{
+        font-size: calc(1rem + 0.5vw);
+        text-align: center;
+    }
+}
 /* Brew Serves End */
 
 /* Brew Serves Footer Start */
@@ -134,6 +169,16 @@
     }
     .brew-serves-footer p{
         font-size: calc(0.55rem + 0.5vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brew-serves-footer{
+        padding: 1rem 1rem 3.5rem 1rem;
+    }
+    .brew-serves-footer p{
+        font-size: calc(0.9rem + 0.5vw);
+        width: 100%;
     }
 }
 /* Brew Serves Footer End */
