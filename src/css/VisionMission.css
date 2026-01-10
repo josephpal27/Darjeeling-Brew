@@ -1,0 +1,28 @@
+/* Banner Start */
+.mv-banner{
+    position: relative;
+}
+.mv-banner img{
+    width: 100%;
+    min-height: 90vh;
+    object-fit: cover;
+}
+.mv-banner .banner-content{
+    padding: 2rem 7% 5.5rem 7%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #fff;
+}
+.mv-banner .banner-content h1{
+    font-size: calc(2.3rem + 0.5vw);
+}
+/* Banner End */
+
+/* MV Content Start */
+
+/* MV Content End */

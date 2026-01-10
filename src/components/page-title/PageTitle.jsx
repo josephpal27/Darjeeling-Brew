@@ -21,6 +21,14 @@ const PageTitle = () => {
         title = "Cold Brew - The Darjeeling Brew";
         description = "";
         break;
+      case "/vision":
+        title = "Vision - The Darjeeling Brew";
+        description = "";
+        break;
+      case "/mission":
+        title = "Mission - The Darjeeling Brew";
+        description = "";
+        break;
       case "/sustainability":
         title = "Sustainability - The Darjeeling Brew";
         description = "";

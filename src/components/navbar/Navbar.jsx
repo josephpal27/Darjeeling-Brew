@@ -52,10 +52,10 @@ const MyNavbar = () => {
                         </Nav.Link>
                         {/* Bootstrap Dropdown */}
                         <NavDropdown title="About Us" id="navbarDropdown">
-                            <NavDropdown.Item as={NavLink} to="/#" onClick={handleClose}>
+                            <NavDropdown.Item as={NavLink} to="/vision" onClick={handleClose}>
                                 Vision
                             </NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} to="/#" onClick={handleClose}>
+                            <NavDropdown.Item as={NavLink} to="/mission" onClick={handleClose}>
                                 Mission
                             </NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} to="/sustainability" onClick={handleClose}>

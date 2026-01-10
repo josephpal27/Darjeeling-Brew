@@ -9,6 +9,8 @@ import App from './App.jsx';
 import Home from './pages/Home.jsx';
 import HotBrew from './pages/HotBrew.jsx';
 import ColdBrew from './pages/ColdBrew.jsx';
+import Vision from './pages/Vision.jsx';
+import Mission from './pages/Mission.jsx';
 import Sustainability from './pages/Sustainability.jsx';
 import Error from './pages/Error.jsx';
 
@@ -21,6 +23,8 @@ let routers = createBrowserRouter([
       {path: "/", element: <Home />},
       {path: "/hot-brew", element: <HotBrew />},
       {path: "/cold-brew", element: <ColdBrew />},
+      {path: "/vision", element: <Vision />},
+      {path: "/mission", element: <Mission />},
       {path: "/sustainability", element: <Sustainability />},
       {path: "*", element: <Error />},
     ]
