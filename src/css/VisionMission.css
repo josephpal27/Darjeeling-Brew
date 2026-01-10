@@ -37,6 +37,18 @@
         font-size: calc(1.9rem + 0.5vw);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .mv-banner img{
+        min-height: auto;
+    }
+    .mv-banner .banner-content{
+        padding: 2rem 1rem 0.5rem 1rem;
+    }
+    .mv-banner .banner-content h1{
+        font-size: calc(1.4rem + 0.5vw);
+    }
+}
 /* Banner End */
 
 /* MV Content Start */
@@ -78,6 +90,19 @@
     }
     .mv-content p{
         font-size: calc(0.5rem + 0.5vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mv-content{
+        padding: 1.5rem 1rem 3.5rem 1rem;
+    }
+    .mv-content h2{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-bottom: 1.5rem;
+    }
+    .mv-content p{
+        font-size: calc(0.9rem + 0.5vw);
     }
 }
 /* MV Content End */
