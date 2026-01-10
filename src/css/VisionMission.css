@@ -21,8 +21,63 @@
 .mv-banner .banner-content h1{
     font-size: calc(2.3rem + 0.5vw);
 }
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .mv-banner .banner-content h1{
+        font-size: calc(2.1rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .mv-banner .banner-content{
+        padding: 2rem 7% 5rem 7%;
+    }
+    .mv-banner .banner-content h1{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+}
 /* Banner End */
 
 /* MV Content Start */
+.mv-content{
+    padding: 4rem 7%;
+}
+.mv-content h2{
+    font-size: calc(1.6rem + 0.5vw);
+    color: #8e2f2d;
+    margin-bottom: 3rem;
+}
+.mv-content p{
+    font-size: calc(0.6rem + 0.5vw);
+    font-weight: 500;
+    color: #000;
+}
 
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .mv-content{
+        padding: 3.5rem 7%;
+    }
+    .mv-content h2{
+        font-size: calc(1.4rem + 0.5vw);
+        margin-bottom: 2.7rem;
+    }
+    .mv-content p{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .mv-content{
+        padding: 3rem 7%;
+    }
+    .mv-content h2{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-bottom: 2.5rem;
+    }
+    .mv-content p{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+}
 /* MV Content End */
