@@ -113,7 +113,8 @@
   .offcanvas .offCanvasLogo {
     width: 75px;
   }
-  .offcanvas .nav-link {
+  .offcanvas .nav-link,
+  .offcanvas #navbarDropdown {
     color: #000 !important;
     margin: 0.4rem 0;
     font-size: calc(1rem + 0.5vw);
@@ -127,6 +128,22 @@
     font-size: calc(1.7rem + 0.5vw);
     color: #000;
     margin-top: 0.8rem;
+  }
+
+  .offcanvas .dropdown-menu{
+    padding: 0.7rem 1.2rem;
+    border: none;
+    background: #fcffe2ec;
+    backdrop-filter: blur(3px);
+    box-shadow: rgba(0, 0, 0, 0.232) 0px 5px 10px;
+    border-radius: 0;
+  }
+  .offcanvas .dropdown-item{
+    padding: 0.5rem 0;
+    color: #000 !important;
+    font-weight: 550;
+    font-size: calc(0.93rem + 0.5vw);
+    background: none;
   }
   /* .offcanvas .right-btn-wrapper .search-btn {
     display: none;
