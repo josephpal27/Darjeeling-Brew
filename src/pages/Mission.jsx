@@ -13,9 +13,9 @@ const Mission = () => {
 
             {/* MV Content */}
             <section className="mv-content">
-                <h2>Darjeeling Brew is not just tea</h2>
-                <p>It is a Himalayan wellness elixir. Easy to brew, packed with antioxidants, and rooted in the romance of the mountains.</p>
-                <p>Consumers today want more than taste; they want health, sophistication, and lifestyle. That is why Darjeeling Brew is the new choice for mindful, health-conscious customers worldwide.</p>
+                <h2 data-aos="fade" data-aos-once="true">Darjeeling Brew is not just tea</h2>
+                <p data-aos="fade" data-aos-once="true">It is a Himalayan wellness elixir. Easy to brew, packed with antioxidants, and rooted in the romance of the mountains.</p>
+                <p data-aos="fade" data-aos-once="true">Consumers today want more than taste; they want health, sophistication, and lifestyle. That is why Darjeeling Brew is the new choice for mindful, health-conscious customers worldwide.</p>
             </section>
         </>
     )

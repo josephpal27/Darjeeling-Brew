@@ -13,9 +13,9 @@ const Vision = () => {
 
             {/* MV Content */}
             <section className="mv-content">
-                <h2>Where every sip celebrates life, awakens the mind, and energises the body.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
+                <h2 data-aos="fade" data-aos-once="true">Where every sip celebrates life, awakens the mind, and energises the body.</h2>
+                <p data-aos="fade" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
+                <p data-aos="fade" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
             </section>
         </>
     )
