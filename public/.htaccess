@@ -1,10 +1,53 @@
+
+# Disable MultiViews (important for SPA routing)
 Options -MultiViews
+
+# -------------------------------------------------
+# Enable Browser Caching (Fix Lighthouse Cache TTL)
+# -------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # CSS & JS (hashed files)
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
+
+  # Images
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|avif|webp|png|jpg|jpeg|svg|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# -------------------------------------------------
+# Enable GZIP Compression (Extra Performance Boost)
+# -------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/css
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# -------------------------------------------------
+# React / SPA Routing (Fix refresh 404)
+# -------------------------------------------------
 RewriteEngine On
 RewriteBase /
 
-# Allow direct access to existing files and folders
+# Allow existing files and folders
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Redirect all other routes to index.html
+# Send all routes to index.html
 RewriteRule ^ index.html [L]
