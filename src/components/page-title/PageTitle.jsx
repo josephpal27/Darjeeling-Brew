@@ -13,6 +13,18 @@ const PageTitle = () => {
         title = "The Darjeeling Brew";
         description = "";
         break;
+      case "/our-products":
+        title = "Our Products -The Darjeeling Brew";
+        description = "";
+        break;
+      case "/ultimate-beverage":
+        title = "The Ultimate Beverage -The Darjeeling Brew";
+        description = "";
+        break;
+      case "/art-of-brewing":
+        title = "The Art Of Brewing -The Darjeeling Brew";
+        description = "";
+        break;
       case "/hot-brew":
         title = "Hot Brew - The Darjeeling Brew";
         description = "";
@@ -31,6 +43,10 @@ const PageTitle = () => {
         break;
       case "/sustainability":
         title = "Sustainability - The Darjeeling Brew";
+        description = "";
+        break;
+      case "/contact":
+        title = "Contact - The Darjeeling Brew";
         description = "";
         break;
       default:
