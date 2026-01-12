@@ -14,10 +14,10 @@ import Mission from './pages/Mission.jsx';
 import Sustainability from './pages/Sustainability.jsx';
 import Error from './pages/Error.jsx';
 
-import Products from './pages/new/Products.jsx';
-import About from './pages/new/About.jsx';
-import TheUltimateBeverage from './pages/new/TheUltimateBeverage.jsx';
-import TheArtOfBrewing from './pages/new/TheArtOfBrewing.jsx';
+import Products from './pages/Products.jsx';
+import About from './pages/About.jsx';
+import TheUltimateBeverage from './pages/TheUltimateBeverage.jsx';
+import TheArtOfBrewing from './pages/TheArtOfBrewing.jsx';
 
 let routers = createBrowserRouter([
   {

@@ -1,4 +1,4 @@
-import HomeAboutUs from "../../components/about-us/AboutUs";
+import HomeAboutUs from "../components/about-us/AboutUs";
 
 const About = () => {
   return (

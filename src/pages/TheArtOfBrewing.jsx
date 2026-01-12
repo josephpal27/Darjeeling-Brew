@@ -1,4 +1,4 @@
-import ArtOfBrewing from "../../components/art-of-brewing/ArtOfBrewing";
+import ArtOfBrewing from "../components/art-of-brewing/ArtOfBrewing";
 
 const TheArtOfBrewing = () => {
   return (

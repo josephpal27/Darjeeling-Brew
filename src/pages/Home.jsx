@@ -9,10 +9,6 @@ import bannerSlide2 from '/images/banners/home-banner-2.avif';
 import logo from '../assets/images/logo/logo.avif';
 
 import DarjeelingStory from '../components/darjeeling-story/DarjeelingStory';
-import UltimateBeverage from '../components/ultimate-beverage/UltimateBeverage';
-import OurProducts from '../components/our-products/OurProducts';
-import AboutUs from '../components/about-us/AboutUs';
-import ArtOfBrewing from '../components/art-of-brewing/ArtOfBrewing';
 
 const Home = () => {
     return (
@@ -63,18 +59,6 @@ const Home = () => {
 
             {/* Darjeeling Story */}
             <DarjeelingStory />
-
-            {/* Our Products */}
-            <OurProducts />
-
-            {/* About Us */}
-            <AboutUs />
-
-            {/* Ultimate Beverage */}
-            <UltimateBeverage />
-
-            {/* Art Of Brewing */}
-            <ArtOfBrewing />
 
             {/* Mountain Image */}
             <section className="mountain">

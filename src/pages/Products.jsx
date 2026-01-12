@@ -1,5 +1,5 @@
 
-import OurProducts from './../../components/our-products/OurProducts';
+import OurProducts from '../components/our-products/OurProducts';
 
 const Products = () => {
     return (
