@@ -1,5 +1,5 @@
 .about-content{
-    padding: 5rem 7%;
+    padding: 5rem 7% 5.5rem 7%;
     background-color: #f4f8e1;
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .about-content{
-        padding: 4.5rem 7%;
+        padding: 4.5rem 7% 5rem 7%;
     }
     .about-content .about-content-left h3{
         font-size: calc(2.1rem + 0.5vw);
@@ -78,7 +78,7 @@
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
     .about-content{
-        padding: 4rem 7%;
+        padding: 4rem 7% 4.5rem 7%;
     }
     .about-content .about-content-left h3{
         font-size: calc(1.9rem + 0.5vw);
@@ -100,7 +100,10 @@
 
 @media screen and (max-width: 768px) {
     .about-content{
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    .about-content #darjeeling-story-bg{
+        width: 80%;
     }
     .about-content .about-content-left{
         width: 100%;

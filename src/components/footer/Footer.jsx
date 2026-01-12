@@ -24,9 +24,9 @@ const Footer = () => {
           <div className="footer-box">
             <span>Quick Links</span>
             <Link to="/">Home</Link>
-            <HashLink smooth to="/#our-products">Our Products</HashLink>
-            <HashLink smooth to="/#the-ultimate-beverage">The Ultimate Beverage</HashLink>
-            <HashLink smooth to="/#art-of-brewing">Art of Brewing</HashLink>
+            <HashLink smooth to="/our-products">Our Products</HashLink>
+            <HashLink smooth to="/ultimate-beverage">The Ultimate Beverage</HashLink>
+            <HashLink smooth to="/art-of-brewing">Art of Brewing</HashLink>
             <HashLink smooth to="/hot-brew">Hot Brew</HashLink>
             <HashLink smooth to="/cold-brew">Cold Brew</HashLink>
             <HashLink smooth to="/#">Contact</HashLink>

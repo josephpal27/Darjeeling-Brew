@@ -12,12 +12,11 @@ import ColdBrew from './pages/ColdBrew.jsx';
 import Vision from './pages/Vision.jsx';
 import Mission from './pages/Mission.jsx';
 import Sustainability from './pages/Sustainability.jsx';
-import Error from './pages/Error.jsx';
-
 import Products from './pages/Products.jsx';
 import About from './pages/About.jsx';
 import TheUltimateBeverage from './pages/TheUltimateBeverage.jsx';
 import TheArtOfBrewing from './pages/TheArtOfBrewing.jsx';
+import Error from './pages/Error.jsx';
 
 let routers = createBrowserRouter([
   {
@@ -31,12 +30,11 @@ let routers = createBrowserRouter([
       {path: "/vision", element: <Vision />},
       {path: "/mission", element: <Mission />},
       {path: "/sustainability", element: <Sustainability />},
-      {path: "*", element: <Error />},
-
-      {path: "/products", element: <Products />},
+      {path: "/our-products", element: <Products />},
       {path: "/about", element: <About />},
       {path: "/ultimate-beverage", element: <TheUltimateBeverage />},
       {path: "/art-of-brewing", element: <TheArtOfBrewing />},
+      {path: "*", element: <Error />},
     ]
   }
 ]);

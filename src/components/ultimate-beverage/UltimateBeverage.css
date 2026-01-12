@@ -1,5 +1,5 @@
 .ultimate-beverage{
-    padding: 2rem 7% 30rem 7%;
+    padding: 4rem 7% 28rem 7%;
     background: #f4f8e1;
     position: relative;
 }
@@ -60,7 +60,7 @@
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .ultimate-beverage{
-        padding: 1.5rem 7% 27rem 7%;
+        padding: 3.5rem 7% 25rem 7%;
     }
     .ultimate-beverage h6{
         font-size: calc(2.1rem + 0.5vw);
@@ -86,7 +86,7 @@
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
     .ultimate-beverage{
-        padding: 1.5rem 7% 23rem 7%;
+        padding: 3rem 7% 21rem 7%;
     }
     .ultimate-beverage h6{
         font-size: calc(1.9rem + 0.5vw);
