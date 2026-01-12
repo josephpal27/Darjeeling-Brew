@@ -12,12 +12,14 @@ html{
 @font-face {
     font-family: "IvyOra";
     src: url("./assets/fonts/IvyOraText-Medium.woff2") format("woff2");
+    font-display: swap;
 }
 
 /* Mont Regular */
 @font-face {
     font-family: "Mont";
     src: url("./assets/fonts/Mont-Regular.woff2") format("woff2");
+    font-display: swap;
 }
 
 body{
