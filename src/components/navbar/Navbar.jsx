@@ -47,7 +47,7 @@ const MyNavbar = () => {
                         <Nav.Link as={NavLink} to="/" onClick={handleClose}>
                             Home
                         </Nav.Link>
-                        <Nav.Link as={HashLink} smooth to="/our-products" onClick={handleClose}>
+                        <Nav.Link as={NavLink} to="/our-products" onClick={handleClose}>
                             Our Products
                         </Nav.Link>
                         {/* Bootstrap Dropdown */}
@@ -62,10 +62,10 @@ const MyNavbar = () => {
                                 Sustainability
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link as={HashLink} smooth to="/ultimate-beverage" onClick={handleClose}>
+                        <Nav.Link as={NavLink} to="/ultimate-beverage" onClick={handleClose}>
                             The Ultimate Beverage
                         </Nav.Link>
-                        <Nav.Link as={HashLink} smooth to="/art-of-brewing" onClick={handleClose}>
+                        <Nav.Link as={NavLink} to="/art-of-brewing" onClick={handleClose}>
                             Art of Brewing
                         </Nav.Link>
                         {/* Bootstrap Dropdown */}

@@ -3,7 +3,7 @@ import aboutImage1 from '../../assets/images/about-1.avif';
 import aboutImage2 from '../../assets/images/about-2.avif';
 import aboutImage3 from '../../assets/images/about-3.avif';
 
-const HomeAboutUs = () => {
+const AboutUs = () => {
     return (
         <>
             <section className="home-about-us" id="about-us">
@@ -19,4 +19,4 @@ const HomeAboutUs = () => {
     )
 }
 
-export default HomeAboutUs
+export default AboutUs

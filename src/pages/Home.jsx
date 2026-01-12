@@ -9,6 +9,7 @@ import bannerSlide2 from '/images/banners/home-banner-2.avif';
 import logo from '../assets/images/logo/logo.avif';
 
 import DarjeelingStory from '../components/darjeeling-story/DarjeelingStory';
+import AboutUs from '../components/about-us/AboutUs';
 
 const Home = () => {
     return (
@@ -59,6 +60,9 @@ const Home = () => {
 
             {/* Darjeeling Story */}
             <DarjeelingStory />
+
+            {/* About Us */}
+            <AboutUs />
 
             {/* Mountain Image */}
             <section className="mountain">

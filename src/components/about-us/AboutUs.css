@@ -1,5 +1,5 @@
 .home-about-us{
-    padding: 4rem 7% 4rem 7%;
+    padding: 1.2rem 7% 6rem 7%;
     background-color: #f4f8e1;
 }
 .home-about-us h5{
@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
     .home-about-us{
-        padding: 3.5rem 7% 3.5rem 7%;
+        padding: 1rem 7% 5.5rem 7%;
     }
     .home-about-us h5{
         font-size: calc(2.1rem + 0.5vw);
@@ -55,7 +55,7 @@
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
     .home-about-us{
-        padding: 3rem 7% 3rem 7%;
+        padding: 0.5rem 7% 5rem 7%;
     }
     .home-about-us h5{
         font-size: calc(1.9rem + 0.5vw);
@@ -64,14 +64,14 @@
         margin-top: 4rem;
     }
     .home-about-us p{
-        font-size: calc(0.7rem + 0.5vw);
+        font-size: calc(0.65rem + 0.5vw);
         margin: 4rem auto 0;
     }
 }
 
 @media screen and (max-width: 768px) {
     .home-about-us{
-        padding: 3rem 1rem 2rem 1rem;
+        padding: 1rem 1rem 2.5rem 1rem;
     }
     .home-about-us h5{
         font-size: calc(1.7rem + 0.5vw);
