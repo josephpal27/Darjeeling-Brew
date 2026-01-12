@@ -14,6 +14,11 @@ import Mission from './pages/Mission.jsx';
 import Sustainability from './pages/Sustainability.jsx';
 import Error from './pages/Error.jsx';
 
+import Products from './pages/new/Products.jsx';
+import About from './pages/new/About.jsx';
+import TheUltimateBeverage from './pages/new/TheUltimateBeverage.jsx';
+import TheArtOfBrewing from './pages/new/TheArtOfBrewing.jsx';
+
 let routers = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +32,11 @@ let routers = createBrowserRouter([
       {path: "/mission", element: <Mission />},
       {path: "/sustainability", element: <Sustainability />},
       {path: "*", element: <Error />},
+
+      {path: "/products", element: <Products />},
+      {path: "/about", element: <About />},
+      {path: "/ultimate-beverage", element: <TheUltimateBeverage />},
+      {path: "/art-of-brewing", element: <TheArtOfBrewing />},
     ]
   }
 ]);
