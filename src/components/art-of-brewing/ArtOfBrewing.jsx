@@ -100,7 +100,7 @@ const ArtOfBrewing = () => {
                 <img src={leaf} alt="Leaf" loading="lazy" id="leaf-left" data-aos="fade" data-aos-once="true"/>
 
                 <div className="art-of-brewing-head">
-                    <h6 data-aos="fade-up">The Art of Brewing - <br /> The Darjeeling Brew Way</h6>
+                    <h1 data-aos="fade-up">The Art of Brewing - <br /> The Darjeeling Brew Way</h1>
                     <p data-aos="fade">Because Darjeeling Brew isn’t just another cup — it’s a story steeped in the mist of the Himalayas. Every swirl, every minute, and every breath of steam carries the spirit of the mountain. Brewing Darjeeling isn’t an act of habit, it’s an act of devotion.</p>
                 </div>
 

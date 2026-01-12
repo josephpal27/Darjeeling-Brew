@@ -48,7 +48,7 @@ const UltimateBeverage = () => {
     return (
         <>
             <section className="ultimate-beverage" id="the-ultimate-beverage">
-                <h6 data-aos="fade-up">The Ultimate Beverage</h6>
+                <h1 data-aos="fade-up">The Ultimate Beverage</h1>
 
                 {beverageData.map((item, index) => (
                     <div className="beverage-box" key={index} data-aos="fade" data-aos-once="true">

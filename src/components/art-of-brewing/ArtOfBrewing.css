@@ -24,7 +24,7 @@
     flex-direction: column;
     align-items: center;
 }
-.art-of-brewing .art-of-brewing-head h6{
+.art-of-brewing .art-of-brewing-head h1{
     font-size: calc(2.3rem + 0.5vw);
     color: #8e2f2d;
     text-align: center;
@@ -177,7 +177,7 @@
         left: -1.5rem;
         width: 150px;
     }
-    .art-of-brewing .art-of-brewing-head h6{
+    .art-of-brewing .art-of-brewing-head h1{
         font-size: calc(2.1rem + 0.5vw);
     }
     .art-of-brewing .art-of-brewing-head p{
@@ -234,7 +234,7 @@
         left: -1rem;
         width: 130px;
     }
-    .art-of-brewing .art-of-brewing-head h6{
+    .art-of-brewing .art-of-brewing-head h1{
         font-size: calc(1.9rem + 0.5vw);
     }
     .art-of-brewing .art-of-brewing-head p{
@@ -299,7 +299,7 @@
         left: -1rem;
         width: 55px;
     }
-    .art-of-brewing .art-of-brewing-head h6{
+    .art-of-brewing .art-of-brewing-head h1{
         font-size: calc(1.4rem + 0.5vw);
     }
     .art-of-brewing .art-of-brewing-head p{

@@ -2,7 +2,7 @@
     padding: 1.2rem 7% 6rem 7%;
     background-color: #f4f8e1;
 }
-.home-about-us h5{
+.home-about-us h4{
     font-size: calc(2.3rem + 0.5vw);
     color: #000;
     text-align: center;
@@ -41,7 +41,7 @@
     .home-about-us{
         padding: 1rem 7% 5.5rem 7%;
     }
-    .home-about-us h5{
+    .home-about-us h4{
         font-size: calc(2.1rem + 0.5vw);
     }
     .home-about-us .about-us-image-row{
@@ -57,7 +57,7 @@
     .home-about-us{
         padding: 0.5rem 7% 5rem 7%;
     }
-    .home-about-us h5{
+    .home-about-us h4{
         font-size: calc(1.9rem + 0.5vw);
     }
     .home-about-us .about-us-image-row{
@@ -73,7 +73,7 @@
     .home-about-us{
         padding: 1rem 1rem 2.5rem 1rem;
     }
-    .home-about-us h5{
+    .home-about-us h4{
         font-size: calc(1.7rem + 0.5vw);
     }
     .home-about-us .about-us-image-row{

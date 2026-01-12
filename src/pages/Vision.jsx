@@ -1,4 +1,5 @@
 import '../css/VisionMission.css';
+import visionImg from '../assets/images/vision.avif';
 
 const Vision = () => {
     return (
@@ -13,9 +14,15 @@ const Vision = () => {
 
             {/* MV Content */}
             <section className="mv-content">
-                <h2 data-aos="fade" data-aos-once="true">Where every sip celebrates life, awakens the mind, and energises the body.</h2>
-                <p data-aos="fade" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
-                <p data-aos="fade" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
+                <div className="mv-content-image">
+                    <img src={visionImg} alt="Vision" loading="lazy" />
+                    <div className="layer"></div>
+                </div>
+                <div className="mv-content-desc">
+                    <h2 data-aos="fade" data-aos-once="true">Where every sip celebrates life, awakens the mind, and energises the body.</h2>
+                    <p data-aos="fade" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
+                    <p data-aos="fade" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
+                </div>
             </section>
         </>
     )

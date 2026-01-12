@@ -7,7 +7,7 @@ const AboutUs = () => {
     return (
         <>
             <section className="home-about-us" id="about-us">
-                <h5 data-aos="fade-up">About Us</h5>
+                <h4 data-aos="fade-up">About Us</h4>
                 <div className="about-us-image-row">
                     <img src={aboutImage1} alt="About Image 1" loading="lazy" />
                     <img src={aboutImage2} alt="About Image 2" loading="lazy" />
