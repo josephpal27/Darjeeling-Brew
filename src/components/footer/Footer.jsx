@@ -24,11 +24,11 @@ const Footer = () => {
           <div className="footer-box">
             <span>Quick Links</span>
             <Link to="/">Home</Link>
-            <HashLink smooth to="/our-products">Our Products</HashLink>
-            <HashLink smooth to="/ultimate-beverage">The Ultimate Beverage</HashLink>
-            <HashLink smooth to="/art-of-brewing">Art of Brewing</HashLink>
-            <HashLink smooth to="/hot-brew">Hot Brew</HashLink>
-            <HashLink smooth to="/cold-brew">Cold Brew</HashLink>
+            <Link to="/our-products">Our Products</Link>
+            <Link to="/ultimate-beverage">The Ultimate Beverage</Link>
+            <Link to="/art-of-brewing">Art of Brewing</Link>
+            <Link to="/hot-brew">Hot Brew</Link>
+            <Link to="/cold-brew">Cold Brew</Link>
             <HashLink smooth to="/#">Contact</HashLink>
           </div>
           <div className="footer-box">
