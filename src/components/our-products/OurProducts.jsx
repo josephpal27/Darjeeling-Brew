@@ -38,7 +38,7 @@ const productsData = [
       "Matured under the bright Himalayan sun and picked when the rays are strong and yet the air remains cool from the misty mountains, these leaves develop a unique depth of flavour known as muscatel.",
   },
   {
-    title: "HIMALAYAN ELIXIR REGULAR",
+    title: "HIMALAYAN ELIXIR CLASSIC",
     cupLeft: "Smokey and Smooth",
     cupRight: "Rich and Bold",
     cupImage: productImage3,
