@@ -69,10 +69,10 @@
 }
 
 .checkout-summary img{
-  width: 70%;
-  display: block;
-  margin: 0 auto;
-  margin-top: -1rem;
+    width: 72%;
+    display: block;
+    margin: 0 auto;
+    margin-top: -1rem;
 }
 .product-name{
     text-align: center;
@@ -97,31 +97,104 @@
     font-size: calc(0.4rem + 0.5vw);
 }
 .price{
-  font-size: calc(0.6rem + 0.5vw);
-  text-align: center;
+    font-size: calc(0.6rem + 0.5vw);
+    text-align: center;
 }
 .checkout-summary h3{
-  text-align: center;
-  font-size: calc(1.3rem + 0.5vw);
-  color: #000;
-  margin-top: 1.2rem;
+    text-align: center;
+    font-size: calc(1.3rem + 0.5vw);
+    color: #000;
+    margin-top: 1.2rem;
 }
 .checkout-btn{
-  width: 100%;
-  padding: 0.8rem;
-  background: #8e2f2d;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  margin-top: 1.2rem;
-  font-size: calc(0.57rem + 0.5vw);
-  cursor: pointer;
+    width: 100%;
+    padding: 0.8rem;
+    background: #8e2f2d;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    margin-top: 1.2rem;
+    font-size: calc(0.57rem + 0.5vw);
+    cursor: pointer;
 }
 .checkout-btn:hover{
-  background: #7a1f1e;
+    background: #7a1f1e;
 }
 .terms{
-  font-size: calc(0.3rem + 0.5vw);
-  text-align: center;
-  margin-top: 0.8rem;
+    font-size: calc(0.3rem + 0.5vw);
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .checkout{
+        padding: 4.5rem 7% 5rem 7%;
+    }
+    .checkout-form,
+    .checkout-summary{
+        padding: 1.5rem 2.3rem 2.3rem 2.3rem;
+    }
+    .checkout-form h1,
+    .checkout-summary h2{
+        font-size: calc(1.3rem + 0.5vw);
+        margin-bottom: 1.7rem;
+    }
+    .checkout-form input{
+        padding: 0.7rem 0.8rem;
+        margin-bottom: 0.95rem;
+        font-size: calc(0.5rem + 0.5vw);
+    }
+    .checkout-form .input-row{
+        gap: 0.95rem;
+    }
+    .address-type{
+        margin-top: 0.4rem;
+    }
+    .address-type label{
+        margin-bottom: 0.7rem;
+        font-size: calc(0.5rem + 0.5vw);
+    }
+    .address-options{
+        gap: 0.9rem;
+    }
+    .address-options button{
+        padding: 0.37rem 1.2rem;
+        font-size: calc(0.4rem + 0.5vw);
+    }
+
+    .checkout-summary img{
+        margin-top: -0.9rem;
+    }
+    .product-name{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    .qty-box{
+        gap: 1rem;
+        margin: 1.1rem 0;
+    }
+    .qty-box button{
+        width: 30px;
+        height: 30px;
+        font-size: calc(0.35rem + 0.5vw);
+    }
+    .price{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+    .checkout-summary h3{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-top: 1.2rem;
+    }
+    .checkout-btn{
+        padding: 0.7rem;
+        margin-top: 1.1rem;
+        font-size: calc(0.52rem + 0.5vw);
+    }
+    .terms{
+        font-size: calc(0.28rem + 0.5vw);
+        margin-top: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+
 }
