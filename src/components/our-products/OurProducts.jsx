@@ -21,6 +21,7 @@ const productsData = [
   {
     id: "slide-1",
     title: "HIMALAYAN ELIXIR GOLD",
+    price: 5000,
     cupLeft: "Fresh and Floral",
     cupRight: "Bright, golden with a <br /> delicate shimmer",
     cupImage: productImage1,
@@ -30,6 +31,7 @@ const productsData = [
   },
   {
     title: "HIMALAYAN ELIXIR RUBY",
+    price: 2500,
     cupLeft: "Sweet and fragrant with <br /> undertones of honey",
     cupRight: "Ruby, Royal Amber",
     cupImage: productImage2,
@@ -39,6 +41,7 @@ const productsData = [
   },
   {
     title: "HIMALAYAN ELIXIR CLASSIC",
+    price: 800,
     cupLeft: "Smokey and Smooth",
     cupRight: "Rich and Bold",
     cupImage: productImage3,
@@ -124,7 +127,7 @@ const OurProducts = () => {
                           product: {
                             id: product.title.replace(/\s+/g, "-").toLowerCase(),
                             name: product.title,
-                            price: 450, // Price (backend will replace)
+                            price: product.price,
                             image: product.boxImage,
                           },
                         },

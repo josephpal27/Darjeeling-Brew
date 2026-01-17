@@ -161,10 +161,10 @@ const Checkout = () => {
                         </div>
 
                         <p className="price">
-                            ₹{product.price} × {qty}
+                            ₹{product.price.toLocaleString("en-IN")} × {qty}
                         </p>
 
-                        <h3>Total: ₹{totalAmount}</h3>
+                        <h3>Total: ₹{totalAmount.toLocaleString("en-IN")}</h3>
 
                         <button className="checkout-btn" onClick={handleProceed}>
                             PROCEED TO CHECKOUT
