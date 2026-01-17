@@ -114,7 +114,7 @@ const OurProducts = () => {
                     <span>Retail Packs</span> - 50g and 100g
                   </p>
 
-                  <button>View Product</button>
+                  <button>Buy Now</button>
                 </div>
               </SwiperSlide>
             ))}
