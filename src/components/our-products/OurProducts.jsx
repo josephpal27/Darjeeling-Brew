@@ -124,7 +124,7 @@ const OurProducts = () => {
                           product: {
                             id: product.title.replace(/\s+/g, "-").toLowerCase(),
                             name: product.title,
-                            price: 450, // TEMP price (backend will replace)
+                            price: 450, // Price (backend will replace)
                             image: product.boxImage,
                           },
                         },

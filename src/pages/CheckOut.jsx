@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "../css/CheckOut.css";
 import { FaPlus, FaMinus } from "react-icons/fa6";
@@ -6,6 +6,8 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 const Checkout = () => {
     const { state } = useLocation();
     const product = state?.product;
+
+    const navigate = useNavigate();
 
     const [qty, setQty] = useState(1);
 
@@ -23,7 +25,7 @@ const Checkout = () => {
     });
 
     if (!product) {
-        return <p style={{ textAlign: "center" }}>No product selected</p>;
+        return <p style={{ textAlign: "center", height: "90vh", lineHeight: "80vh" }}>No product selected</p>;
     }
 
     const totalAmount = product.price * qty;
@@ -33,18 +35,19 @@ const Checkout = () => {
     };
 
     const handleProceed = () => {
-        const orderPayload = {
-            productId: product.id,
-            productName: product.name,
-            price: product.price,
-            quantity: qty,
-            totalAmount,
-            customer: formData,
-        };
+        // const orderPayload = {
+        //     productId: product.id,
+        //     productName: product.name,
+        //     price: product.price,
+        //     quantity: qty,
+        //     totalAmount,
+        //     customer: formData,
+        // };
 
-        console.log("ORDER PAYLOAD (for backend):", orderPayload);
+        // console.log(orderPayload);
 
         alert("Redirecting to payment gateway...");
+        // navigate("/payment");
     };
 
     return (
