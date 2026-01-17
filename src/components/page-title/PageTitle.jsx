@@ -49,6 +49,10 @@ const PageTitle = () => {
         title = "Contact - The Darjeeling Brew";
         description = "";
         break;
+      case "/checkout":
+        title = "Checkout - The Darjeeling Brew";
+        description = "";
+        break;
       default:
         title = "The Darjeeling Brew";
         description = "";
