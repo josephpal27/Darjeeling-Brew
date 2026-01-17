@@ -114,7 +114,22 @@ const OurProducts = () => {
                     <span>Retail Packs</span> - 50g and 100g
                   </p>
 
-                  <button>Buy Now</button>
+                  <button
+                    onClick={() =>
+                      navigate("/checkout", {
+                        state: {
+                          product: {
+                            id: product.title.replace(/\s+/g, "-").toLowerCase(),
+                            name: product.title,
+                            price: 450, // TEMP price (backend will replace)
+                            image: product.boxImage,
+                          },
+                        },
+                      })
+                    }
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </SwiperSlide>
             ))}

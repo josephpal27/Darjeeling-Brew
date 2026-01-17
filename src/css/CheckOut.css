@@ -1,0 +1,136 @@
+.checkout {
+  padding: 4rem 1rem;
+  background-color: #f4f8e1;
+}
+
+.checkout h1 {
+  text-align: center;
+  color: #8e2f2d;
+  font-family: "IvyOra", sans-serif;
+}
+
+.checkout-wrapper {
+  display: flex;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.checkout-form,
+.checkout-summary {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 14px;
+  flex: 1;
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+  color: #002c5b;
+  margin-bottom: 1rem;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.checkout-form .row {
+  display: flex;
+  gap: 1rem;
+}
+
+.address-type {
+  margin-top: 1rem;
+}
+
+.address-type label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.address-options {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.address-options button {
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #8e2f2d;
+  background: transparent;
+  color: #8e2f2d;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.address-options button.active {
+  background: #8e2f2d;
+  color: #fff;
+}
+
+.checkout-summary img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-name {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.qty-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.qty-box button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #8e2f2d;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.price,
+.checkout-summary h3 {
+  text-align: center;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #8e2f2d;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background: #7a1f1e;
+}
+
+.terms {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .checkout-wrapper {
+    flex-direction: column;
+  }
+}

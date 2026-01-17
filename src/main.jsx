@@ -16,6 +16,7 @@ import Products from './pages/Products.jsx';
 import About from './pages/About.jsx';
 import TheUltimateBeverage from './pages/TheUltimateBeverage.jsx';
 import TheArtOfBrewing from './pages/TheArtOfBrewing.jsx';
+import Checkout from './pages/CheckOut.jsx';
 import Error from './pages/Error.jsx';
 
 let routers = createBrowserRouter([
@@ -34,6 +35,7 @@ let routers = createBrowserRouter([
       {path: "/about", element: <About />},
       {path: "/ultimate-beverage", element: <TheUltimateBeverage />},
       {path: "/art-of-brewing", element: <TheArtOfBrewing />},
+      {path: "/checkout", element: <Checkout />},
       {path: "*", element: <Error />},
     ]
   }
