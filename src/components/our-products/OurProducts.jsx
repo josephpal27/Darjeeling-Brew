@@ -1,5 +1,5 @@
 import "./OurProducts.css";
-
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -49,6 +49,9 @@ const productsData = [
 ];
 
 const OurProducts = () => {
+
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="our-products" id="our-products">
