@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import "../css/CheckOut.css";
+import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Checkout = () => {
     const { state } = useLocation();
@@ -18,7 +19,6 @@ const Checkout = () => {
         state: "",
         pin: "",
         phone: "",
-        email: "",
         addressType: "Home",
     });
 
@@ -50,14 +50,12 @@ const Checkout = () => {
     return (
         <>
             <section className="checkout">
-                <h1>Checkout</h1>
-
                 <div className="checkout-wrapper">
-                    {/* LEFT: DELIVERY FORM */}
+                    {/* Shipping Details*/}
                     <div className="checkout-form">
-                        <h2>Delivery Details</h2>
+                        <h1>Shipping Details</h1>
 
-                        <div className="row">
+                        <div className="input-row">
                             <input
                                 name="firstName"
                                 placeholder="First Name"
@@ -72,7 +70,7 @@ const Checkout = () => {
 
                         <input
                             name="flat"
-                            placeholder="Flat, Floor, House No."
+                            placeholder="Flat, Building, Floor, House No."
                             onChange={handleChange}
                         />
 
@@ -88,7 +86,7 @@ const Checkout = () => {
                             onChange={handleChange}
                         />
 
-                        <div className="row">
+                        <div className="input-row">
                             <input
                                 name="city"
                                 placeholder="City"
@@ -113,14 +111,8 @@ const Checkout = () => {
                             onChange={handleChange}
                         />
 
-                        <input
-                            name="email"
-                            placeholder="Email (Optional)"
-                            onChange={handleChange}
-                        />
-
                         <div className="address-type">
-                            <label>Address Type</label>
+                            <label>Address Type :</label>
                             <div className="address-options">
                                 {["Home", "Office", "Others"].map((type) => (
                                     <button
@@ -140,7 +132,7 @@ const Checkout = () => {
                         </div>
                     </div>
 
-                    {/* RIGHT: ORDER SUMMARY */}
+                    {/* Order Summery*/}
                     <div className="checkout-summary">
                         <h2>Order Summary</h2>
 
@@ -148,12 +140,20 @@ const Checkout = () => {
                         <p className="product-name">{product.name}</p>
 
                         <div className="qty-box">
-                            <button onClick={() => qty > 1 && setQty(qty - 1)}>
-                                -
+                            <button
+                                onClick={() => setQty((prev) => Math.max(1, prev - 1))}
+                                disabled={qty === 1}
+                            >
+                                <FaMinus />
                             </button>
+
                             <span>{qty}</span>
-                            <button onClick={() => setQty(qty + 1)}>
-                                +
+
+                            <button
+                                onClick={() => setQty((prev) => Math.min(10, prev + 1))}
+                                disabled={qty === 10}
+                            >
+                                <FaPlus />
                             </button>
                         </div>
 
