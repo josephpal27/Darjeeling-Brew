@@ -71,7 +71,7 @@ const ColdBrew = () => {
             {/* Brew Serves */}
             <section className="brew-serves">
                 <div className="brew-serves-head">
-                    <h2 data-aos="fade-up">COLD BREW SERVES</h2>
+                    <h2 data-aos="fade">COLD BREW SERVES</h2>
                     <p data-aos="fade">A cooler way to brew - smooth and easy</p>
                 </div>
                 {/* Brew Serves Row */}
