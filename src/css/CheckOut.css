@@ -264,3 +264,82 @@
         margin-top: 0.5rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .checkout{
+        padding: 2.2rem 1rem 4rem 1rem;
+    }
+    .checkout-wrapper{
+        flex-direction: column-reverse;
+        gap: 1.2rem;
+    }
+    .checkout-form,
+    .checkout-summary{
+        padding: 1.2rem 1rem 1.6rem 1rem;
+        border-radius: 8px;
+        width: 100%;
+    }
+    .checkout-summary{
+        padding: 1.2rem 1rem 0.5rem 1rem;
+    }
+    .checkout-form h1,
+    .checkout-summary h2{
+        font-size: calc(1.4rem + 0.5vw);
+        margin-bottom: 1.8rem;
+    }
+    .checkout-form input{
+        border-radius: 5px;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .checkout-form .input-row{
+        flex-direction: column;
+        gap: 0;
+    }
+    .address-type{
+        margin-top: 0.3rem;
+    }
+    .address-type label{
+        margin-bottom: 0.7rem;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .address-options{
+        gap: 0.6rem;
+    }
+    .address-options button{
+        padding: 0.37rem 1rem;
+        font-size: calc(0.7rem + 0.5vw);
+    }
+
+    .checkout-summary img{
+        width: 100%;
+        margin-top: -1.2rem;
+    }
+    .product-name{
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .qty-box{
+        gap: 1.5rem;
+        margin: 1.2rem 0;
+    }
+    .qty-box button{
+        width: 31px;
+        height: 31px;
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    .price{
+        font-size: calc(0.95rem + 0.5vw);
+    }
+    .checkout-summary h3{
+        font-size: calc(1.5rem + 0.5vw);
+        margin-top: 1rem;
+    }
+    .checkout-btn{
+        padding: 0.65rem;
+        margin-top: 0.85rem;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .terms{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+}
