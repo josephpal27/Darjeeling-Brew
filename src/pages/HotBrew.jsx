@@ -71,7 +71,7 @@ const HotBrew = () => {
             {/* Brew Serves */}
             <section className="brew-serves">
                 <div className="brew-serves-head">
-                    <h2 data-aos="fade-up">HOT BREW SERVES</h2>
+                    <h2 data-aos="fade">HOT BREW SERVES</h2>
                     <p data-aos="fade">Comforting, aromatic, and calming</p>
                 </div>
                 {/* Brew Serves Row */}
