@@ -74,7 +74,7 @@ const OurProducts = () => {
                 <RatingStars rating={item.rating} />
 
                 <div className="btn-row">
-                  <Link to="/product-details">
+                  <Link to="">
                     <button id="buy-now-btn">Buy Now</button>
                   </Link>
 
@@ -89,6 +89,11 @@ const OurProducts = () => {
               No Product Found
             </p>
           )}
+        </div>
+
+        {/* Foot Content */}
+        <div className="our-products-foot">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
         </div>
       </section>
     </>
