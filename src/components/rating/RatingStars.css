@@ -1,0 +1,11 @@
+#rating-num{
+    color: #8e2f2d;
+    font-weight: 700;
+    font-size: calc(0.65rem + 0.5vw);
+    font-family: "IvyOra", sans-serif !important;
+    margin-right: 0.5rem;
+}
+#rating-stars{
+    color: #000;
+    font-size: calc(0.65rem + 0.5vw);
+}

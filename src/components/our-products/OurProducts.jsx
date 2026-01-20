@@ -1,155 +1,77 @@
 import "./OurProducts.css";
-import { useNavigate } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
-
-import productImage1 from "../../assets/images/our-products/product-1.avif";
-import productImage2 from "../../assets/images/our-products/product-2.avif";
-import productImage3 from "../../assets/images/our-products/product-3.avif";
 import productBox1 from "../../assets/images/our-products/product-box-1.avif";
 import productBox2 from "../../assets/images/our-products/product-box-2.avif";
 import productBox3 from "../../assets/images/our-products/product-box-3.avif";
-
-import angleImage from "../../assets/images/icons/left-angle.png";
-
-import leaf from "../../assets/images/tea-leaf.avif";
+import { useState } from "react";
+import { IoSearch } from "react-icons/io5";
+import { FaCartPlus } from "react-icons/fa6";
+import RatingStars from "../rating/RatingStars";
 
 const productsData = [
   {
-    id: "slide-1",
-    title: "HIMALAYAN ELIXIR GOLD",
-    price: 5000,
-    cupLeft: "Fresh and Floral",
-    cupRight: "Bright, golden with a <br /> delicate shimmer",
-    cupImage: productImage1,
-    boxImage: productBox1,
-    essence:
-      "The rarest of rare harvests, plucked at dawn in early spring, when the Himalayan mist is still rests on the leaves, grown and produced in limited quantities.",
-  },
-  {
-    title: "HIMALAYAN ELIXIR RUBY",
-    price: 2500,
-    cupLeft: "Sweet and fragrant with <br /> undertones of honey",
-    cupRight: "Ruby, Royal Amber",
-    cupImage: productImage2,
-    boxImage: productBox2,
-    essence:
-      "Matured under the bright Himalayan sun and picked when the rays are strong and yet the air remains cool from the misty mountains, these leaves develop a unique depth of flavour known as muscatel.",
-  },
-  {
-    title: "HIMALAYAN ELIXIR CLASSIC",
+    id: "1",
+    title: "Himalayan Elixir Classic",
     price: 800,
-    cupLeft: "Smokey and Smooth",
-    cupRight: "Rich and Bold",
-    cupImage: productImage3,
-    boxImage: productBox3,
-    essence:
-      "Harvested during the monsoons, it offers a smooth, full-bodied flavor - a daily luxury that brings the mountains to your morning, best enjoyed black or with a dash of milk and sugar.",
+    Image: productBox3,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
+    rating: 4.3,
+  },
+  {
+    id: "2",
+    title: "Himalayan Elixir Ruby",
+    price: 2500,
+    Image: productBox2,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
+    rating: 4.3,
+  },
+  {
+    id: "3",
+    title: "Himalayan Elixir Gold",
+    price: 5000,
+    Image: productBox1,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
+    rating: 4.9,
   },
 ];
 
 const OurProducts = () => {
 
-  const navigate = useNavigate();
+  const [search, setSearch] = useState("");
 
   return (
     <>
-      <section className="our-products" id="our-products">
-        <div className="our-products-head">
-          <h1 data-aos="fade-up">Our Products</h1>
-          <span data-aos="fade">Serving Customers Worldwide</span>
-          <p data-aos="fade">
-            Select from our range of The Darjeeling Brew All Flushes and Grades
-            available <br /> (Wholeleaf and Fannings/ Flakes)
-          </p>
+      <section className="our-products">
+        {/* Search Box */}
+        <div className="search-box">
+          <input
+            type="text"
+            placeholder="Search here"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <IoSearch className="search-icon" />
         </div>
-
-        <div className="products-slider">
-          <Swiper
-            modules={[Navigation]}
-            slidesPerView={1}
-            centeredSlides={true}
-            loop={true}
-            grabCursor={true}
-            spaceBetween={0}
-            autoHeight={true}
-            speed={1000}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            }}
-          >
-            {productsData.map((product, index) => (
-              <SwiperSlide key={index} id={product.id || undefined}>
-                <span className="product-category" data-aos="fade" data-aos-once="true">B2B</span>
-                <div className="line" data-aos="fade" data-aos-once="true"></div>
-                <span className="product-title" data-aos="fade" data-aos-once="true">{product.title}</span>
-                <p className="product-sub-title" data-aos="fade" data-aos-once="true">Available in Whole Leaf & Fannings/Flakes</p>
-
-                <div className="cup-boxes">
-                  <div className="left-cup-content" data-aos="fade-left" data-aos-once="true">
-                    <img src={angleImage} alt="Angle Image" loading="lazy" />
-                    <p dangerouslySetInnerHTML={{ __html: product.cupLeft, }} />
-                  </div>
-
-                  <div className="cup-image" data-aos="fade" data-aos-once="true">
-                    <img src={product.cupImage} alt="Product Image" loading="lazy" />
-                  </div>
-
-                  <div className="right-cup-content" data-aos="fade-right" data-aos-once="true">
-                    <p dangerouslySetInnerHTML={{ __html: product.cupRight, }} />
-                    <img src={angleImage} alt="Angle Image" loading="lazy" />
-                  </div>
+        {/* Products */}
+        <div className="products-row">
+          {
+            productsData.map((item, index) => (
+              <div className="product-card" key={index}>
+                <div className="product-img">
+                  <img src={item.Image} alt={item.title} loading="lazy" />
                 </div>
-
-                <div className="container-boxes" data-aos="fade" data-aos-once="true" >
-                  <img src={product.boxImage} alt="Container Image" loading="lazy" />
-                  <span>Product Essence</span>
-                  <p>{product.essence}</p>
-
-                  <p className="container-box-desc">
-                    <span>Bulk Packs</span> - 1 kg to 20 kg ( Customisable options
-                    available) <br />
-                    <span>Retail Packs</span> - 50g and 100g
-                  </p>
-
-                  <button
-                    onClick={() =>
-                      navigate("/checkout", {
-                        state: {
-                          product: {
-                            id: product.title.replace(/\s+/g, "-").toLowerCase(),
-                            name: product.title,
-                            price: product.price,
-                            image: product.boxImage,
-                          },
-                        },
-                      })
-                    }
-                  >
-                    Buy Now
-                  </button>
+                <span id="price">₹{item.price}</span>
+                <h2>{item.title}</h2>
+                <p>{item.desc}</p>
+                <RatingStars rating={item.rating} />
+                <div className="btn-row">
+                  <button>Buy Now</button>
+                  <button>Add to Cart <FaCartPlus className="cart-icon" /></button>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          <div className="swiper-button-next"></div>
-          <div className="swiper-button-prev"></div>
-        </div>
-
-        <div className="leaf" id="left-leaf">
-          <img src={leaf} alt="Leaf" loading="lazy" data-aos="zoom-in" data-aos-once="true" />
-        </div>
-        <div className="leaf" id="right-leaf">
-          <img src={leaf} alt="Leaf" loading="lazy" data-aos="zoom-in" data-aos-once="true" />
+              </div>
+            ))
+          }
         </div>
       </section>
     </>
