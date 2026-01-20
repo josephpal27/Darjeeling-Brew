@@ -7,7 +7,8 @@ import productBox3 from "../../assets/images/our-products/product-box-3.avif";
 import { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import { FaCartPlus } from "react-icons/fa6";
-import RatingStars from "../rating/RatingStars";
+import RatingStars from "../rating-stars/RatingStars";
+import { Link } from "react-router-dom";
 
 const productsData = [
   {
@@ -40,6 +41,10 @@ const OurProducts = () => {
 
   const [search, setSearch] = useState("");
 
+  const filteredProducts = productsData.filter((product) =>
+    product.title.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <>
       <section className="our-products">
@@ -55,23 +60,35 @@ const OurProducts = () => {
         </div>
         {/* Products */}
         <div className="products-row">
-          {
-            productsData.map((item, index) => (
-              <div className="product-card" key={index}>
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((item) => (
+              <div className="product-card" key={item.id}>
                 <div className="product-img">
                   <img src={item.Image} alt={item.title} loading="lazy" />
                 </div>
+
                 <span id="price">₹{item.price}</span>
                 <h2>{item.title}</h2>
                 <p>{item.desc}</p>
+
                 <RatingStars rating={item.rating} />
+
                 <div className="btn-row">
-                  <button>Buy Now</button>
-                  <button>Add to Cart <FaCartPlus className="cart-icon" /></button>
+                  <Link to="/product-details">
+                    <button id="buy-now-btn">Buy Now</button>
+                  </Link>
+
+                  <button id="add-cart-btn">
+                    Add to Cart <FaCartPlus className="cart-icon" />
+                  </button>
                 </div>
               </div>
             ))
-          }
+          ) : (
+            <p className="no-product-found">
+              No Product Found
+            </p>
+          )}
         </div>
       </section>
     </>
