@@ -245,4 +245,63 @@
     .our-products{
         padding: 2rem 1rem 3rem 1rem;
     }
+    .our-products .search-box{
+        width: 100%;
+    }
+    .our-products .search-box input{
+        padding: 0.7rem 1rem 0.7rem 3rem;
+        font-size: calc(0.9rem + 0.5vw);
+        outline: 2.5px solid #8e2f2d;
+    }
+    .our-products .search-box .search-icon{
+        left: 0.8rem;
+        font-size: calc(1.4rem + 0.5vw);
+    }
+
+    .our-products .products-row{
+        margin-top: 2rem;
+        gap: 1.2rem;
+    }
+    .our-products .products-row .product-card{
+        width: 100%;
+        padding: 1.2rem 1rem;
+    }
+    .our-products .products-row .product-card #price{
+        font-size: calc(1.6rem + 0.5vw);
+        margin-top: 0;
+    }
+    .our-products .products-row .product-card h2{
+        font-size: calc(1.3rem + 0.5vw);
+        margin-top: 0.2rem;
+    }
+    .our-products .products-row .product-card p{
+        font-size: calc(0.75rem + 0.5vw);
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .our-products .products-row .product-card .btn-row{
+        margin-top: 0.8rem;
+        gap: 0.8rem;
+    }
+    .our-products .products-row .product-card .btn-row button{
+        padding: 0.28rem 1rem;
+        font-size: calc(0.9rem + 0.5vw);
+        gap: 0.4rem;
+    }
+    .our-products .products-row .product-card .btn-row .cart-icon{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .our-products .products-row .no-product-found{
+        font-size: calc(1rem + 0.5vw);
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .our-products .our-products-foot{
+        margin-top: 3rem;
+    }
+    .our-products .our-products-foot p{
+        font-size: calc(0.9rem + 0.5vw);
+        width: 100%;
+    }
 }

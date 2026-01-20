@@ -27,3 +27,12 @@
         font-size: calc(0.6rem + 0.5vw);
     }
 }
+
+@media screen and (max-width: 768px) {
+    #rating-num{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    #rating-stars{
+        font-size: calc(1rem + 0.5vw);
+    }
+}
