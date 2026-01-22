@@ -1,12 +1,19 @@
-import ProductGallery from '../components/product-gallery/ProductGallery'
-import '../css/ProductDetails.css'
+import { useParams } from "react-router-dom";
+import "../css/ProductDetails.css";
+
+import ProductGallery from "../components/product-gallery/ProductGallery";
+import { products } from "../data/products";
 
 const ProductDetails = () => {
-    return (
-        <>
-            <ProductGallery />
-        </>
-    )
-}
+    const { slug } = useParams();
 
-export default ProductDetails
+    const product = products.find((item) => item.slug === slug);
+
+    if (!product) {
+        return <p style={{ textAlign: "center" }}>Product Not Found</p>;
+    }
+
+    return <ProductGallery product={product} />;
+};
+
+export default ProductDetails;
