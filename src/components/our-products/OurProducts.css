@@ -50,17 +50,17 @@
     width: 100%;
     scale: 1.2;
 }
-.our-products .products-row .product-card #price{
+/* .our-products .products-row .product-card #price{
     font-family: "IvyOra", sans-serif !important;
     color: #862a28;
     font-size: calc(1.8rem + 0.5vw);
     display: block;
     margin-top: 0.5rem;
-}
+} */
 .our-products .products-row .product-card h2{
     font-size: calc(1.1rem + 0.5vw);
     color: #8e2f2d;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
 }
 .our-products .products-row .product-card p{
     font-size: calc(0.45rem + 0.5vw);
@@ -145,13 +145,13 @@
     .our-products .products-row .product-card{
         padding: 2.5rem 1.8rem 1.8rem 1.8rem;
     }
-    .our-products .products-row .product-card #price{
+    /* .our-products .products-row .product-card #price{
         font-size: calc(1.65rem + 0.5vw);
         margin-top: 0.4rem;
-    }
+    } */
     .our-products .products-row .product-card h2{
         font-size: calc(1rem + 0.5vw);
-        margin-top: 0.4rem;
+        margin-top: 1.4rem;
     }
     .our-products .products-row .product-card p{
         font-size: calc(0.4rem + 0.5vw);
@@ -203,13 +203,13 @@
     .our-products .products-row .product-card{
         padding: 2.2rem 1.5rem 1.5rem 1.5rem;
     }
-    .our-products .products-row .product-card #price{
+    /* .our-products .products-row .product-card #price{
         font-size: calc(1.5rem + 0.5vw);
         margin-top: 0.35rem;
-    }
+    } */
     .our-products .products-row .product-card h2{
         font-size: calc(0.9rem + 0.5vw);
-        margin-top: 0.3rem;
+        margin-top: 1.3rem;
     }
     .our-products .products-row .product-card p{
         font-size: calc(0.37rem + 0.5vw);
@@ -266,13 +266,13 @@
         width: 100%;
         padding: 1.2rem 1rem;
     }
-    .our-products .products-row .product-card #price{
+    /* .our-products .products-row .product-card #price{
         font-size: calc(1.6rem + 0.5vw);
         margin-top: 0;
-    }
+    } */
     .our-products .products-row .product-card h2{
         font-size: calc(1.3rem + 0.5vw);
-        margin-top: 0.2rem;
+        margin-top: 1rem;
     }
     .our-products .products-row .product-card p{
         font-size: calc(0.75rem + 0.5vw);

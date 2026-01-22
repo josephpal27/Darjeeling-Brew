@@ -67,7 +67,7 @@ const OurProducts = () => {
                   <img src={item.Image} alt={item.title} loading="lazy" />
                 </div>
 
-                <span id="price">₹{item.price}</span>
+                {/* <span id="price">₹{item.price}</span> */}
                 <h2>{item.title}</h2>
                 <p>{item.desc}</p>
 
