@@ -13,8 +13,20 @@ const PageTitle = () => {
         title = "The Darjeeling Brew";
         description = "";
         break;
-      case "/our-products":
+      case "/products":
         title = "Our Products -The Darjeeling Brew";
+        description = "";
+        break;
+      case "/products/himalayan-elixir-classic":
+        title = "Himalayan Elixir Classic -The Darjeeling Brew";
+        description = "";
+        break;
+      case "/products/himalayan-elixir-ruby":
+        title = "Himalayan Elixir Ruby -The Darjeeling Brew";
+        description = "";
+        break;
+      case "/products/himalayan-elixir-gold":
+        title = "Himalayan Elixir Gold -The Darjeeling Brew";
         description = "";
         break;
       case "/ultimate-beverage":
