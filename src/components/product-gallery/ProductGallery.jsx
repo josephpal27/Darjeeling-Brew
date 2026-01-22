@@ -7,11 +7,13 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 const ProductGallery = ({ product }) => {
   const [qty, setQty] = useState(1);
   const [selectedVariant, setSelectedVariant] = useState(
-    product.variants[0] // default = first variant (100g)
+    product.variants[0] // default = 100g
   );
-  const [activeImage, setActiveImage] = useState(product.images[0]);
+  const [activeImage, setActiveImage] = useState(product.mainProductImage);
 
-  const finalPrice = selectedVariant.price * qty;
+  // PRICE LOGIC
+  const unitPrice = selectedVariant.price;
+  const totalPrice = unitPrice * qty;
 
   return (
     <section className="product-gallery">
@@ -44,7 +46,10 @@ const ProductGallery = ({ product }) => {
 
         <p>{product.desc}</p>
 
-        <span id="price">₹{finalPrice}</span>
+        {/* BIG PRICE (variant only) */}
+        <span id="price">
+          ₹{unitPrice.toLocaleString("en-IN")}
+        </span>
 
         <p id="select-qnty-lebel">Select Quantity</p>
 
@@ -56,7 +61,10 @@ const ProductGallery = ({ product }) => {
               className={
                 selectedVariant.weight === variant.weight ? "active" : ""
               }
-              onClick={() => setSelectedVariant(variant)}
+              onClick={() => {
+                setSelectedVariant(variant);
+                setQty(1);
+              }}
             >
               {variant.weight} g
             </button>
@@ -85,7 +93,10 @@ const ProductGallery = ({ product }) => {
             </button>
           </div>
 
-          <div className="quantity-price">₹{finalPrice}</div>
+          {/* SMALL PRICE (variant × qty) */}
+          <div className="quantity-price">
+            ₹{totalPrice.toLocaleString("en-IN")}
+          </div>
         </div>
 
         {/* ACTION BUTTONS */}
