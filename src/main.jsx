@@ -13,6 +13,7 @@ import Vision from './pages/Vision.jsx';
 import Mission from './pages/Mission.jsx';
 import Sustainability from './pages/Sustainability.jsx';
 import Products from './pages/Products.jsx';
+import ProductDetails from './pages/ProductDetails.jsx';
 import About from './pages/About.jsx';
 import TheUltimateBeverage from './pages/TheUltimateBeverage.jsx';
 import TheArtOfBrewing from './pages/TheArtOfBrewing.jsx';
@@ -31,7 +32,8 @@ let routers = createBrowserRouter([
       {path: "/vision", element: <Vision />},
       {path: "/mission", element: <Mission />},
       {path: "/sustainability", element: <Sustainability />},
-      {path: "/our-products", element: <Products />},
+      {path: "/products", element: <Products />},
+      {path: "/products/:slug", element: <ProductDetails />},
       {path: "/about", element: <About />},
       {path: "/ultimate-beverage", element: <TheUltimateBeverage />},
       {path: "/art-of-brewing", element: <TheArtOfBrewing />},

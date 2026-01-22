@@ -47,7 +47,7 @@ const MyNavbar = () => {
                         <Nav.Link as={NavLink} to="/" onClick={handleClose}>
                             Home
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/our-products" onClick={handleClose}>
+                        <Nav.Link as={NavLink} to="/products" onClick={handleClose}>
                             Our Products
                         </Nav.Link>
                         {/* Bootstrap Dropdown */}

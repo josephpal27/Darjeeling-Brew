@@ -74,7 +74,7 @@ const OurProducts = () => {
                 <RatingStars rating={item.rating} />
 
                 <div className="btn-row">
-                  <Link to="">
+                  <Link to={`/products/himalayan-elixir-classic`}>
                     <button id="buy-now-btn">Buy Now</button>
                   </Link>
 

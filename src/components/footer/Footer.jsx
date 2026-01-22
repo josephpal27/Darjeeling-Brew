@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="footer-box">
             <span>Quick Links</span>
             <Link to="/">Home</Link>
-            <Link to="/our-products">Our Products</Link>
+            <Link to="/products">Our Products</Link>
             <Link to="/ultimate-beverage">The Ultimate Beverage</Link>
             <Link to="/art-of-brewing">Art of Brewing</Link>
             <Link to="/hot-brew">Hot Brew</Link>
