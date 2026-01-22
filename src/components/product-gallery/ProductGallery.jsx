@@ -1,10 +1,13 @@
 import "./ProductGallery.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import RatingStars from "../rating-stars/RatingStars";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const ProductGallery = ({ product }) => {
+  const navigate = useNavigate();
+
   const [qty, setQty] = useState(1);
   const [selectedVariant, setSelectedVariant] = useState(
     product.variants[0] // default = 100g
@@ -14,6 +17,25 @@ const ProductGallery = ({ product }) => {
   // PRICE LOGIC
   const unitPrice = selectedVariant.price;
   const totalPrice = unitPrice * qty;
+
+  // BUY NOW HANDLER
+  const handleBuyNow = () => {
+    navigate("/checkout", {
+      state: {
+        order: {
+          productId: product.id,
+          title: product.title,
+          image: product.mainProductImage,
+          variant: {
+            weight: selectedVariant.weight,
+            unitPrice: unitPrice,
+          },
+          quantity: qty,
+          totalAmount: totalPrice,
+        },
+      },
+    });
+  };
 
   return (
     <section className="product-gallery">
@@ -46,7 +68,7 @@ const ProductGallery = ({ product }) => {
 
         <p>{product.desc}</p>
 
-        {/* BIG PRICE (variant only) */}
+        {/* BIG PRICE */}
         <span id="price">
           ₹{unitPrice.toLocaleString("en-IN")}
         </span>
@@ -93,7 +115,7 @@ const ProductGallery = ({ product }) => {
             </button>
           </div>
 
-          {/* SMALL PRICE (variant × qty) */}
+          {/* SMALL PRICE */}
           <div className="quantity-price">
             ₹{totalPrice.toLocaleString("en-IN")}
           </div>
@@ -102,7 +124,7 @@ const ProductGallery = ({ product }) => {
         {/* ACTION BUTTONS */}
         <div className="action-btns">
           <button>Add to Cart</button>
-          <button>Buy Now</button>
+          <button onClick={handleBuyNow}>Buy Now</button>
         </div>
       </div>
     </section>
