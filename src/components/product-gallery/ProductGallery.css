@@ -1,0 +1,81 @@
+.product-gallery{
+    padding: 4rem 7% 5rem 7%;
+    background-color: #f4f8e1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-gallery .gallery-images{
+    width: 47%;
+}
+.product-gallery .gallery-images .gallery-main{
+    background-color: #f8faec;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+.product-gallery .gallery-images .gallery-main img{
+    width: 100%;
+}
+.product-gallery .gallery-images .gallery-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.product-gallery .gallery-images .gallery-bottom .bottom-box{
+    width: 23%;
+    background-color: #f8faec;
+    padding: 0.5rem;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.product-gallery .gallery-images .gallery-bottom .bottom-box img{
+    width: 100%;
+}
+.product-gallery .gallery-content{
+    width: 47%;
+}
+.product-gallery .gallery-content h1{
+    font-size: calc(1.7rem + 0.5vw);
+    color: #8e2f2d;
+    margin-bottom: 1rem;
+}
+.product-gallery .gallery-content p{
+    font-size: calc(0.6rem + 0.5vw);
+    color: #000;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.product-gallery .gallery-content #price{
+    font-family: "IvyOra", sans-serif !important;
+    color: #862a28;
+    font-size: calc(3rem + 0.5vw);
+    display: block;
+}
+.product-gallery .gallery-content #select-qnty-lebel{
+    color: #862a28;
+    font-size: calc(0.55rem + 0.5vw);
+    margin-top: 0.3rem;
+    font-family: "IvyOra", sans-serif !important;
+}
+.product-gallery .gallery-content .quantity-btns{
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.7rem;
+}
+.product-gallery .gallery-content .quantity-btns button{
+    background-color: transparent;
+    color: #862a28;
+    font-size: calc(0.55rem + 0.5vw);
+    font-family: "IvyOra", sans-serif !important;
+    border-radius: 40px;
+    padding: 0.3rem 1.5rem;
+    border: 2px solid #862a28;
+    cursor: pointer;
+}
+.product-gallery .gallery-content .quantity-btns button.active{
+    background-color: #862a28;
+    color: #fff;
+}
