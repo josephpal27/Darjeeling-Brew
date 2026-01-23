@@ -2,7 +2,7 @@ import "./ProductGallery.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import RatingStars from "../rating-stars/RatingStars";
+// import RatingStars from "../rating-stars/RatingStars";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const ProductGallery = ({ product }) => {
@@ -64,7 +64,7 @@ const ProductGallery = ({ product }) => {
       <div className="gallery-content">
         <h1>{product.title}</h1>
 
-        <RatingStars rating={product.rating} />
+        {/* <RatingStars rating={product.rating} /> */}
 
         <p>{product.desc}</p>
 

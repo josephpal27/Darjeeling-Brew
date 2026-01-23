@@ -42,7 +42,7 @@ const OurProducts = () => {
               <h2>{item.title}</h2>
               <p>{item.desc}</p>
 
-              <RatingStars rating={item.rating} />
+              {/* <RatingStars rating={item.rating} /> */}
 
               <div className="btn-row">
                 <Link to={`/products/${item.slug}`}>
