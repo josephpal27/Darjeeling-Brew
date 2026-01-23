@@ -4,6 +4,7 @@ import "../css/ProductDetails.css";
 import ProductGallery from "../components/product-gallery/ProductGallery";
 import { products } from "../data/products";
 import ProductCups from "../components/product-cups/ProductCups";
+import ProductReviews from "../components/product-reviews/ProductReviews";
 
 const ProductDetails = () => {
     const { slug } = useParams();
@@ -17,8 +18,10 @@ const ProductDetails = () => {
     return (
         <>
             <ProductGallery product={product} />
-            
+
             <ProductCups />
+
+            <ProductReviews />
         </>
     );
 };
