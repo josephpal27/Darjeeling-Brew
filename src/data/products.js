@@ -13,7 +13,7 @@ export const products = [
     rating: 4.3,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
     mainProductImage: productBox1,
-    images: [productBox1, productBox2, productBox3, productBox1],
+    images: [productBox1, productBox1, productBox1, productBox1],
     variants: [
       {
         weight: 100,
@@ -36,7 +36,7 @@ export const products = [
     rating: 4.7,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
     mainProductImage: productBox2,
-    images: [productBox2, productBox3, productBox1, productBox2],
+    images: [productBox2, productBox2, productBox2, productBox2],
     variants: [
       {
         weight: 100,
@@ -59,7 +59,7 @@ export const products = [
     rating: 4.9,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
     mainProductImage: productBox3,
-    images: [productBox3, productBox1, productBox2, productBox3],
+    images: [productBox3, productBox3, productBox3, productBox3],
     variants: [
       {
         weight: 100,

@@ -1,5 +1,5 @@
 .product-cup{
-    padding: 1rem 7% 5rem 7%;
+    padding: 1rem 7% 4.5rem 7%;
     background-color: #f4f8e1;
 }
 .product-cup .product-cup-head{
@@ -79,4 +79,149 @@
     text-align: center;
     width: 53%;
     margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .product-cup{
+        padding: 0.7rem 7% 4rem 7%;
+    }
+    .product-cup .product-cup-head h2{
+        font-size: calc(1.35rem + 0.5vw);
+    }
+    .product-cup .product-cup-head p{
+        font-size: calc(1.35rem + 0.5vw);
+        margin-top: 0.9rem;
+    }
+    .product-cup .product-cup-row{
+        margin-top: 2.8rem;
+    }
+    .product-cup .product-cup-row .product-cup-content{
+        gap: 0.7rem;
+    }
+    .product-cup .product-cup-row .product-cup-content img{
+        width: 70px;
+    }
+    .product-cup .product-cup-row .product-cup-content span{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    .product-cup .product-cup-row #product-cup-content-right{
+        padding-top: 1.8rem;
+    }
+    .product-cup .product-cup-row #product-cup-content-left img{
+        margin-top: 2.8rem;
+    }
+
+    .product-cup .product-cup-foot{
+        margin-top: 2.8rem;
+    }
+    .product-cup .product-cup-foot span{
+        font-size: calc(1.35rem + 0.5vw);
+    }
+    .product-cup .product-cup-foot p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .product-cup{
+        padding: 0.3rem 7% 3.5rem 7%;
+    }
+    .product-cup .product-cup-head h2{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .product-cup .product-cup-head p{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .product-cup .product-cup-row{
+        margin-top: 2.6rem;
+    }
+    .product-cup .product-cup-row .product-cup-content{
+        gap: 0.6rem;
+    }
+    .product-cup .product-cup-row .product-cup-content img{
+        width: 60px;
+    }
+    .product-cup .product-cup-row .product-cup-content span{
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .product-cup .product-cup-row #product-cup-content-right{
+        padding-top: 1.6rem;
+    }
+    .product-cup .product-cup-row #product-cup-content-left img{
+        margin-top: 2.6rem;
+    }
+
+    .product-cup .product-cup-foot{
+        margin-top: 2.6rem;
+    }
+    .product-cup .product-cup-foot span{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .product-cup .product-cup-foot p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-cup{
+        padding: 0.3rem 1rem 2rem 1rem;
+    }
+    .product-cup .product-cup-head h2{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .product-cup .product-cup-head p{
+        font-size: calc(1.1rem + 0.5vw);
+        margin-top: 0.7rem;
+    }
+    .product-cup .product-cup-row{
+        margin-top: 2.5rem;
+    }
+    .product-cup .product-cup-row .product-cup-content{
+        gap: 0;
+        width: 100%;
+    }
+    .product-cup .product-cup-row .product-cup-content img{
+        display: none;
+    }
+    .product-cup .product-cup-row .product-cup-content span{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .product-cup .product-cup-row #product-cup-content-left,
+    .product-cup .product-cup-row #product-cup-content-right{
+        align-items: center;
+    }
+    .product-cup .product-cup-row #product-cup-content-left span,
+    .product-cup .product-cup-row #product-cup-content-right span{
+        text-align: center;
+    }
+    .product-cup .product-cup-row #product-cup-content-right{
+        padding-top: 0;
+    }
+
+    .product-cup .product-cup-row .product-cup-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .product-cup .product-cup-row .product-cup-image img{
+        width: 70%;
+    }
+
+    .product-cup .product-cup-foot{
+        margin-top: 2.5rem;
+    }
+    .product-cup .product-cup-foot span{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+    .product-cup .product-cup-foot p{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 0.5rem;
+        width: 100%;
+    }
 }
