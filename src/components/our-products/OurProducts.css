@@ -110,7 +110,8 @@
     font-size: calc(0.6rem + 0.5vw);
     text-align: center;
     width: 100%;
-    margin-top: 2.5rem;
+    height: 55vh;
+    line-height: 50vh;
 }
 
 .our-products .our-products-foot{
@@ -172,7 +173,6 @@
     }
     .our-products .products-row .no-product-found{
         font-size: calc(0.55rem + 0.5vw);
-        margin-top: 2.3rem;
     }
 
     .our-products .our-products-foot{
@@ -230,7 +230,6 @@
     }
     .our-products .products-row .no-product-found{
         font-size: calc(0.5rem + 0.5vw);
-        margin-top: 2rem;
     }
 
     .our-products .our-products-foot{
@@ -295,6 +294,8 @@
         font-size: calc(1rem + 0.5vw);
         margin-top: 4rem;
         margin-bottom: 2rem;
+        height: auto;
+        line-height: normal;
     }
 
     .our-products .our-products-foot{

@@ -10,7 +10,7 @@ const ProductDetails = () => {
     const product = products.find((item) => item.slug === slug);
 
     if (!product) {
-        return <p style={{ textAlign: "center" }}>Product Not Found</p>;
+        return <p style={{ textAlign: "center", height: "90vh", lineHeight: "80vh" }}>Product Not Found</p>;
     }
 
     return <ProductGallery product={product} />;

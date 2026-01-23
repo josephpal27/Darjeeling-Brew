@@ -63,12 +63,12 @@
 .product-gallery .gallery-content .quantity-btns{
     margin-top: 1rem;
     display: flex;
-    gap: 0.7rem;
+    gap: 1rem;
 }
 .product-gallery .gallery-content .quantity-btns button{
     background-color: transparent;
     color: #862a28;
-    font-size: calc(0.55rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
     font-family: "IvyOra", sans-serif !important;
     border-radius: 40px;
     padding: 0.3rem 1.5rem;
@@ -78,4 +78,65 @@
 .product-gallery .gallery-content .quantity-btns button.active{
     background-color: #862a28;
     color: #fff;
+}
+.product-gallery .gallery-content .quantity-count-outer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.product-gallery .gallery-content .quantity-count-outer .quantity-count{
+    border: 2px solid #862a28;
+    border-radius: 40px;
+    padding: 0.3rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+.product-gallery .gallery-content .quantity-count-outer .quantity-count button{
+    font-size: calc(0.5rem + 0.5vw);
+    background: transparent;
+    border: none;
+    color: #000;
+}
+.product-gallery .gallery-content .quantity-count-outer .quantity-count span{
+    color: #862a28;
+    font-size: calc(0.6rem + 0.5vw);
+    font-family: "IvyOra", sans-serif !important;
+}
+.product-gallery .gallery-content .quantity-count-outer .quantity-price{
+    border: 2px solid #862a28;
+    border-radius: 40px;
+    padding: 0.3rem 1.5rem;
+    color: #862a28;
+    font-size: calc(0.6rem + 0.5vw);
+    font-family: "IvyOra", sans-serif !important;
+}
+.product-gallery .gallery-content .action-btns{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+.product-gallery .gallery-content .action-btns button{
+    border: 2px solid #862a28;
+    border-radius: 40px;
+    padding: 0.4rem 2rem;
+    font-size: calc(1.1rem + 0.5vw);
+    font-family: "IvyOra", sans-serif !important;
+    transition: all 0.1s ease;
+}
+.product-gallery .gallery-content .action-btns button:first-child{
+    color: #862a28;
+    background: transparent;
+}
+.product-gallery .gallery-content .action-btns button:first-child:hover{
+    color: #fff;
+    background: #862a28;
+}
+.product-gallery .gallery-content .action-btns button:last-child{
+    color: #fff;
+    background: #862a28;
+}
+.product-gallery .gallery-content .action-btns button:last-child:hover{
+    background: #761f1d;
 }
