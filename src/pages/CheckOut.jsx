@@ -30,7 +30,7 @@ const Checkout = () => {
     );
   }
 
-  // PRICE LOGIC
+  // Price Logic
   const unitPrice = order.variant.unitPrice;
   const totalAmount = unitPrice * qty;
 
@@ -50,17 +50,17 @@ const Checkout = () => {
       customer: formData,
     };
 
-    console.log("FINAL ORDER PAYLOAD 👉", orderPayload);
+    console.log("FINAL ORDER PAYLOAD :", orderPayload);
 
     alert("Redirecting to payment gateway...");
-    // send orderPayload to backend here
+    // Send orderPayload to backend from here
   };
 
   return (
     <section>
       <form className="checkout" onSubmit={handleSubmit}>
         <div className="checkout-wrapper">
-          {/* SHIPPING DETAILS */}
+          {/* Shipping Details */}
           <div className="checkout-form">
             <h1>Shipping Details</h1>
 
@@ -159,7 +159,7 @@ const Checkout = () => {
             </div>
           </div>
 
-          {/* ORDER SUMMARY */}
+          {/* Order Summary */}
           <div className="checkout-summary">
             <h2>Order Summary</h2>
 

@@ -96,7 +96,7 @@
     color: #fff;
     font-size: calc(0.4rem + 0.5vw);
 }
-.price{
+.variant{
     font-size: calc(0.6rem + 0.5vw);
     text-align: center;
 }
@@ -177,7 +177,7 @@
         height: 30px;
         font-size: calc(0.35rem + 0.5vw);
     }
-    .price{
+    .variant{
         font-size: calc(0.55rem + 0.5vw);
     }
     .checkout-summary h3{
@@ -247,7 +247,7 @@
         height: 27px;
         font-size: calc(0.25rem + 0.5vw);
     }
-    .price{
+    .variant{
         font-size: calc(0.55rem + 0.5vw);
     }
     .checkout-summary h3{
@@ -326,7 +326,7 @@
         height: 31px;
         font-size: calc(0.7rem + 0.5vw);
     }
-    .price{
+    .variant{
         font-size: calc(0.95rem + 0.5vw);
     }
     .checkout-summary h3{
