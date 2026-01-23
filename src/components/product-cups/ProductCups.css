@@ -1,5 +1,5 @@
 .product-cup{
-    padding: 1rem 7%;
+    padding: 1rem 7% 5rem 7%;
     background-color: #f4f8e1;
 }
 .product-cup .product-cup-head{
@@ -44,6 +44,9 @@
 }
 .product-cup .product-cup-row #product-cup-content-left{
     align-items: flex-end;
+}
+.product-cup .product-cup-row #product-cup-content-left span{
+    text-align: end;
 }
 .product-cup .product-cup-row #product-cup-content-right img{
     transform: rotate(180deg);

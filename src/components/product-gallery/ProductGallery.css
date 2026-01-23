@@ -46,17 +46,17 @@
     font-size: calc(0.6rem + 0.5vw);
     color: #000;
     margin-top: 0.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 .product-gallery .gallery-content #price{
     font-family: "IvyOra", sans-serif !important;
     color: #862a28;
-    font-size: calc(3rem + 0.5vw);
+    font-size: calc(3.2rem + 0.5vw);
     display: block;
 }
 .product-gallery .gallery-content #select-qnty-lebel{
     color: #862a28;
-    font-size: calc(0.55rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
     margin-top: 0.3rem;
     font-family: "IvyOra", sans-serif !important;
 }
@@ -68,7 +68,7 @@
 .product-gallery .gallery-content .quantity-btns button{
     background-color: transparent;
     color: #862a28;
-    font-size: calc(0.6rem + 0.5vw);
+    font-size: calc(0.65rem + 0.5vw);
     font-family: "IvyOra", sans-serif !important;
     border-radius: 40px;
     padding: 0.3rem 1.5rem;
@@ -101,7 +101,7 @@
 }
 .product-gallery .gallery-content .quantity-count-outer .quantity-count span{
     color: #862a28;
-    font-size: calc(0.6rem + 0.5vw);
+    font-size: calc(0.65rem + 0.5vw);
     font-family: "IvyOra", sans-serif !important;
 }
 .product-gallery .gallery-content .quantity-count-outer .quantity-price{
@@ -109,7 +109,7 @@
     border-radius: 40px;
     padding: 0.3rem 1.5rem;
     color: #862a28;
-    font-size: calc(0.6rem + 0.5vw);
+    font-size: calc(0.65rem + 0.5vw);
     font-family: "IvyOra", sans-serif !important;
 }
 .product-gallery .gallery-content .action-btns{

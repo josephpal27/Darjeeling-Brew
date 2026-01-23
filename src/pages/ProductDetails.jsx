@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import "../css/ProductDetails.css";
 
 import ProductGallery from "../components/product-gallery/ProductGallery";
 import { products } from "../data/products";
@@ -19,9 +18,13 @@ const ProductDetails = () => {
         <>
             <ProductGallery product={product} />
 
-            <ProductCups />
+            <ProductCups product={product} />
 
             {/* <ProductReviews /> */}
+
+            <section className="mountain-bg" style={{backgroundColor: '#f4f8e1'}}>
+                <img src="/images/mountain.avif" alt="Mountain" loading="lazy" width="100%" />
+            </section>
         </>
     );
 };
