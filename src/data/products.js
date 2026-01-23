@@ -9,8 +9,8 @@ export const products = [
     title: "Himalayan Elixir Classic",
     rating: 4.3,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
-    mainProductImage: productBox3,
-    images: [productBox3, productBox2, productBox1, productBox3],
+    mainProductImage: productBox1,
+    images: [productBox1, productBox2, productBox3, productBox1],
     variants: [
       {
         weight: 100,
@@ -18,7 +18,7 @@ export const products = [
       },
       {
         weight: 50,
-        price: 450,
+        price: 400,
       },
     ],
   },
@@ -37,7 +37,7 @@ export const products = [
       },
       {
         weight: 50,
-        price: 1400,
+        price: 1250,
       },
     ],
   },
@@ -47,8 +47,8 @@ export const products = [
     title: "Himalayan Elixir Gold",
     rating: 4.9,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
-    mainProductImage: productBox1,
-    images: [productBox1, productBox2, productBox3, productBox1],
+    mainProductImage: productBox3,
+    images: [productBox3, productBox1, productBox2, productBox3],
     variants: [
       {
         weight: 100,
@@ -56,7 +56,7 @@ export const products = [
       },
       {
         weight: 50,
-        price: 2800,
+        price: 2500,
       },
     ],
   },
