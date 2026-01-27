@@ -150,7 +150,24 @@ const Checkout = () => {
               <button type="button">Apply</button>
             </div>
 
-            <h3>Total: ₹{totalAmount.toLocaleString("en-IN")}</h3>
+            <div className="checkout-summary-final">
+              <div>
+                <span>Subtotal:</span>
+                <span>₹{totalAmount.toLocaleString("en-IN")}</span>
+              </div>
+              <div>
+                <span>Shipping:</span>
+                <span>₹0</span>
+              </div>
+              <div>
+                <span>Discount:</span>
+                <span>₹0</span>
+              </div>
+              <div className="checkout-final">
+                <span>Total:</span>
+                <span>₹{totalAmount.toLocaleString("en-IN")}</span>
+              </div>
+            </div>
 
             <button className="checkout-btn" type="submit">
               PROCEED TO PAYMENT
