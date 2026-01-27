@@ -18,6 +18,7 @@ import About from './pages/About.jsx';
 import TheUltimateBeverage from './pages/TheUltimateBeverage.jsx';
 import TheArtOfBrewing from './pages/TheArtOfBrewing.jsx';
 import Checkout from './pages/CheckOut.jsx';
+import Cart from './pages/Cart.jsx';
 import Error from './pages/Error.jsx';
 
 let routers = createBrowserRouter([
@@ -38,6 +39,7 @@ let routers = createBrowserRouter([
       {path: "/ultimate-beverage", element: <TheUltimateBeverage />},
       {path: "/art-of-brewing", element: <TheArtOfBrewing />},
       {path: "/checkout", element: <Checkout />},
+      {path: "/cart", element: <Cart />},
       {path: "*", element: <Error />},
     ]
   }
