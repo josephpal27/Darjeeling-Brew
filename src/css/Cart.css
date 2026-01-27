@@ -86,7 +86,7 @@
     color: #002c5b;
     font-family: "IvyOra", sans-serif !important;
 }
-.cart-content .cart-products .cart-item .item-essence{
+.cart-content .cart-products .cart-item .item-cart-price{
     font-size: calc(0.75rem + 0.5vw);
     color: #000;
     margin-top: 0.5rem;
@@ -121,6 +121,10 @@
     margin-top: 1.7rem;
     background-color: transparent;
     border: none;
+}
+.cart-content .no-cart{
+    color: #000;
+    font-size: calc(0.7rem + 0.5vw);
 }
 
 .cart-content .cart-summary{

@@ -39,7 +39,7 @@ const Cart = () => {
       </div>
 
       <div className="cart-content" data-aos="fade" data-aos-once="true">
-        {/* LEFT : CART PRODUCTS */}
+        {/* Left : Cart Products */}
         <div className="cart-products">
           {filteredCart.length === 0 ? (
             <p className="no-cart">Your cart is empty</p>
@@ -55,7 +55,7 @@ const Cart = () => {
                   <p className="sub-head">Available in Whole Leaf & Fannings/Flakes</p>
 
                   <span>{item.variant.weight} g</span>
-                  <p className="item-essence">
+                  <p className="item-cart-price">
                     ₹{item.variant.unitPrice.toLocaleString("en-IN")}
                   </p>
                 </div>
@@ -95,7 +95,7 @@ const Cart = () => {
           )}
         </div>
 
-        {/* RIGHT : SUMMARY */}
+        {/* Right : Summary */}
         <div className="cart-summary">
           <div className="summary-head">
             <span>Your Order</span>
@@ -112,17 +112,17 @@ const Cart = () => {
 
           <div className="taxes-content">
             <span>CGST</span>
-            <span>₹000</span>
+            <span>₹0</span>
           </div>
 
           <div className="taxes-content">
             <span>SGST</span>
-            <span>₹000</span>
+            <span>₹0</span>
           </div>
 
           <div className="taxes-content">
             <span>IGST</span>
-            <span>₹000</span>
+            <span>₹0</span>
           </div>
 
           <div className="summary-total">
