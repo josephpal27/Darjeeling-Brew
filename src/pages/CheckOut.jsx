@@ -77,7 +77,7 @@ const Checkout = () => {
     <section>
       <form className="checkout" onSubmit={handleSubmit}>
         <div className="checkout-wrapper">
-          {/* LEFT */}
+          {/* Left: Form */}
           <div className="checkout-form">
             <h1>Contact</h1>
 
@@ -99,7 +99,7 @@ const Checkout = () => {
             <input name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required onChange={handleChange} />
           </div>
 
-          {/* RIGHT */}
+          {/* Right: Summary */}
           <div className="checkout-summary">
             {/* <h2>Order Summary</h2> */}
 

@@ -73,7 +73,7 @@ const ProductGallery = ({ product }) => {
 
   return (
     <section className="product-gallery">
-      <div className="gallery-images">
+      <div className="gallery-images" data-aos="fade" data-aos-once="true">
         <div className="gallery-main">
           {galleryImages[0] && (
             <img
@@ -97,7 +97,7 @@ const ProductGallery = ({ product }) => {
         </div>
       </div>
 
-      <div className="gallery-content">
+      <div className="gallery-content" data-aos="fade" data-aos-once="true">
         <h1>{product.title}</h1>
         <p>{product.desc}</p>
 
