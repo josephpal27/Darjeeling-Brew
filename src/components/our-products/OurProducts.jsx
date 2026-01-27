@@ -7,7 +7,7 @@ import { IoSearch } from "react-icons/io5";
 import { FaCartPlus } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-import RatingStars from "../rating-stars/RatingStars";
+// import RatingStars from "../rating-stars/RatingStars";
 import { products } from "../../data/products";
 
 const OurProducts = () => {

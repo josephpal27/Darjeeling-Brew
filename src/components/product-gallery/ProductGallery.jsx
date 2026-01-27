@@ -6,15 +6,14 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 const ProductGallery = ({ product }) => {
   const navigate = useNavigate();
 
-  // QUANTITY
   const [qty, setQty] = useState(1);
 
-  // VARIANT (default = first variant, usually 100g)
+  // Varient (default = first variant, usually 100g)
   const [selectedVariant, setSelectedVariant] = useState(
     product.variants[0]
   );
 
-  // GALLERY IMAGES (variant-aware)
+  // Gallery Images based on selected variant
   const variantImages =
     product.gallery?.[selectedVariant.weight] || [];
 
@@ -22,16 +21,16 @@ const ProductGallery = ({ product }) => {
     variantImages
   );
 
-  // RESET GALLERY WHEN VARIANT CHANGES
+  // Reset gallery images when variant changes
   useEffect(() => {
     setGalleryImages(variantImages);
   }, [selectedVariant]);
 
-  // PRICE LOGIC
+  // price logic
   const unitPrice = selectedVariant.price;
   const totalPrice = unitPrice * qty;
 
-  // SWAP IMAGE LOGIC
+  // Swap images on thumbnail click
   const handleImageClick = (clickedIndex) => {
     setGalleryImages((prev) => {
       const updated = [...prev];
@@ -43,7 +42,7 @@ const ProductGallery = ({ product }) => {
     });
   };
 
-  // BUY NOW HANDLER
+  // Buy now handler
   const handleBuyNow = () => {
     navigate("/checkout", {
       state: {
@@ -64,9 +63,8 @@ const ProductGallery = ({ product }) => {
 
   return (
     <section className="product-gallery">
-      {/* LEFT : IMAGES */}
+      {/* Left : Images */}
       <div className="gallery-images">
-        {/* MAIN IMAGE */}
         <div className="gallery-main">
           {galleryImages[0] && (
             <img
@@ -76,8 +74,6 @@ const ProductGallery = ({ product }) => {
             />
           )}
         </div>
-
-        {/* THUMBNAILS */}
         <div className="gallery-bottom">
           {galleryImages.slice(1, 5).map((img, index) => (
             <div
@@ -97,20 +93,19 @@ const ProductGallery = ({ product }) => {
         </div>
       </div>
 
-      {/* RIGHT : CONTENT */}
+      {/* Right : Content */}
       <div className="gallery-content">
         <h1>{product.title}</h1>
 
         <p>{product.desc}</p>
 
-        {/* BIG PRICE */}
         <span id="price">
           ₹{unitPrice.toLocaleString("en-IN")}
         </span>
 
         <p id="select-qnty-lebel">Select Quantity</p>
 
-        {/* VARIANT SELECTION */}
+        {/* Varient Selection */}
         <div className="quantity-btns">
           {product.variants.map((variant) => (
             <button
@@ -130,7 +125,7 @@ const ProductGallery = ({ product }) => {
           ))}
         </div>
 
-        {/* QUANTITY COUNTER */}
+        {/* Quantity Counter */}
         <div className="quantity-count-outer">
           <div className="quantity-count">
             <button
@@ -156,13 +151,11 @@ const ProductGallery = ({ product }) => {
             </button>
           </div>
 
-          {/* SMALL PRICE */}
           <div className="quantity-price">
             ₹{totalPrice.toLocaleString("en-IN")}
           </div>
         </div>
 
-        {/* ACTION BUTTONS */}
         <div className="action-btns">
           <button>Add to Cart</button>
           <button onClick={handleBuyNow}>
