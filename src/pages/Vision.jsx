@@ -19,9 +19,9 @@ const Vision = () => {
                     <div className="layer"></div>
                 </div>
                 <div className="mv-content-desc">
-                    <h2 data-aos="fade" data-aos-once="true">Where every sip celebrates life, awakens the mind, and energises the body.</h2>
-                    <p data-aos="fade" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
-                    <p data-aos="fade" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci-didunt ut labore et dolore magna aliqua.</p>
+                    <h2 data-aos="fade" data-aos-once="true">We bring the magic of Darjeeling to every cup.</h2>
+                    <p data-aos="fade" data-aos-once="true">A tea that captures the misty hills, soothing aroma, and delicate, uplifting taste. Our aim is to make this legendary specialty accessible to everyone, everywhere. Each sip awakens the senses, energizes naturally, and turns simple moments into rituals.</p>
+                    <p data-aos="fade" data-aos-once="true">We want every cup to be more than tea—it’s a pause, a celebration, a connection. Experience the essence of Darjeeling with The Darjeeling Brew.</p>
                 </div>
             </section>
         </>
