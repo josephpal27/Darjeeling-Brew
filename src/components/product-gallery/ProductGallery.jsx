@@ -1,22 +1,47 @@
 import "./ProductGallery.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
-// import RatingStars from "../rating-stars/RatingStars";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const ProductGallery = ({ product }) => {
   const navigate = useNavigate();
 
+  // QUANTITY
   const [qty, setQty] = useState(1);
+
+  // VARIANT (default = first variant, usually 100g)
   const [selectedVariant, setSelectedVariant] = useState(
-    product.variants[0] // default = 100g
+    product.variants[0]
   );
-  const [activeImage, setActiveImage] = useState(product.mainProductImage);
+
+  // GALLERY IMAGES (variant-aware)
+  const variantImages =
+    product.gallery?.[selectedVariant.weight] || [];
+
+  const [galleryImages, setGalleryImages] = useState(
+    variantImages
+  );
+
+  // RESET GALLERY WHEN VARIANT CHANGES
+  useEffect(() => {
+    setGalleryImages(variantImages);
+  }, [selectedVariant]);
 
   // PRICE LOGIC
   const unitPrice = selectedVariant.price;
   const totalPrice = unitPrice * qty;
+
+  // SWAP IMAGE LOGIC
+  const handleImageClick = (clickedIndex) => {
+    setGalleryImages((prev) => {
+      const updated = [...prev];
+      [updated[0], updated[clickedIndex]] = [
+        updated[clickedIndex],
+        updated[0],
+      ];
+      return updated;
+    });
+  };
 
   // BUY NOW HANDLER
   const handleBuyNow = () => {
@@ -25,7 +50,7 @@ const ProductGallery = ({ product }) => {
         order: {
           productId: product.id,
           title: product.title,
-          image: product.mainProductImage,
+          image: product.mainProductImage, // current main image
           variant: {
             weight: selectedVariant.weight,
             unitPrice: unitPrice,
@@ -41,20 +66,32 @@ const ProductGallery = ({ product }) => {
     <section className="product-gallery">
       {/* LEFT : IMAGES */}
       <div className="gallery-images">
+        {/* MAIN IMAGE */}
         <div className="gallery-main">
-          <img src={activeImage} alt={product.title} loading="lazy" />
+          {galleryImages[0] && (
+            <img
+              src={galleryImages[0]}
+              alt={product.title}
+              loading="lazy"
+            />
+          )}
         </div>
 
+        {/* THUMBNAILS */}
         <div className="gallery-bottom">
-          {product.images.map((img, index) => (
+          {galleryImages.slice(1, 5).map((img, index) => (
             <div
-              key={index}
-              className={`bottom-box ${
-                activeImage === img ? "active" : ""
-              }`}
-              onClick={() => setActiveImage(img)}
+              key={img + index}
+              className="bottom-box"
+              onClick={() =>
+                handleImageClick(index + 1)
+              }
             >
-              <img src={img} alt={product.title} loading="lazy" />
+              <img
+                src={img}
+                alt={product.title}
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
@@ -63,8 +100,6 @@ const ProductGallery = ({ product }) => {
       {/* RIGHT : CONTENT */}
       <div className="gallery-content">
         <h1>{product.title}</h1>
-
-        {/* <RatingStars rating={product.rating} /> */}
 
         <p>{product.desc}</p>
 
@@ -81,7 +116,9 @@ const ProductGallery = ({ product }) => {
             <button
               key={variant.weight}
               className={
-                selectedVariant.weight === variant.weight ? "active" : ""
+                selectedVariant.weight === variant.weight
+                  ? "active"
+                  : ""
               }
               onClick={() => {
                 setSelectedVariant(variant);
@@ -98,7 +135,9 @@ const ProductGallery = ({ product }) => {
           <div className="quantity-count">
             <button
               onClick={() =>
-                setQty((prev) => (prev > 1 ? prev - 1 : prev))
+                setQty((prev) =>
+                  prev > 1 ? prev - 1 : prev
+                )
               }
             >
               <FaMinus />
@@ -108,7 +147,9 @@ const ProductGallery = ({ product }) => {
 
             <button
               onClick={() =>
-                setQty((prev) => (prev < 10 ? prev + 1 : prev))
+                setQty((prev) =>
+                  prev < 10 ? prev + 1 : prev
+                )
               }
             >
               <FaPlus />
@@ -124,7 +165,9 @@ const ProductGallery = ({ product }) => {
         {/* ACTION BUTTONS */}
         <div className="action-btns">
           <button>Add to Cart</button>
-          <button onClick={handleBuyNow}>Buy Now</button>
+          <button onClick={handleBuyNow}>
+            Buy Now
+          </button>
         </div>
       </div>
     </section>

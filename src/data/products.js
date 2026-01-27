@@ -13,7 +13,22 @@ export const products = [
     rating: 4.3,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
     mainProductImage: productBox1,
-    images: [productBox1, productBox1, productBox1, productBox1],
+    gallery: {
+      100: [
+        "/images/gallery/classic/100-1.avif",
+        "/images/gallery/classic/100-2.avif",
+        "/images/gallery/classic/100-3.avif",
+        "/images/gallery/classic/100-4.avif",
+        "/images/gallery/classic/100-5.avif",
+      ],
+      50: [
+        "/images/gallery/classic/50-1.avif",
+        "/images/gallery/classic/50-2.avif",
+        "/images/gallery/classic/100-3.avif",
+        "/images/gallery/classic/100-4.avif",
+        "/images/gallery/classic/50-5.avif",
+      ],
+    },
     variants: [
       {
         weight: 100,
@@ -27,7 +42,8 @@ export const products = [
     cupImage: productCup1,
     cupLeftContent: "Smokey and Smooth",
     cupRightContent: "Rich and Bold",
-    productEssence: "Harvested during the monsoons, it offers a smooth, full-bodied flavor - a daily luxury that brings the mountains to your morning, best enjoyed black or with a dash of milk and sugar.",
+    productEssence:
+      "Harvested during the monsoons, it offers a smooth, full-bodied flavor - a daily luxury that brings the mountains to your morning, best enjoyed black or with a dash of milk and sugar.",
   },
   {
     id: 2,
@@ -36,7 +52,23 @@ export const products = [
     rating: 4.7,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
     mainProductImage: productBox2,
-    images: [productBox2, productBox2, productBox2, productBox2],
+    galleryMainImage: productBox2,
+    gallery: {
+      100: [
+        productBox2,
+        productBox2,
+        productBox2,
+        productBox2,
+        productBox2,
+      ],
+      50: [
+        productBox2,
+        productBox2,
+        productBox2,
+        productBox2,
+        productBox2,
+      ],
+    },
     variants: [
       {
         weight: 100,
@@ -50,7 +82,8 @@ export const products = [
     cupImage: productCup2,
     cupLeftContent: "Sweet and fragrant with <br/> undertones of honey",
     cupRightContent: "Ruby, Royal Amber",
-    productEssence: "Matured under the bright Himalayan sun and picked when the rays are strong and yet the air remains cool from the misty mountains, these leaves develop a unique depth of flavour known as muscatel.",
+    productEssence:
+      "Matured under the bright Himalayan sun and picked when the rays are strong and yet the air remains cool from the misty mountains, these leaves develop a unique depth of flavour known as muscatel.",
   },
   {
     id: 3,
@@ -59,7 +92,23 @@ export const products = [
     rating: 4.9,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
     mainProductImage: productBox3,
-    images: [productBox3, productBox3, productBox3, productBox3],
+    galleryMainImage: productBox3,
+    gallery: {
+      100: [
+        productBox3,
+        productBox3,
+        productBox3,
+        productBox3,
+        productBox3,
+      ],
+      50: [
+        productBox3,
+        productBox3,
+        productBox3,
+        productBox3,
+        productBox3,
+      ],
+    },
     variants: [
       {
         weight: 100,
@@ -73,6 +122,7 @@ export const products = [
     cupImage: productCup3,
     cupLeftContent: "Fresh and Floral",
     cupRightContent: "Bright, golden with a <br/> delicate shimmer",
-    productEssence: "The rarest of rare harvests, plucked at dawn in early spring, when the Himalayan mist is still rests on the leaves, grown and produced in limited quantities.",
+    productEssence:
+      "The rarest of rare harvests, plucked at dawn in early spring, when the Himalayan mist is still rests on the leaves, grown and produced in limited quantities.",
   },
 ];
