@@ -77,14 +77,14 @@ const MyNavbar = () => {
                                 Cold Brew
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link as={HashLink} smooth to="/#" onClick={handleClose}>
+                        <Nav.Link as={NavLink} to="https://mail.google.com/mail/?view=cm&fs=1&to=vcare@thedarjeelingbrew.com" target="_blank" onClick={handleClose}>
                             Contact
                         </Nav.Link>
                     </Nav>
 
                     {/* Right Side */}
                     <div className="right-btn-wrapper">
-                        <NavLink to="/#" className="cart-btn" onClick={handleClose}>
+                        <NavLink to="/cart" className="cart-btn" onClick={handleClose}>
                             <BsHandbag className="nav-icon" />
                         </NavLink>
                     </div>

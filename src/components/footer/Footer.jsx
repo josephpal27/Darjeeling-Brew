@@ -29,7 +29,7 @@ const Footer = () => {
             <Link to="/art-of-brewing">Art of Brewing</Link>
             <Link to="/hot-brew">Hot Brew</Link>
             <Link to="/cold-brew">Cold Brew</Link>
-            <HashLink smooth to="/#">Contact</HashLink>
+            <Link to="/cart">Cart</Link>
           </div>
           <div className="footer-box">
             <span>Contact Info</span>
