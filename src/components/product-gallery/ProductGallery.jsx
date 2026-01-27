@@ -38,12 +38,12 @@ const ProductGallery = ({ product }) => {
     });
   };
 
-  // ✅ ADD TO CART (ALWAYS mainProductImage)
+  // Add to Cart
   const handleAddToCart = () => {
     addToCart({
       productId: product.id,
       title: product.title,
-      image: product.mainProductImage, // ✅ FIX HERE
+      image: product.mainProductImage,
       variant: {
         weight: selectedVariant.weight,
         unitPrice,
@@ -52,14 +52,14 @@ const ProductGallery = ({ product }) => {
     });
   };
 
-  // BUY NOW
+  // Buy Now
   const handleBuyNow = () => {
     navigate("/checkout", {
       state: {
         order: {
           productId: product.id,
           title: product.title,
-          image: product.mainProductImage, // ✅ already correct
+          image: product.mainProductImage,
           variant: {
             weight: selectedVariant.weight,
             unitPrice,

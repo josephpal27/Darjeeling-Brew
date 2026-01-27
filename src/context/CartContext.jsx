@@ -12,10 +12,10 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  // helper to clamp quantity
+  // Helper to clamp quantity
   const clampQty = (qty) => Math.min(10, Math.max(1, qty));
 
-  // ADD TO CART
+  // Add to Cart
   const addToCart = (item) => {
     setCart((prev) => {
       const existing = prev.find(
@@ -46,7 +46,7 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // UPDATE QUANTITY (cart + checkout safe)
+  // Update Quantity (cart + checkout safe)
   const updateQty = (index, qty) => {
     setCart((prev) =>
       prev.map((item, i) =>
