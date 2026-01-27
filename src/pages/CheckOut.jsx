@@ -18,14 +18,14 @@ const Checkout = () => {
   const items = order.fromCart
     ? order.items
     : [
-        {
-          productId: order.productId,
-          title: order.title,
-          image: order.image,
-          variant: order.variant,
-          quantity: order.quantity,
-        },
-      ];
+      {
+        productId: order.productId,
+        title: order.title,
+        image: order.image,
+        variant: order.variant,
+        quantity: order.quantity,
+      },
+    ];
 
   const [cartItems, setCartItems] = useState(items);
 
@@ -79,7 +79,7 @@ const Checkout = () => {
         <div className="checkout-wrapper">
           {/* LEFT */}
           <div className="checkout-form">
-            <h1>Shipping Details</h1>
+            <h1>Contact</h1>
 
             <div className="input-row">
               <input name="firstName" placeholder="First Name" required onChange={handleChange} />
@@ -101,17 +101,22 @@ const Checkout = () => {
 
           {/* RIGHT */}
           <div className="checkout-summary">
-            <h2>Order Summary</h2>
+            {/* <h2>Order Summary</h2> */}
 
             {cartItems.map((item, index) => (
               <div key={index} className="checkout-item">
-                <img src={item.image} alt={item.title} />
-                <p className="product-name">{item.title}</p>
+                <div className="checkout-item-image">
+                  <img src={item.image} alt={item.title} />
+                </div>
 
-                <p className="variant">
-                  {item.variant.weight} g × ₹
-                  {item.variant.unitPrice.toLocaleString("en-IN")}
-                </p>
+                <div className="checkout-item-desc">
+                  <p className="product-name">{item.title}</p>
+
+                  <p className="variant">
+                    {item.variant.weight} g × ₹
+                    {item.variant.unitPrice.toLocaleString("en-IN")}
+                  </p>
+                </div>
 
                 <div className="qty-box">
                   <button
@@ -139,6 +144,11 @@ const Checkout = () => {
                 </div>
               </div>
             ))}
+
+            <div className="checkout-coupon">
+              <input type="text" placeholder="Apply Coupon Code" />
+              <button type="button">Apply</button>
+            </div>
 
             <h3>Total: ₹{totalAmount.toLocaleString("en-IN")}</h3>
 
