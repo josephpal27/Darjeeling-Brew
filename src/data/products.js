@@ -11,7 +11,7 @@ export const products = [
     slug: "himalayan-elixir-classic",
     title: "Himalayan Elixir Classic",
     rating: 4.3,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
+    desc: "A refined Himalayan brew that nourishes the body, calms the senses, and elevates everyday wellness.",
     mainProductImage: productBox1,
     gallery: {
       100: [
@@ -50,7 +50,7 @@ export const products = [
     slug: "himalayan-elixir-ruby",
     title: "Himalayan Elixir Ruby",
     rating: 4.7,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
+    desc: "A Darjeeling infusion shaped by sun and mist, revealing the region’s signature muscatel depth.",
     mainProductImage: productBox2,
     galleryMainImage: productBox2,
     gallery: {
@@ -90,7 +90,7 @@ export const products = [
     slug: "himalayan-elixir-gold",
     title: "Himalayan Elixir Gold",
     rating: 4.9,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua.",
+    desc: "A rare high-altitude Darjeeling infusion, hand-crafted from legacy bushes for pure clarity, depth, and quiet distinction.",
     mainProductImage: productBox3,
     galleryMainImage: productBox3,
     gallery: {

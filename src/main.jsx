@@ -21,32 +21,36 @@ import Checkout from './pages/CheckOut.jsx';
 import Cart from './pages/Cart.jsx';
 import Error from './pages/Error.jsx';
 
+import { CartProvider } from './context/CartContext.jsx';
+
 let routers = createBrowserRouter([
   {
     path: "/",
-    element: <App />, 
+    element: <App />,
     // errorElement: <Error />,
     children: [
-      {path: "/", element: <Home />},
-      {path: "/hot-brew", element: <HotBrew />},
-      {path: "/cold-brew", element: <ColdBrew />},
-      {path: "/vision", element: <Vision />},
-      {path: "/mission", element: <Mission />},
-      {path: "/sustainability", element: <Sustainability />},
-      {path: "/products", element: <Products />},
-      {path: "/products/:slug", element: <ProductDetails />},
-      {path: "/about", element: <About />},
-      {path: "/ultimate-beverage", element: <TheUltimateBeverage />},
-      {path: "/art-of-brewing", element: <TheArtOfBrewing />},
-      {path: "/checkout", element: <Checkout />},
-      {path: "/cart", element: <Cart />},
-      {path: "*", element: <Error />},
+      { path: "/", element: <Home /> },
+      { path: "/hot-brew", element: <HotBrew /> },
+      { path: "/cold-brew", element: <ColdBrew /> },
+      { path: "/vision", element: <Vision /> },
+      { path: "/mission", element: <Mission /> },
+      { path: "/sustainability", element: <Sustainability /> },
+      { path: "/products", element: <Products /> },
+      { path: "/products/:slug", element: <ProductDetails /> },
+      { path: "/about", element: <About /> },
+      { path: "/ultimate-beverage", element: <TheUltimateBeverage /> },
+      { path: "/art-of-brewing", element: <TheArtOfBrewing /> },
+      { path: "/checkout", element: <Checkout /> },
+      { path: "/cart", element: <Cart /> },
+      { path: "*", element: <Error /> },
     ]
   }
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={routers} />
+    <CartProvider>
+      <RouterProvider router={routers} />
+    </CartProvider>
   </StrictMode>,
 )

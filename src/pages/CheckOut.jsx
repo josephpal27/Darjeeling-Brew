@@ -7,7 +7,32 @@ const Checkout = () => {
   const { state } = useLocation();
   const order = state?.order;
 
-  const [qty, setQty] = useState(order?.quantity || 1);
+  if (!order) {
+    return (
+      <p style={{ textAlign: "center", height: "90vh", lineHeight: "80vh" }}>
+        No Order Found
+      </p>
+    );
+  }
+
+  const items = order.fromCart
+    ? order.items
+    : [
+        {
+          productId: order.productId,
+          title: order.title,
+          image: order.image,
+          variant: order.variant,
+          quantity: order.quantity,
+        },
+      ];
+
+  const [cartItems, setCartItems] = useState(items);
+
+  const totalAmount = cartItems.reduce(
+    (sum, item) => sum + item.variant.unitPrice * item.quantity,
+    0
+  );
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -22,188 +47,104 @@ const Checkout = () => {
     addressType: "Home",
   });
 
-  if (!order) {
-    return (
-      <p style={{ textAlign: "center", height: "90vh", lineHeight: "80vh" }}>
-        No Order Found
-      </p>
-    );
-  }
-
-  // Price Logic
-  const unitPrice = order.variant.unitPrice;
-  const totalAmount = unitPrice * qty;
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const updateQty = (index, qty) => {
+    const safeQty = Math.min(10, Math.max(1, qty));
+    setCartItems((prev) =>
+      prev.map((item, i) =>
+        i === index ? { ...item, quantity: safeQty } : item
+      )
+    );
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const orderPayload = {
-      productId: order.productId,
-      productName: order.title,
-      variant: order.variant,
-      quantity: qty,
+      items: cartItems,
       totalAmount,
       customer: formData,
     };
 
     console.log("FINAL ORDER PAYLOAD :", orderPayload);
-
     alert("Redirecting to payment gateway...");
-    // Send orderPayload to backend from here
   };
 
   return (
     <section>
       <form className="checkout" onSubmit={handleSubmit}>
         <div className="checkout-wrapper">
-          {/* Shipping Details */}
+          {/* LEFT */}
           <div className="checkout-form">
             <h1>Shipping Details</h1>
 
             <div className="input-row">
-              <input
-                name="firstName"
-                placeholder="First Name"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-              />
-              <input
-                name="lastName"
-                placeholder="Last Name"
-                value={formData.lastName}
-                onChange={handleChange}
-              />
+              <input name="firstName" placeholder="First Name" required onChange={handleChange} />
+              <input name="lastName" placeholder="Last Name" onChange={handleChange} />
             </div>
 
-            <input
-              name="flat"
-              placeholder="Flat, Building, Floor, House No."
-              value={formData.flat}
-              onChange={handleChange}
-              required
-            />
-
-            <input
-              name="area"
-              placeholder="Area, Street, Sector"
-              value={formData.area}
-              onChange={handleChange}
-              required
-            />
-
-            <input
-              name="landmark"
-              placeholder="Landmark (Optional)"
-              value={formData.landmark}
-              onChange={handleChange}
-            />
+            <input name="flat" placeholder="Flat, Building, Floor, House No." required onChange={handleChange} />
+            <input name="area" placeholder="Area, Street, Sector" required onChange={handleChange} />
+            <input name="landmark" placeholder="Landmark (Optional)" onChange={handleChange} />
 
             <div className="input-row">
-              <input
-                name="city"
-                placeholder="City"
-                value={formData.city}
-                onChange={handleChange}
-                required
-              />
-              <input
-                name="state"
-                placeholder="State"
-                value={formData.state}
-                onChange={handleChange}
-                required
-              />
+              <input name="city" placeholder="City" required onChange={handleChange} />
+              <input name="state" placeholder="State" required onChange={handleChange} />
             </div>
 
-            <input
-              name="pin"
-              placeholder="PIN Code"
-              type="text"
-              pattern="[0-9]{6}"
-              value={formData.pin}
-              onChange={handleChange}
-              required
-            />
-
-            <input
-              name="phone"
-              placeholder="Phone Number"
-              type="tel"
-              pattern="[0-9]{10}"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
-
-            <div className="address-type">
-              <label>Address Type :</label>
-              <div className="address-options">
-                {["Home", "Office", "Others"].map((type) => (
-                  <button
-                    key={type}
-                    type="button"
-                    className={formData.addressType === type ? "active" : ""}
-                    onClick={() =>
-                      setFormData({ ...formData, addressType: type })
-                    }
-                  >
-                    {type}
-                  </button>
-                ))}
-              </div>
-            </div>
+            <input name="pin" placeholder="PIN Code" pattern="[0-9]{6}" required onChange={handleChange} />
+            <input name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required onChange={handleChange} />
           </div>
 
-          {/* Order Summary */}
+          {/* RIGHT */}
           <div className="checkout-summary">
             <h2>Order Summary</h2>
 
-            <img src={order.image} alt={order.title} />
-            <p className="product-name">{order.title}</p>
+            {cartItems.map((item, index) => (
+              <div key={index} className="checkout-item">
+                <img src={item.image} alt={item.title} />
+                <p className="product-name">{item.title}</p>
 
-            <p className="variant">
-              {order.variant.weight} g × ₹
-              {unitPrice.toLocaleString("en-IN")}
-            </p>
+                <p className="variant">
+                  {item.variant.weight} g × ₹
+                  {item.variant.unitPrice.toLocaleString("en-IN")}
+                </p>
 
-            <div className="qty-box">
-              <button
-                type="button"
-                onClick={() =>
-                  setQty((prev) => (prev > 1 ? prev - 1 : prev))
-                }
-              >
-                <FaMinus />
-              </button>
+                <div className="qty-box">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      updateQty(index, item.quantity > 1 ? item.quantity - 1 : 1)
+                    }
+                  >
+                    <FaMinus />
+                  </button>
 
-              <span>{qty}</span>
+                  <span>{item.quantity}</span>
 
-              <button
-                type="button"
-                onClick={() =>
-                  setQty((prev) => (prev < 10 ? prev + 1 : prev))
-                }
-              >
-                <FaPlus />
-              </button>
-            </div>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      updateQty(
+                        index,
+                        item.quantity < 10 ? item.quantity + 1 : item.quantity
+                      )
+                    }
+                  >
+                    <FaPlus />
+                  </button>
+                </div>
+              </div>
+            ))}
 
-            <h3>
-              Total: ₹{totalAmount.toLocaleString("en-IN")}
-            </h3>
+            <h3>Total: ₹{totalAmount.toLocaleString("en-IN")}</h3>
 
             <button className="checkout-btn" type="submit">
               PROCEED TO PAYMENT
             </button>
-
-            <p className="terms">
-              By proceeding, you agree to our Terms & Refund Policy
-            </p>
           </div>
         </div>
       </form>

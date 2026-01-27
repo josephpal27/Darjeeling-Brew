@@ -2,35 +2,31 @@ import "./ProductGallery.css";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaPlus, FaMinus } from "react-icons/fa6";
+import { useCart } from "../../context/CartContext";
 
 const ProductGallery = ({ product }) => {
   const navigate = useNavigate();
+  const { addToCart } = useCart();
 
   const [qty, setQty] = useState(1);
 
-  // Varient (default = first variant, usually 100g)
+  // Variant (default = first variant)
   const [selectedVariant, setSelectedVariant] = useState(
     product.variants[0]
   );
 
-  // Gallery Images based on selected variant
   const variantImages =
     product.gallery?.[selectedVariant.weight] || [];
 
-  const [galleryImages, setGalleryImages] = useState(
-    variantImages
-  );
+  const [galleryImages, setGalleryImages] = useState(variantImages);
 
-  // Reset gallery images when variant changes
   useEffect(() => {
     setGalleryImages(variantImages);
   }, [selectedVariant]);
 
-  // price logic
   const unitPrice = selectedVariant.price;
   const totalPrice = unitPrice * qty;
 
-  // Swap images on thumbnail click
   const handleImageClick = (clickedIndex) => {
     setGalleryImages((prev) => {
       const updated = [...prev];
@@ -42,17 +38,31 @@ const ProductGallery = ({ product }) => {
     });
   };
 
-  // Buy now handler
+  // ✅ ADD TO CART (ALWAYS mainProductImage)
+  const handleAddToCart = () => {
+    addToCart({
+      productId: product.id,
+      title: product.title,
+      image: product.mainProductImage, // ✅ FIX HERE
+      variant: {
+        weight: selectedVariant.weight,
+        unitPrice,
+      },
+      quantity: qty,
+    });
+  };
+
+  // BUY NOW
   const handleBuyNow = () => {
     navigate("/checkout", {
       state: {
         order: {
           productId: product.id,
           title: product.title,
-          image: product.mainProductImage, // current main image
+          image: product.mainProductImage, // ✅ already correct
           variant: {
             weight: selectedVariant.weight,
-            unitPrice: unitPrice,
+            unitPrice,
           },
           quantity: qty,
           totalAmount: totalPrice,
@@ -63,7 +73,6 @@ const ProductGallery = ({ product }) => {
 
   return (
     <section className="product-gallery">
-      {/* Left : Images */}
       <div className="gallery-images">
         <div className="gallery-main">
           {galleryImages[0] && (
@@ -74,46 +83,34 @@ const ProductGallery = ({ product }) => {
             />
           )}
         </div>
+
         <div className="gallery-bottom">
           {galleryImages.slice(1, 5).map((img, index) => (
             <div
               key={img + index}
               className="bottom-box"
-              onClick={() =>
-                handleImageClick(index + 1)
-              }
+              onClick={() => handleImageClick(index + 1)}
             >
-              <img
-                src={img}
-                alt={product.title}
-                loading="lazy"
-              />
+              <img src={img} alt={product.title} loading="lazy" />
             </div>
           ))}
         </div>
       </div>
 
-      {/* Right : Content */}
       <div className="gallery-content">
         <h1>{product.title}</h1>
-
         <p>{product.desc}</p>
 
-        <span id="price">
-          ₹{unitPrice.toLocaleString("en-IN")}
-        </span>
+        <span id="price">₹{unitPrice.toLocaleString("en-IN")}</span>
 
         <p id="select-qnty-lebel">Select Quantity</p>
 
-        {/* Varient Selection */}
         <div className="quantity-btns">
           {product.variants.map((variant) => (
             <button
               key={variant.weight}
               className={
-                selectedVariant.weight === variant.weight
-                  ? "active"
-                  : ""
+                selectedVariant.weight === variant.weight ? "active" : ""
               }
               onClick={() => {
                 setSelectedVariant(variant);
@@ -125,28 +122,13 @@ const ProductGallery = ({ product }) => {
           ))}
         </div>
 
-        {/* Quantity Counter */}
         <div className="quantity-count-outer">
           <div className="quantity-count">
-            <button
-              onClick={() =>
-                setQty((prev) =>
-                  prev > 1 ? prev - 1 : prev
-                )
-              }
-            >
+            <button onClick={() => setQty((p) => Math.max(1, p - 1))}>
               <FaMinus />
             </button>
-
             <span>{qty}</span>
-
-            <button
-              onClick={() =>
-                setQty((prev) =>
-                  prev < 10 ? prev + 1 : prev
-                )
-              }
-            >
+            <button onClick={() => setQty((p) => Math.min(10, p + 1))}>
               <FaPlus />
             </button>
           </div>
@@ -157,10 +139,8 @@ const ProductGallery = ({ product }) => {
         </div>
 
         <div className="action-btns">
-          <button>Add to Cart</button>
-          <button onClick={handleBuyNow}>
-            Buy Now
-          </button>
+          <button onClick={handleAddToCart}>Add to Cart</button>
+          <button onClick={handleBuyNow}>Buy Now</button>
         </div>
       </div>
     </section>
