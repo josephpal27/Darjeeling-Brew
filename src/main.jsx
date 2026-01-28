@@ -19,6 +19,7 @@ import TheUltimateBeverage from './pages/TheUltimateBeverage.jsx';
 import TheArtOfBrewing from './pages/TheArtOfBrewing.jsx';
 import Checkout from './pages/CheckOut.jsx';
 import Cart from './pages/Cart.jsx';
+import ThankYou from './pages/ThankYou.jsx';
 import Error from './pages/Error.jsx';
 
 import { CartProvider } from './context/CartContext.jsx';
@@ -42,6 +43,7 @@ let routers = createBrowserRouter([
       { path: "/art-of-brewing", element: <TheArtOfBrewing /> },
       { path: "/checkout", element: <Checkout /> },
       { path: "/cart", element: <Cart /> },
+      { path: "/thank-you", element: <ThankYou /> },
       { path: "*", element: <Error /> },
     ]
   }

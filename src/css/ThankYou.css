@@ -1,0 +1,86 @@
+.thank-you{
+    padding: 5rem 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+.thank-you h1{
+    font-size: calc(4rem + 0.5vw);
+    color: #8e2f2d;
+}
+.thank-you p{
+    font-size: calc(0.6rem + 0.5vw);
+    color: #002c5b;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.thank-you button{
+    font-size: calc(0.6rem + 0.5vw);
+    background-color: #8e2f2d;
+    color: #fff;
+    border: none;
+    padding: 0.72rem 1.5rem;
+    border-radius: 40px;
+    margin-top: 1.5rem;
+    transition: all 0.1s ease;
+}
+.thank-you button:hover{
+    background-color: #7a1f1e;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .thank-you{
+        padding: 4.5rem 7%;
+    }
+    .thank-you h1{
+        font-size: calc(3.6rem + 0.5vw);
+    }
+    .thank-you p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.4rem;
+    }
+    .thank-you button{
+        font-size: calc(0.57rem + 0.5vw);
+        padding: 0.64rem 1.4rem;
+        margin-top: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .thank-you{
+        padding: 4rem 7%;
+    }
+    .thank-you h1{
+        font-size: calc(3.2rem + 0.5vw);
+    }
+    .thank-you p{
+        font-size: calc(0.52rem + 0.5vw);
+        margin-top: 0.4rem;
+    }
+    .thank-you button{
+        font-size: calc(0.54rem + 0.5vw);
+        padding: 0.6rem 1.3rem;
+        margin-top: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .thank-you{
+        padding: 2rem 1rem;
+    }
+    .thank-you h1{
+        font-size: calc(3rem + 0.5vw);
+    }
+    .thank-you p{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 0.4rem;
+    }
+    .thank-you button{
+        font-size: calc(0.95rem + 0.5vw);
+        padding: 0.6rem 1.3rem;
+        margin-top: 1.2rem;
+    }
+}

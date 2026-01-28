@@ -50,8 +50,8 @@ const Home = () => {
                     <SwiperSlide>
                         <img src={bannerSlide2} alt="Banner Slide 3" loading="lazy" />
                         <div className="slide-content">
-                            <h2>The Wellness Brew for <br /> Morden Living</h2>
-                            <div className="line"></div>
+                            {/* <h2>The Wellness Brew for <br /> Morden Living</h2> */}
+                            {/* <div className="line"></div> */}
                         </div>
                     </SwiperSlide>
 

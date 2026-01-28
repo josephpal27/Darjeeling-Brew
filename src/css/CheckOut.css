@@ -21,7 +21,6 @@
     font-size: calc(1.4rem + 0.5vw);
     color: #8e2f2d;
     margin-bottom: 2rem;
-    /* text-align: center; */
 }
 .checkout-form input{
     width: 100%;
@@ -69,22 +68,14 @@
     color: #fff;
 }
 
-/* .checkout-summary img{
-    width: 72%;
-    display: block;
-    margin: 0 auto;
-    margin-top: -1rem;
-} */
 .checkout-summary .checkout-item{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5rem;
-    /* background-color: red; */
 }
 .checkout-summary .checkout-item .checkout-item-image{
     width: 20%;
-    /* background-color: blue; */
 }
 .checkout-summary .checkout-item .checkout-item-image img{
     width: 100%;
@@ -92,7 +83,6 @@
 }
 .checkout-summary .checkout-item .checkout-item-desc{
     width: 58%;
-    /* background-color: yellow; */
 }
 .product-name{
     font-weight: 600;
