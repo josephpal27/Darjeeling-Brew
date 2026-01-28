@@ -50,6 +50,9 @@ const ProductGallery = ({ product }) => {
       },
       quantity: qty,
     });
+
+    // Redirect to cart
+    navigate("/cart");
   };
 
   // Buy Now
