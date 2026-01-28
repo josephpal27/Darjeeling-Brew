@@ -97,6 +97,29 @@ const Checkout = () => {
 
             <input name="pin" placeholder="PIN Code" pattern="[0-9]{6}" required onChange={handleChange} />
             <input name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required onChange={handleChange} />
+
+            <div className="address-type">
+              <label>Address Type :</label>
+              <div className="address-options">
+                {["Home", "Office", "Others"].map((type) => (
+                  <button
+                    key={type}
+                    type="button"
+                    className={
+                      formData.addressType === type ? "active" : ""
+                    }
+                    onClick={() =>
+                      setFormData({
+                        ...formData,
+                        addressType: type,
+                      })
+                    }
+                  >
+                    {type}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Right: Summary */}
