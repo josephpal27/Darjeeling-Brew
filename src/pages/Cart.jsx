@@ -150,6 +150,10 @@ const Cart = () => {
             </div>
           </div>
         </div>
+
+        <img src="/images/cart-element.avif" alt="Element 1" loading="lazy" id="cart-element-1" />
+        <img src="/images/cart-element.avif" alt="Element 2" loading="lazy" id="cart-element-2" />
+
       </section>
 
       <section className="mountain-bg" style={{ backgroundColor: '#f4f8e1' }}>

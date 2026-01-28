@@ -146,6 +146,9 @@ const ProductGallery = ({ product }) => {
           <button onClick={handleBuyNow}>Buy Now</button>
         </div>
       </div>
+
+      <img src="/images/product-element.avif" alt="Element 1" loading="lazy" id="product-element-1" />
+
     </section>
   );
 };
