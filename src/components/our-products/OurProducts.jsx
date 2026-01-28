@@ -5,18 +5,35 @@ import "swiper/css/navigation";
 import { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import { FaCartPlus } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { products } from "../../data/products";
-import { useCart } from "../../context/CartContext"; // ✅ ADD
+import { useCart } from "../../context/CartContext";
 
 const OurProducts = () => {
   const [search, setSearch] = useState("");
-  const { addToCart } = useCart(); // ✅ ADD
+  const { addToCart } = useCart();
+  const navigate = useNavigate();
 
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().includes(search.toLowerCase())
   );
+
+  const handleAddToCart = (item) => {
+    addToCart({
+      productId: item.id,
+      title: item.title,
+      image: item.mainProductImage,
+      variant: {
+        weight: item.variants[0].weight, // default 100g
+        unitPrice: item.variants[0].price,
+      },
+      quantity: 1,
+    });
+
+    // Redirect to cart
+    navigate("/cart");
+  };
 
   return (
     <section className="our-products">
@@ -52,21 +69,9 @@ const OurProducts = () => {
                   <button id="buy-now-btn">Buy Now</button>
                 </Link>
 
-                {/* ✅ UPDATED */}
                 <button
                   id="add-cart-btn"
-                  onClick={() =>
-                    addToCart({
-                      productId: item.id,
-                      title: item.title,
-                      image: item.mainProductImage,
-                      variant: {
-                        weight: item.variants[0].weight, // default 100g
-                        unitPrice: item.variants[0].price,
-                      },
-                      quantity: 1,
-                    })
-                  }
+                  onClick={() => handleAddToCart(item)}
                 >
                   Add to Cart <FaCartPlus className="cart-icon" />
                 </button>
