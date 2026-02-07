@@ -1,6 +1,7 @@
 .terms-policies{
-    padding: 4rem 7%;
+    padding: 4rem 7% 3.5rem 7%;
     background: #f4f8e1;
+    position: relative;
 }
 .terms-policies h1{
     font-size: calc(2.3rem + 0.5vw);
@@ -14,12 +15,12 @@
 .terms-policies span{
     display: block;
     margin-bottom: 1.5rem;
-    font-size: calc(1rem + 0.5vw);
+    font-size: calc(1.1rem + 0.5vw);
     color: #8e2f2d;
     font-family: "IvyOra", sans-serif !important;
 }
 .terms-policies p{
-    font-size: calc(0.55rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
     color: #000;
     margin-bottom: 0.7rem;
 }
@@ -30,11 +31,112 @@
     margin-top: 1rem;
 }
 .terms-policies li{
-    font-size: calc(0.55rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
     color: #000;
     margin-bottom: 0.7rem;
 }
 .terms-policies li b{
     font-family: "IvyOra", sans-serif !important;
     color: #002c5b;
+}
+.terms-policies #terms-element-1{
+    position: absolute;
+    width: 450px;
+    z-index: 0;
+    right: 0;
+    top: 0;
+}
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .terms-policies{
+        padding: 3.5rem 7% 3rem 7%;
+    }
+    .terms-policies h1{
+        font-size: calc(2.1rem + 0.5vw);
+        margin-bottom: 3rem;
+    }
+    .terms-policies .terms-box{
+        margin-bottom: 2.2rem;
+    }
+    .terms-policies span{
+        margin-bottom: 1.3rem;
+        font-size: calc(1rem + 0.5vw);
+    }
+    .terms-policies p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-bottom: 0.6rem;
+    }
+    .terms-policies ul{
+        margin-top: 0.9rem;
+    }
+    .terms-policies li{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-bottom: 0.6rem;
+    }
+    .terms-policies #terms-element-1{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+    .terms-policies{
+        padding: 3rem 7% 2.8rem 7%;
+    }
+    .terms-policies h1{
+        font-size: calc(1.9rem + 0.5vw);
+        margin-bottom: 2.5rem;
+    }
+    .terms-policies .terms-box{
+        margin-bottom: 1.9rem;
+    }
+    .terms-policies span{
+        margin-bottom: 1.2rem;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .terms-policies p{
+        font-size: calc(0.5rem + 0.5vw);
+        margin-bottom: 0.5rem;
+    }
+    .terms-policies ul{
+        margin-top: 0.8rem;
+    }
+    .terms-policies li{
+        font-size: calc(0.5rem + 0.5vw);
+        margin-bottom: 0.5rem;
+    }
+    .terms-policies #terms-element-1{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .terms-policies{
+        padding: 2rem 1rem 1.7rem 1rem;
+    }
+    .terms-policies h1{
+        font-size: calc(1.4rem + 0.5vw);
+        margin-bottom: 1.7rem;
+    }
+    .terms-policies .terms-box{
+        margin-bottom: 1.5rem;
+    }
+    .terms-policies span{
+        margin-bottom: 1rem;
+        font-size: calc(1.1rem + 0.5vw);
+    }
+    .terms-policies p{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-bottom: 0.7rem;
+    }
+    .terms-policies ul{
+        margin-top: 1rem;
+        padding-left: 1.2rem;
+    }
+    .terms-policies li{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-bottom: 0.7rem;
+    }
+    .terms-policies #terms-element-1{
+        width: 180px;
+    }
 }

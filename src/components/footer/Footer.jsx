@@ -30,6 +30,7 @@ const Footer = () => {
             <Link to="/hot-brew">Hot Brew</Link>
             <Link to="/cold-brew">Cold Brew</Link>
             <Link to="/cart">Cart</Link>
+            <Link to="/store-terms-and-policies">Store Terms & Policies</Link>
           </div>
           <div className="footer-box">
             <span>Contact Info</span>
