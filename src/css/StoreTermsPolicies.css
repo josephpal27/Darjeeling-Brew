@@ -1,0 +1,40 @@
+.terms-policies{
+    padding: 4rem 7%;
+    background: #f4f8e1;
+}
+.terms-policies h1{
+    font-size: calc(2.3rem + 0.5vw);
+    text-align: center;
+    color: #8e2f2d;
+    margin-bottom: 3.5rem;
+}
+.terms-policies .terms-box{
+    margin-bottom: 2.5rem;
+}
+.terms-policies span{
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: calc(1rem + 0.5vw);
+    color: #8e2f2d;
+    font-family: "IvyOra", sans-serif !important;
+}
+.terms-policies p{
+    font-size: calc(0.55rem + 0.5vw);
+    color: #000;
+    margin-bottom: 0.7rem;
+}
+.terms-policies a{
+    color: #002c5b;
+}
+.terms-policies ul{
+    margin-top: 1rem;
+}
+.terms-policies li{
+    font-size: calc(0.55rem + 0.5vw);
+    color: #000;
+    margin-bottom: 0.7rem;
+}
+.terms-policies li b{
+    font-family: "IvyOra", sans-serif !important;
+    color: #002c5b;
+}
