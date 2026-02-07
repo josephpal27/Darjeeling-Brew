@@ -20,6 +20,7 @@ import TheArtOfBrewing from './pages/TheArtOfBrewing.jsx';
 import Checkout from './pages/CheckOut.jsx';
 import Cart from './pages/Cart.jsx';
 import ThankYou from './pages/ThankYou.jsx';
+import StoreTermsPolicies from './pages/StoreTermsPolicies';
 import Error from './pages/Error.jsx';
 
 import { CartProvider } from './context/CartContext.jsx';
@@ -44,6 +45,7 @@ let routers = createBrowserRouter([
       { path: "/checkout", element: <Checkout /> },
       { path: "/cart", element: <Cart /> },
       { path: "/thank-you", element: <ThankYou /> },
+      { path: "/store-terms-and-policies", element: <StoreTermsPolicies /> },
       { path: "*", element: <Error /> },
     ]
   }

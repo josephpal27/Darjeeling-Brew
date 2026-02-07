@@ -65,6 +65,14 @@ const PageTitle = () => {
         title = "Checkout - The Darjeeling Brew";
         description = "";
         break;
+      case "/cart":
+        title = "Cart - The Darjeeling Brew";
+        description = "";
+        break;
+      case "/store-terms-and-policies":
+        title = "Store terms & policies - The Darjeeling Brew";
+        description = "";
+        break;
       default:
         title = "The Darjeeling Brew";
         description = "";
