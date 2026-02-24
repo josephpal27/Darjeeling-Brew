@@ -10,6 +10,7 @@ import logo from '../assets/images/logo/logo.avif';
 
 import DarjeelingStory from '../components/darjeeling-story/DarjeelingStory';
 import AboutUs from '../components/about-us/AboutUs';
+import LegacyVideo from '../components/legacy-video/LegacyVideo';
 
 const Home = () => {
     return (
@@ -63,6 +64,9 @@ const Home = () => {
 
             {/* About Us */}
             <AboutUs />
+
+            {/* Legacy Video */}
+            <LegacyVideo />
 
             {/* Mountain Image */}
             <section className="mountain">
