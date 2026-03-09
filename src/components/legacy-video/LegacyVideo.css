@@ -16,8 +16,8 @@
 .legacy-video .video-box-left{
     width: 55%;
 }
-.legacy-video .video-box video{
-    width: 100%;
+.legacy-video .video-box iframe{
+    aspect-ratio: 16/9;
 }
 .legacy-video .video-box-right{
     width: 40%;
